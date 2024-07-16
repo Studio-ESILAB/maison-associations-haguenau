@@ -1,0 +1,23 @@
+// fonts
+// @import url("PASTE_LINK_HERE");
+
+// settings
+@import "./tools/mixins";
+@import "./tools/functions";
+@import "./settings/variables";
+@import "./settings/reset";
+@import "./settings/global";
+@import "./settings/layout";
+@import "./settings/typos";
+
+// blocks
+@import "./blocks/block-name";
+
+// components
+@import "./components/menu";
+@import "./components/button";
+
+// partials
+@import "./partials/header";
+@import "./partials/footer";
+@import "./partials/hero";

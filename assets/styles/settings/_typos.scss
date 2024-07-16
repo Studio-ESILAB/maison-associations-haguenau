@@ -1,0 +1,103 @@
+h1,
+.o-h1 {
+    margin: 0;
+    font-family: var(--font-f-heading);
+    font-size: var(--font-s-h1);
+    font-weight: var(--font-w-h1);
+    line-height: var(--font-lh-h1);
+    letter-spacing: var(--font-ls-h1);
+}
+h2,
+.o-h2 {
+    margin: 0;
+    font-family: var(--font-f-heading);
+    font-size: var(--font-s-h2);
+    font-weight: var(--font-w-h2);
+    line-height: var(--font-lh-h2);
+    letter-spacing: var(--font-ls-h2);
+}
+h3,
+.o-h3 {
+    margin: 0;
+    font-family: var(--font-f-heading);
+    font-size: var(--font-s-h3);
+    font-weight: var(--font-w-h3);
+    line-height: var(--font-lh-h3);
+    letter-spacing: var(--font-ls-h3);
+}
+h4,
+.o-h4 {
+    margin: 0;
+    font-family: var(--font-f-heading);
+    font-size: var(--font-s-h4);
+    font-weight: var(--font-w-h4);
+    line-height: var(--font-lh-h4);
+    letter-spacing: var(--font-ls-h4);
+}
+h5,
+.o-h5 {
+    margin: 0;
+    font-family: var(--font-f-heading);
+    font-size: var(--font-s-h5);
+    font-weight: var(--font-w-h5);
+    line-height: var(--font-lh-h5);
+    letter-spacing: var(--font-ls-h5);
+}
+h6,
+.o-h6 {
+    margin: 0;
+    font-family: var(--font-f-heading);
+    font-size: var(--font-s-h6);
+    font-weight: var(--font-w-h6);
+    line-height: var(--font-lh-h6);
+    letter-spacing: var(--font-ls-h6);
+}
+.o-par {
+    margin: 0;
+    font-family: var(--font-f-body);
+    font-size: var(--font-s-p);
+    font-weight: var(--font-w-p);
+    line-height: var(--font-lh-p);
+    letter-spacing: var(--font-ls-p);
+}
+
+a {
+    text-underline-offset: var(--underline-offset);
+    transition: color 0.5s var(--Power4EaseOut);
+}
+
+blockquote {
+    margin: 0 auto;
+    padding: 0 var(--section-gap);
+    position: relative;
+    p {
+        font-size: var(--font-s-big);
+        line-height: var(--font-lh-h4);
+    }
+}
+
+b,
+strong {
+    font-weight: 600;
+}
+
+p,
+li,
+div,
+.o-p {
+    font-family: var(--font-f-body);
+    font-size: var(--font-s-p);
+    font-weight: var(--font-w-p);
+    line-height: var(--font-lh-p);
+    letter-spacing: var(--font-ls-p);
+}
+
+ul,
+ol {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    display: block;
+}

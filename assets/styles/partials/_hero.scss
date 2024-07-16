@@ -1,0 +1,14 @@
+.p-hero {
+    background-image: url("../images/hero-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    &__container {
+        height: 100vh;
+    }
+
+    &__title {
+        color: var(--color-white);
+    }
+}
