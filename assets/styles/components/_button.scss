@@ -9,7 +9,7 @@
             }
         }
     }
-
+    
     &__link {
         width: fit-content;
         display: block;
@@ -20,7 +20,7 @@
             border-color: var(--color-night);
         }
     }
-
+    
     &--yellow {
         .c-button__link {
             color: var(--color-night);
@@ -41,7 +41,7 @@
             }
         }
     }
-
+    
     &--night {
         .c-button__link {
             color: var(--color-white);
@@ -54,7 +54,7 @@
             }
         }
     }
-
+    
     &--white {
         .c-button__link {
             color: var(--color-night);
