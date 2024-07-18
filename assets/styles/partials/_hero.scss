@@ -7,8 +7,12 @@
     &__container {
         height: 100vh;
     }
-
+    
     &__title {
+        grid-column: 1 / -1;
         color: var(--color-white);
+        @include breakpoint(from-medium) {
+            grid-column: 1 / 6;
+        }
     }
 }
