@@ -7,8 +7,8 @@
   "type": "module",
   "main": "assets/scripts/app.js",
   "scripts": {
-    "dev": "sass -w assets/styles/styles.scss:assets/styles/styles.css",
-    "build": "sass -w assets/styles/styles.scss:assets/styles/styles.css --style=compressed"
+    "dev": "sass -w assets/styles/app.scss:assets/styles/app.css",
+    "build": "sass -w assets/styles/app.scss:assets/styles/app.css --style=compressed"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
