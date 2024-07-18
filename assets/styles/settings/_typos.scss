@@ -52,6 +52,14 @@ h6,
     line-height: var(--font-lh-h6);
     letter-spacing: var(--font-ls-h6);
 }
+.o-suptitle {
+    margin: 0;
+    font-family: var(--font-f-heading);
+    font-size: var(--font-s-h4);
+    font-weight: var(--font-w-500);
+    line-height: var(--font-lh-h4);
+    letter-spacing: var(--font-ls-h4);
+}
 .o-par {
     margin: 0;
     font-family: var(--font-f-body);
@@ -62,8 +70,10 @@ h6,
 }
 
 a {
+    color: var(--color-night);
+    font-weight: var(--font-w-600);
     text-underline-offset: var(--underline-offset);
-    transition: color 0.5s var(--Power4EaseOut);
+    transition: 0.5s var(--Power4EaseOut);
 }
 
 blockquote {
@@ -94,10 +104,5 @@ div,
 
 ul,
 ol {
-    margin-top: 1em;
-    margin-bottom: 1em;
-    margin-left: 0;
-    margin-right: 0;
-    padding-left: 40px;
     display: block;
 }

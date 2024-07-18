@@ -1,9 +1,9 @@
 :root {
     
     // colors
-    // & {--color-NAME: #000000;}
-    // & {--color-NAME: #000000;}
-    // & {--color-NAME: #000000;}
+    & {--color-night: #12314e;}
+    & {--color-yellow: #ffde16;}
+    & {--color-light: #f6f7f8;}
     & {--color-white: #ffffff;}
     & {--color-grey: #7f7f7f;}
     & {--color-black: #000000;}
@@ -19,32 +19,37 @@
     & {--font-size: 16px;}
     
     & {--font-s-h1: 3rem;}
-    & {--font-s-h2: 2.4rem;}
-    & {--font-s-h3: 1.4rem;}
-    & {--font-s-h4: 1.25rem;}
-    & {--font-s-h5: 1rem;}
+    & {--font-s-h2: 2.5rem;}
+    & {--font-s-h3: 2rem;}
+    & {--font-s-h4: 1.5rem;}
+    & {--font-s-h5: 1.25rem;}
     & {--font-s-h6: 1rem;}
     & {--font-s-p: 1rem;}
-    & {--font-s-small: 0.8rem;}
-    & {--font-s-big: 3.4rem;}
+    & {--font-s-small: 0.85rem;}
+    & {--font-s-big: 2rem;}
     @include breakpoint(from-small) {
-        & {--font-s-h1: 3.2rem;}
-        & {--font-s-h2: 2.6rem;}
-        & {--font-s-h3: 1.6rem;}
-        & {--font-s-big: 3.6rem;}
-    }
-    @include breakpoint(from-medium) {
-        & {--font-s-h1: 3.6rem;}
-        & {--font-s-h2: 2.8rem;}
-        & {--font-s-h3: 1.8rem;}
-        & {--font-s-big: 4rem;}
-    }
-    @include breakpoint(from-large) {
         & {--font-s-h1: 4rem;}
         & {--font-s-h2: 3rem;}
         & {--font-s-h3: 2rem;}
-        & {--font-s-big: 4.5rem;}
+        & {--font-s-h4: 1.5rem;}
+        & {--font-s-h5: 1.25rem;}
+        & {--font-s-h6: 1rem;}
+        & {--font-s-p: 1rem;}
+        & {--font-s-small: 0.85rem;}
+        & {--font-s-big: 2rem;}
     }
+    @include breakpoint(from-medium) {
+        & {--font-s-h1: 5rem;}
+        & {--font-s-h2: 3rem;}
+        & {--font-s-h3: 2.5rem;}
+        & {--font-s-h4: 2rem;}
+        & {--font-s-h5: 1.5rem;}
+        & {--font-s-h6: 1.25rem;}
+        & {--font-s-p: 1rem;}
+        & {--font-s-small: 0.85rem;}
+        & {--font-s-big: 2rem;}
+    }
+    // @include breakpoint(from-large) {}
     
     & {--font-w-h1: 700;}
     & {--font-w-h2: 700;}
@@ -53,14 +58,17 @@
     & {--font-w-h5: 700;}
     & {--font-w-h6: 700;}
     & {--font-w-p: 400;}
+    & {--font-w-500: 500;}
+    & {--font-w-600: 600;}
     
-    & {--font-lh-h1: normal;}
-    & {--font-lh-h2: normal;}
-    & {--font-lh-h3: normal;}
-    & {--font-lh-h4: normal;}
-    & {--font-lh-h5: normal;}
-    & {--font-lh-h6: normal;}
-    & {--font-lh-p: normal;}
+    & {--font-lh-h1: 1.2;}
+    & {--font-lh-h2: 1.2;}
+    & {--font-lh-h3: 1.25;}
+    & {--font-lh-h4: 1.25;}
+    & {--font-lh-h5: 1.25;}
+    & {--font-lh-h6: 1.25;}
+    & {--font-lh-p: 1.35;}
+    & {--font-lh-small: 1.2;}
     
     & {--font-ls-h1: normal;}
     & {--font-ls-h2: normal;}
@@ -76,30 +84,28 @@
         & {--base-unit: clamp(1rem, 1vw + 0rem, 1.25rem);}
     }
     
-    & {--space-3xs: calc(var(--base-unit) * 0.3);}
+    & {--space-3xs: calc(var(--base-unit) * 0.25);}
     & {--space-2xs: calc(var(--base-unit) * 0.5);}
     & {--space-xs: calc(var(--base-unit) * 1);}
-    & {--space-s: calc(var(--base-unit) * 2);}
-    & {--space-m: calc(var(--base-unit) * 3);}
-    & {--space-l: calc(var(--base-unit) * 4);}
-    & {--space-xl: calc(var(--base-unit) * 5);}
-    & {--space-2xl: calc(var(--base-unit) * 6);}
-    & {--space-3xl: calc(var(--base-unit) * 7);}
+    & {--space-s: calc(var(--base-unit) * 1.5);}
+    & {--space-m: calc(var(--base-unit) * 2);}
+    & {--space-l: calc(var(--base-unit) * 3.5);}
+    & {--space-xl: calc(var(--base-unit) * 4);}
+    & {--space-2xl: calc(var(--base-unit) * 5);}
+    & {--space-3xl: calc(var(--base-unit) * 6);}
+    & {--space-4xl: calc(var(--base-unit) * 7.5);}
     
     // layout
-    & {--header-height: 60px;}
-    & {--border-radius: 4px;}
-    & {--border-radius-lg: 10px;}
-    & {--border-radius-xl: 16px;}
+    & {--header-height: 104px;}
     & {--underline-offset: 2px;}
     
     // wrappers
     & {--wrapper-max-width: 1600px;}
-    & {--grid-margin: 30px;}
+    & {--grid-margin: 40px;}
     & {--grid-cols: 4;}
-    & {--grid-gap: 25px;}
+    & {--grid-gap: calc(var(--base-unit) * 1.5);}
     @include breakpoint(from-small) {
-        & {--grid-margin: 30px;}
+        & {--grid-margin: 50px;}
         & {--grid-cols: 8;}
     }
     @include breakpoint(from-medium) {
@@ -107,7 +113,7 @@
         & {--grid-cols: 12;}
     }
     @include breakpoint(from-large) {
-        & {--grid-margin: 80px;}
+        & {--grid-margin: 70px;}
     }
     
     // eases
