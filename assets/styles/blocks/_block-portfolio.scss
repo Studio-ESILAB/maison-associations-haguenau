@@ -1,0 +1,46 @@
+.block-portfolio {
+    
+    &__title {
+        // &-title {}
+        &-subtitle {
+            grid-column: 1 / -1;
+            @include breakpoint(from-small) {
+                grid-column: 2 / 8;
+            }
+            @include breakpoint(from-medium) {
+                grid-column: 3 / 11;
+            }
+        }
+    }
+
+    // &__content {}
+
+    .swiper,
+    &__slider {
+        &-wrapper,
+        &-swiper-wrapper {
+            display: flex;
+            gap: var(--grid-gap);
+        }
+        &-slide,
+        &-swiper-slide {
+            &-image {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center center;
+                }
+            }
+            // &-description {}
+        }
+        &-footer {
+            @include breakpoint(from-small) {
+                flex-direction: row;
+            }
+        }
+        // &-arrows {}
+        // &-scrollbar {}
+        // &-link {}
+    }
+}
