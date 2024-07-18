@@ -1,0 +1,24 @@
+.block-cta {
+    
+    &__container {
+        background-color: var(--color-night);
+    }
+    
+    &__content {
+        color: var(--color-white);
+        grid-column: 1 / -1;
+        @include breakpoint(from-small) {
+            padding: var(--space-xl);
+        }
+        @include breakpoint(to-medium) {
+            grid-column: span 6;
+        }
+        @include breakpoint(from-medium) {
+            padding: var(--space-2xl) var(--space-4xl);
+            grid-column: 1 / 8;
+        }
+        // &-title {}
+        // &-text {}
+        // &-link {}
+    }
+}

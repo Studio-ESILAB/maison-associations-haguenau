@@ -1029,6 +1029,30 @@ ol {
   }
 }
 
+.block-cta__container {
+  background-color: var(--color-night);
+}
+.block-cta__content {
+  color: var(--color-white);
+  grid-column: 1/-1;
+}
+@media (min-width: 700px) {
+  .block-cta__content {
+    padding: var(--space-xl);
+  }
+}
+@media (max-width: 1025px) {
+  .block-cta__content {
+    grid-column: span 6;
+  }
+}
+@media (min-width: 1025px) {
+  .block-cta__content {
+    padding: var(--space-2xl) var(--space-4xl);
+    grid-column: 1/8;
+  }
+}
+
 .c-menu {
   display: flex;
   flex-direction: column;
