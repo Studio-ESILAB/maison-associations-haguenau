@@ -1,1 +1,22 @@
-// .c-menu {}
+.c-menu {
+    display: flex;
+    flex-direction: column;
+    gap: var(--grid-gap);
+    list-style: none;
+    &--row {
+        @include breakpoint(from-medium) {
+            flex-direction: row;
+        }
+    }
+
+    &__item {
+        // &.active &-link {}
+        &-link {
+            color: var(--color-white);
+            font-weight: var(--font-w-500);
+            line-height: 1.2;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+    }
+}
