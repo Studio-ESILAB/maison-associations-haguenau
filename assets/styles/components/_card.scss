@@ -1,0 +1,93 @@
+.c-card {
+    height: 100%;
+    background-color: var(--color-light);
+    
+    &--landscape {
+        display: grid;
+        align-items: center;
+        -moz-column-gap: var(--grid-gap);
+        column-gap: var(--grid-gap);
+        grid-template-columns: repeat(var(--grid-cols), 1fr);
+        & .c-card__image,
+        & .c-card__texts {
+            grid-column: 1 / -1;
+            @include breakpoint(from-small) {
+                grid-column: span 4;
+            }
+            @include breakpoint(from-medium) {
+                grid-column: span 6;
+            }
+            &:not(:has(img)) {
+                @include breakpoint(from-small) {
+                    padding: var(--space-m);
+                }
+            }
+            &-title {
+                margin: 0;
+                font-family: var(--font-f-heading);
+                font-size: var(--font-s-h4);
+                font-weight: var(--font-w-h4);
+                line-height: var(--font-lh-h4);
+                letter-spacing: var(--font-ls-h4);
+            }
+            &-infos {
+                margin-bottom: var(--space-xs);
+            }
+        }
+    }
+
+    &__image {
+        &-link {
+            width: 100%;
+            height: 100%;
+            display: block;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
+    }
+
+    &__texts {
+        // &-suptitle {}
+        // &-title {}
+        &-infos {
+            gap: var(--space-s);
+            list-style: disc;
+            font-size: var(--font-s-small);
+            font-weight: var(--font-w-600);
+            line-height: var(--font-lh-small);
+            & li {
+                &:first-child {
+                    list-style: none;
+                }
+            }
+            &-date {
+                font-size: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+                i {
+                    margin-right: var(--space-2xs);
+                    font-size: inherit;
+                    line-height: inherit;
+                }
+                span {
+                    font-size: inherit;
+                    font-weight: inherit;
+                    line-height: inherit;
+                    opacity: 0.65;
+                }
+            }
+            &-tag {
+                font-size: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+                opacity: 0.65;
+            }
+        }
+        // &-excerpt {}
+        // &-link {}
+    }
+}
