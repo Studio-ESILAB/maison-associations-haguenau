@@ -1,7 +1,7 @@
 .block-image-texts {
     
     // &__container {}
-
+    
     &__image {
         grid-column: 1 / -1;
         @include breakpoint(to-medium) {
@@ -17,7 +17,7 @@
             object-position: center center;
         }
     }
-
+    
     &__content {
         grid-column: 1 / -1;
         @include breakpoint(to-medium) {
