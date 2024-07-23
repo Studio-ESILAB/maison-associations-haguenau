@@ -1,5 +1,4 @@
-.o-wrapper,
-.o-container {
+.o-wrapper {
     display: block;
   
     // width
@@ -11,6 +10,10 @@
     margin-left: auto;
     padding-right: 0;
     padding-left: 0;
+
+    &-small {
+        max-width: var(--wrapper-small-max-width);
+    }
 }
 
 .o-grid {
@@ -30,6 +33,9 @@
     &--row-gap {
         -moz-row-gap: var(--grid-gap);
         row-gap: var(--grid-gap);
+    }
+    &--no-gap {
+        gap: 0;
     }
 }
 .o-full {

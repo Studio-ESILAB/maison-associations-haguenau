@@ -147,16 +147,16 @@
   --font-lh-h2: 1.2;
 }
 :root {
-  --font-lh-h3: 1.25;
+  --font-lh-h3: 1.2;
 }
 :root {
-  --font-lh-h4: 1.25;
+  --font-lh-h4: 1.2;
 }
 :root {
-  --font-lh-h5: 1.25;
+  --font-lh-h5: 1.2;
 }
 :root {
-  --font-lh-h6: 1.25;
+  --font-lh-h6: 1.2;
 }
 :root {
   --font-lh-p: 1.35;
@@ -231,6 +231,9 @@
 }
 :root {
   --wrapper-max-width: 1600px;
+}
+:root {
+  --wrapper-small-max-width: 860px;
 }
 :root {
   --grid-margin: 40px;
@@ -335,8 +338,7 @@ body .c-main {
   gap: var(--grid-gap) !important;
 }
 
-.o-wrapper,
-.o-container {
+.o-wrapper {
   display: block;
   width: calc(100% - var(--grid-margin) * 2);
   max-width: var(--wrapper-max-width);
@@ -344,6 +346,9 @@ body .c-main {
   margin-left: auto;
   padding-right: 0;
   padding-left: 0;
+}
+.o-wrapper-small {
+  max-width: var(--wrapper-small-max-width);
 }
 
 .o-grid {
@@ -364,6 +369,9 @@ body .c-main {
 .o-grid--row-gap {
   -moz-row-gap: var(--grid-gap);
   row-gap: var(--grid-gap);
+}
+.o-grid--no-gap {
+  gap: 0;
 }
 
 .o-full {
@@ -925,7 +933,8 @@ h6,
   letter-spacing: var(--font-ls-p);
 }
 
-a {
+a,
+button {
   color: var(--color-night);
   font-weight: var(--font-w-600);
   text-underline-offset: var(--underline-offset);

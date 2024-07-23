@@ -69,7 +69,8 @@ h6,
     letter-spacing: var(--font-ls-p);
 }
 
-a {
+a,
+button {
     color: var(--color-night);
     font-weight: var(--font-w-600);
     text-underline-offset: var(--underline-offset);
