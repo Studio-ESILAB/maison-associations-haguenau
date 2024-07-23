@@ -17,8 +17,10 @@
     }
 }
 
-body.user-logged .p-hero {
-    .p-hero__container {
-        height: 65vh;
+body.user-logged {
+    .p-hero {
+        &__container {
+            height: 65vh;
+        }
     }
 }
