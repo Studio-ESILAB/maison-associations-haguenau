@@ -362,7 +362,7 @@ body .c-main {
   -moz-row-gap: var(--grid-gap);
   row-gap: var(--grid-gap);
 }
-.o-grid--no-gap {
+.o-grid--ng {
   gap: 0;
 }
 
