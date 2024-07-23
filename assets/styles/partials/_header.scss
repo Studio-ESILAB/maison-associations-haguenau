@@ -3,6 +3,18 @@
     position: sticky;
     top: 0;
     z-index: 9999;
+    &--light {
+        background-color: var(--color-white);
+        #logo {
+            display: none !important;
+            &-light {
+                display: block !important;
+            }
+        }
+        & * {
+            color: var(--color-night) !important;
+        }
+    }
     
     // &__container {}
     
@@ -20,6 +32,12 @@
                 display: block;
                 object-fit: contain;
                 object-position: left center;
+            }
+            #logo {
+                display: block;
+                &-light {
+                    display: none;
+                }
             }
         }
     }

@@ -1334,6 +1334,18 @@ ol {
   top: 0;
   z-index: 9999;
 }
+.p-header--light {
+  background-color: var(--color-white);
+}
+.p-header--light #logo {
+  display: none !important;
+}
+.p-header--light #logo-light {
+  display: block !important;
+}
+.p-header--light * {
+  color: var(--color-night) !important;
+}
 .p-header__logo {
   grid-column: 1/-1;
 }
@@ -1352,6 +1364,12 @@ ol {
   display: block;
   object-fit: contain;
   object-position: left center;
+}
+.p-header__logo-link #logo {
+  display: block;
+}
+.p-header__logo-link #logo-light {
+  display: none;
 }
 .p-header__menu {
   grid-column: 1/-1;
