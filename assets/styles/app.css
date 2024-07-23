@@ -349,6 +349,13 @@ body .c-main {
   column-gap: var(--grid-gap);
   grid-template-columns: repeat(var(--grid-cols), 1fr);
 }
+.o-grid--row-gap {
+  -moz-row-gap: var(--grid-gap);
+  row-gap: var(--grid-gap);
+}
+.o-grid--ng {
+  gap: 0;
+}
 .o-grid--ais {
   align-items: flex-start;
 }
@@ -357,13 +364,6 @@ body .c-main {
 }
 .o-grid--aic {
   align-items: center;
-}
-.o-grid--row-gap {
-  -moz-row-gap: var(--grid-gap);
-  row-gap: var(--grid-gap);
-}
-.o-grid--ng {
-  gap: 0;
 }
 
 .o-full {

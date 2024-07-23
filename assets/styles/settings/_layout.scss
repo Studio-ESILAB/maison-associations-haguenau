@@ -21,6 +21,13 @@
     -moz-column-gap: var(--grid-gap);
     column-gap: var(--grid-gap);
     grid-template-columns: repeat(var(--grid-cols), 1fr);
+    &--row-gap {
+        -moz-row-gap: var(--grid-gap);
+        row-gap: var(--grid-gap);
+    }
+    &--ng {
+        gap: 0;
+    }
     &--ais {
         align-items: flex-start;
     }
@@ -29,13 +36,6 @@
     }
     &--aic {
         align-items: center;
-    }
-    &--row-gap {
-        -moz-row-gap: var(--grid-gap);
-        row-gap: var(--grid-gap);
-    }
-    &--ng {
-        gap: 0;
     }
 }
 .o-full {
