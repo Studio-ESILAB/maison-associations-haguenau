@@ -1,26 +1,50 @@
 .p-hero {
+    height: 100vh;
+    color: var(--color-white);
     background-image: url("../images/hero-background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     
-    &__container {
-        height: 100vh;
+    &--light {
+        height: 75vh;
+        color: var(--color-night);
+        background-color: var(--color-white);
+        background-image: none;
+        // background-image: url("../images/image-fallback.svg");
     }
     
-    &__title {
+    // &__container {}
+    
+    &__breadcrumb {
+        gap: var(--space-3xs);
+        &-start,
+        &-text {
+            color: inherit;
+            font-weight: var(--font-w-p);
+        }
+        &-end {
+            font-weight: var(--font-w-h6);
+        }
+        // &-text {}
+        // &-separator {}
+    }
+    
+    &__title,
+    &__subtitle {
+        height: auto;
         grid-column: 1 / -1;
-        color: var(--color-white);
+        color: inherit;
         @include breakpoint(from-medium) {
             grid-column: 1 / 6;
         }
     }
+    
+    // &__subtitle {}
 }
 
 body.user-logged {
     .p-hero {
-        &__container {
-            height: 65vh;
-        }
+        height: 75vh;
     }
 }
