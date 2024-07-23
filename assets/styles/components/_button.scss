@@ -16,6 +16,10 @@
         color: var(--color-night);
         border: solid 2px var(--color-yellow);
         background-color: var(--color-yellow);
+        &:is(button) {
+            width: 100%;
+            cursor: pointer;
+        }
         &:hover {
             border-color: var(--color-night);
         }

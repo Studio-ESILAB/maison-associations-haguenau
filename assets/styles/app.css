@@ -1064,6 +1064,46 @@ ol {
   object-position: center center;
 }
 
+.block-login__container {
+  background-color: var(--color-light);
+}
+.block-login__content {
+  grid-column: 1/-1;
+}
+@media (max-width: 1025px) {
+  .block-login__content {
+    padding: var(--space-l) var(--space-xl);
+    grid-column: 1/6;
+  }
+}
+@media (min-width: 1025px) {
+  .block-login__content {
+    padding: var(--space-xl) var(--space-2xl);
+    grid-column: 1/9;
+  }
+}
+.block-login__image {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/-1;
+}
+@media (min-width: 700px) {
+  .block-login__image {
+    grid-column: 6/-1;
+  }
+}
+@media (min-width: 1025px) {
+  .block-login__image {
+    grid-column: 9/-1;
+  }
+}
+.block-login__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
 .c-menu {
   display: flex;
   flex-direction: column;
@@ -1097,6 +1137,10 @@ ol {
   color: var(--color-night);
   border: solid 2px var(--color-yellow);
   background-color: var(--color-yellow);
+}
+.c-button__link:is(button) {
+  width: 100%;
+  cursor: pointer;
 }
 .c-button__link:hover {
   border-color: var(--color-night);
@@ -1220,6 +1264,67 @@ ol {
   font-weight: inherit;
   line-height: inherit;
   opacity: 0.65;
+}
+
+.c-form {
+  display: grid;
+  -moz-column-gap: var(--grid-gap);
+  -moz-row-gap: var(--grid-gap);
+  column-gap: var(--grid-gap);
+  row-gap: var(--grid-gap);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+}
+.c-form__field {
+  grid-column: 1/-1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+}
+.c-form__field--checkbox {
+  flex-direction: row;
+}
+.c-form__field-label {
+  cursor: pointer;
+}
+.c-form__field-input {
+  padding: 16px;
+  border: solid 1px rgba(18, 49, 78, 0.2);
+  border-radius: var(--space-2xs);
+  cursor: pointer;
+  transition: 0.5s var(--Power4EaseOut);
+}
+.c-form__field-input:hover {
+  border-color: rgba(18, 49, 78, 0.5);
+}
+.c-form__field-input:focus, .c-form__field-input:active {
+  border-color: var(--color-night);
+}
+@media (min-width: 1025px) {
+  .c-form__field--remember {
+    grid-column: span 6;
+  }
+}
+.c-form__link {
+  grid-column: 1/-1;
+  display: flex;
+}
+.c-form__link a {
+  font-size: var(--font-s-small);
+  font-weight: var(--font-w-p);
+}
+@media (min-width: 1025px) {
+  .c-form__link--forgot {
+    grid-column: span 6;
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1025px) {
+  .c-form__link--register {
+    justify-content: center;
+  }
+}
+.c-form__submit {
+  grid-column: 1/-1;
 }
 
 .p-header {
