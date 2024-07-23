@@ -1,4 +1,9 @@
 .block-login {
+    min-height: calc(100vh - var(--header-height));
+    @include breakpoint(from-big) {
+        margin-top: calc(var(--space-4xl) + var(--header-height));
+        min-height: auto;
+    }
     
     &__container {
         background-color: var(--color-light);

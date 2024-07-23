@@ -1065,6 +1065,15 @@ ol {
   object-position: center center;
 }
 
+.block-login {
+  min-height: calc(100vh - var(--header-height));
+}
+@media (min-width: 1400px) {
+  .block-login {
+    margin-top: calc(var(--space-4xl) + var(--header-height));
+    min-height: auto;
+  }
+}
 .block-login__container {
   background-color: var(--color-light);
 }
