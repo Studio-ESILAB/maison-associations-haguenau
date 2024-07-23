@@ -1225,6 +1225,9 @@ ol {
   border-color: var(--color-white);
   background-color: var(--color-white);
 }
+.c-button--icon i {
+  margin-right: var(--space-2xs);
+}
 .c-button__link {
   width: fit-content;
   display: block;

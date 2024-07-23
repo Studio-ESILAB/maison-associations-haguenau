@@ -9,6 +9,11 @@
             }
         }
     }
+    &--icon {
+        i {
+            margin-right: var(--space-2xs);
+        }
+    }
     
     &__link {
         width: fit-content;
