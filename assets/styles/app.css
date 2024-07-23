@@ -356,6 +356,10 @@ body .c-main {
   -moz-row-gap: var(--grid-gap);
   row-gap: var(--grid-gap);
 }
+.o-grid--row-gap-large {
+  -moz-row-gap: var(--space-xl);
+  row-gap: var(--space-xl);
+}
 .o-grid--ng {
   gap: 0;
 }

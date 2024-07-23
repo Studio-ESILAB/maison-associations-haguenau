@@ -24,6 +24,10 @@
     &--row-gap {
         -moz-row-gap: var(--grid-gap);
         row-gap: var(--grid-gap);
+        &-large {
+            -moz-row-gap: var(--space-xl);
+            row-gap: var(--space-xl);
+        }
     }
     &--ng {
         gap: 0;
