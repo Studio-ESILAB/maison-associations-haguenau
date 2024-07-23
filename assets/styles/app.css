@@ -1783,7 +1783,7 @@ ol {
   height: 75vh;
   color: var(--color-night);
   background-color: var(--color-white);
-  background-image: none;
+  background-image: url("../images/image-fallback.svg");
 }
 .p-hero__breadcrumb {
   gap: var(--space-3xs);

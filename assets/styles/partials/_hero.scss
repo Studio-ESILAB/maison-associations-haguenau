@@ -10,8 +10,7 @@
         height: 75vh;
         color: var(--color-night);
         background-color: var(--color-white);
-        background-image: none;
-        // background-image: url("../images/image-fallback.svg");
+        background-image: url("../images/image-fallback.svg");
     }
     
     // &__container {}
