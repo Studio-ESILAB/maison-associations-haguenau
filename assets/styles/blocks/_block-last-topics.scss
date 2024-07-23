@@ -3,24 +3,26 @@
     // &__container {}
     
     &__sidebar {
-        padding: var(--space-m) var(--space-l);
         grid-column: 1 / -1;
         position: relative;
         z-index: 0;
         color: var(--color-white);
         background-color: var(--color-night);
-        overflow: hidden;
-        @include breakpoint(from-small) {
+        @include breakpoint(from-medium) {
+            padding-top: var(--space-m);
             grid-column: 1 / 5;
         }
         &-background {
             width: 100%;
-            height: 15%;
+            height: 25%;
             display: block;
             position: absolute;
             top: 0;
             left: 0;
             z-index: -1;
+            @include breakpoint(from-medium) {
+                height: 15%;
+            }
             img {
                 width: 100%;
                 height: 100%;
@@ -35,7 +37,9 @@
                 aspect-ratio: 1 / 1;
                 display: block;
                 border-radius: 100%;
-                overflow: hidden;
+                @include breakpoint(from-small) {
+                    margin-bottom: var(--space-xs);
+                }
                 img {
                     width: 100%;
                     height: 100%;
@@ -77,11 +81,16 @@
     &__content {
         grid-column: 1 / -1;
         @include breakpoint(from-medium) {
+            margin-top: 0;
             padding-left: var(--space-xl);
             grid-column: 5 / -1;
         }
         // &-title {}
-        // &-link {}
+        &-link {
+            @include breakpoint(from-small) {
+                flex-direction: row;
+            }
+        }
     }
     
     &__list {

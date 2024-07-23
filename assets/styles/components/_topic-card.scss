@@ -3,6 +3,11 @@
     border: none;
     border-top: solid 1px;
     border-color: rgba(0, 177, 170, 0.4) !important;
+    @include breakpoint(from-medium) {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+    }
     
     &__image {
         flex: 1 2 5vw;
@@ -13,7 +18,6 @@
             aspect-ratio: 1 / 1;
             display: block;
             border-radius: 100%;
-            overflow: hidden;
             img {
                 width: 100%;
                 height: 100%;
@@ -25,11 +29,22 @@
     }
     
     &__texts {
+        flex: 1 1 50vw;
+        @include breakpoint(from-medium) {
+            flex: 1 2 auto;
+        }
         &-title {
             font-size: var(--font-s-p);
         }
         &-infos {
             list-style: initial;
+            @include breakpoint(to-medium) {
+                & > li {
+                    &:last-child {
+                        list-style: none;
+                    }
+                }
+            }
             & > li {
                 &:first-child {
                     list-style: none;
@@ -48,6 +63,10 @@
                 }
             }
             &-tags {
+                flex: 1 1 100%;
+                @include breakpoint(from-medium) {
+                    flex: 1 1 auto;
+                }
                 &-list {
                     list-style: initial;
                     & > li {
@@ -64,10 +83,11 @@
     }
     
     &__metas {
-        flex: 1 2 15vw;
-        gap: calc(var(--grid-gap) / 3);
         @include breakpoint(from-medium) {
+            margin-top: 0;
+            flex: 1 2 15vw;
             flex-direction: column;
+            gap: calc(var(--grid-gap) / 3);
         }
         &-comments,
         &-views {
