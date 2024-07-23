@@ -330,14 +330,6 @@ body .c-main {
   position: relative;
 }
 
-.grecaptcha-badge {
-  visibility: hidden;
-}
-
-.wp-block-columns {
-  gap: var(--grid-gap) !important;
-}
-
 .o-wrapper {
   display: block;
   width: calc(100% - var(--grid-margin) * 2);
