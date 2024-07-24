@@ -48,11 +48,13 @@ body.user-logged {
     }
 }
 
-body.simple-new {
-    .p-hero {
+.p-hero {
+    &--simple {
         height: auto;
         color: var(--color-night);
         background: none;
+    }
+    &--simple & {
         &__container {
             grid-column: 1 / -1;
         }

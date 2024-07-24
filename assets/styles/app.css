@@ -1911,35 +1911,35 @@ body.user-logged .p-hero {
   height: 75vh;
 }
 
-body.simple-new .p-hero {
+.p-hero--simple {
   height: auto;
   color: var(--color-night);
   background: none;
 }
-body.simple-new .p-hero__container {
+.p-hero--simple .p-hero__container {
   grid-column: 1/-1;
 }
 @media (min-width: 700px) {
-  body.simple-new .p-hero__breadcrumb {
+  .p-hero--simple .p-hero__breadcrumb {
     justify-content: center;
   }
 }
 @media (min-width: 1025px) {
-  body.simple-new .p-hero__breadcrumb {
+  .p-hero--simple .p-hero__breadcrumb {
     justify-content: flex-start;
   }
 }
 @media (min-width: 700px) {
-  body.simple-new .p-hero__title {
+  .p-hero--simple .p-hero__title {
     text-align: center;
   }
 }
 @media (min-width: 1025px) {
-  body.simple-new .p-hero__title {
+  .p-hero--simple .p-hero__title {
     grid-column: 3/-3;
   }
 }
-body.simple-new .p-hero__infos {
+.p-hero--simple .p-hero__infos {
   grid-column: 1/-1;
   gap: var(--space-s);
   font-size: var(--font-s-small);
@@ -1948,56 +1948,56 @@ body.simple-new .p-hero__infos {
   opacity: 0.65;
 }
 @media (min-width: 700px) {
-  body.simple-new .p-hero__infos {
+  .p-hero--simple .p-hero__infos {
     justify-content: center;
   }
 }
 @media (min-width: 1025px) {
-  body.simple-new .p-hero__infos {
+  .p-hero--simple .p-hero__infos {
     grid-column: 3/-3;
   }
 }
-body.simple-new .p-hero__infos li:first-child {
+.p-hero--simple .p-hero__infos li:first-child {
   list-style: none;
 }
-body.simple-new .p-hero__infos-date {
+.p-hero--simple .p-hero__infos-date {
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
 }
-body.simple-new .p-hero__infos-date i {
+.p-hero--simple .p-hero__infos-date i {
   margin-right: var(--space-2xs);
   font-size: inherit;
   line-height: inherit;
 }
-body.simple-new .p-hero__infos-date span {
+.p-hero--simple .p-hero__infos-date span {
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
 }
-body.simple-new .p-hero__infos-tags {
+.p-hero--simple .p-hero__infos-tags {
   font-size: inherit;
   font-weight: inherit;
   line-height: inherit;
 }
-body.simple-new .p-hero__image {
+.p-hero--simple .p-hero__image {
   position: relative;
   z-index: 0;
 }
-body.simple-new .p-hero__image img {
+.p-hero--simple .p-hero__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: center center;
 }
-body.simple-new .p-hero__image-decoration {
+.p-hero--simple .p-hero__image-decoration {
   height: 200px;
   position: absolute;
   top: 0;
   z-index: -1;
 }
 @media (min-width: 1025px) {
-  body.simple-new .p-hero__image-decoration {
+  .p-hero--simple .p-hero__image-decoration {
     display: block;
   }
 }
