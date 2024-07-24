@@ -1025,7 +1025,12 @@ ol {
   display: flex;
   gap: var(--grid-gap);
 }
-.block-portfolio .swiper-slide-image img, .block-portfolio .swiper-swiper-slide-image img, .block-portfolio__slider-slide-image img, .block-portfolio__slider-swiper-slide-image img {
+.block-portfolio .swiper-slide-image-link, .block-portfolio .swiper-swiper-slide-image-link, .block-portfolio__slider-slide-image-link, .block-portfolio__slider-swiper-slide-image-link {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.block-portfolio .swiper-slide-image-link img, .block-portfolio .swiper-swiper-slide-image-link img, .block-portfolio__slider-slide-image-link img, .block-portfolio__slider-swiper-slide-image-link img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1035,6 +1040,55 @@ ol {
   .block-portfolio .swiper-footer, .block-portfolio__slider-footer {
     flex-direction: row;
   }
+}
+.block-portfolio__list {
+  list-style: none;
+}
+.block-portfolio__pagination {
+  gap: var(--space-2xs);
+}
+.block-portfolio__pagination-prev, .block-portfolio__pagination-next {
+  width: 40px;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 100%;
+}
+.block-portfolio__pagination-prev:hover, .block-portfolio__pagination-next:hover {
+  color: var(--color-white);
+  background-color: var(--color-night);
+}
+.block-portfolio__pagination:has(.block-portfolio__pagination-pages-item--active:first-child) .block-portfolio__pagination-prev {
+  display: none;
+}
+.block-portfolio__pagination:has(.block-portfolio__pagination-pages-item--active:last-child) .block-portfolio__pagination-next {
+  display: none;
+}
+.block-portfolio__pagination-pages {
+  gap: var(--space-2xs);
+  list-style: none;
+}
+.block-portfolio__pagination-pages-item {
+  width: 40px;
+  height: auto;
+  aspect-ratio: 1/1;
+  display: block;
+  border-radius: 100%;
+  background-color: var(--color-white);
+  transition: 0.5s var(--Power4EaseOut);
+}
+.block-portfolio__pagination-pages-item:hover, .block-portfolio__pagination-pages-item--active {
+  color: var(--color-white);
+  background-color: var(--color-night);
+}
+.block-portfolio__pagination-pages-item--more:hover {
+  color: inherit;
+  background-color: inherit;
+}
+.block-portfolio__pagination-pages-link {
+  width: 100%;
+  height: 100%;
+  color: inherit;
+  border-radius: inherit;
 }
 
 .block-cta__container {
