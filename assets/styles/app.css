@@ -1650,7 +1650,7 @@ ol {
 }
 @media (min-width: 1025px) {
   .p-header__menu .c-menu {
-    grid-column: 1/11;
+    grid-column: 1/10;
   }
 }
 .p-header__menu-login {
@@ -1658,15 +1658,37 @@ ol {
 }
 @media (min-width: 1025px) {
   .p-header__menu-login {
-    grid-column: 11/-1;
+    margin-top: 0;
+    grid-column: 10/-1;
   }
 }
-.p-header__menu-login * {
+.p-header__menu-login-link {
+  gap: var(--space-2xs);
   color: var(--color-white);
-  text-decoration: none;
 }
-.p-header__menu-login i {
-  margin-right: var(--space-2xs);
+@media (min-width: 1025px) {
+  .p-header__menu-login-link {
+    justify-content: flex-end;
+  }
+}
+.p-header__menu-login-image {
+  width: 38px;
+  max-width: 38px;
+  height: auto;
+  aspect-ratio: 1/1;
+  display: block;
+  border-radius: 100%;
+}
+.p-header__menu-login-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: inherit;
+}
+.p-header__menu-login-text, .p-header__menu-login-name {
+  font-weight: var(--font-w-500);
+  white-space: nowrap;
 }
 
 .p-footer {
