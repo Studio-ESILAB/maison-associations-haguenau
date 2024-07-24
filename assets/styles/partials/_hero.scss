@@ -47,3 +47,89 @@ body.user-logged {
         height: 75vh;
     }
 }
+
+body.simple-new {
+    .p-hero {
+        height: auto;
+        color: var(--color-night);
+        background: none;
+        &__container {
+            grid-column: 1 / -1;
+        }
+        &__breadcrumb {
+            @include breakpoint(from-small) {
+                justify-content: center;
+            }
+            @include breakpoint(from-medium) {
+                justify-content: flex-start;
+            }
+        }
+        &__title {
+            @include breakpoint(from-small) {
+                text-align: center;
+            }
+            @include breakpoint(from-medium) {
+                grid-column: 3 / -3;
+            }
+        }
+        &__infos {
+            grid-column: 1 / -1;
+            gap: var(--space-s);
+            font-size: var(--font-s-small);
+            font-weight: var(--font-w-600);
+            line-height: var(--font-lh-small);
+            opacity: 0.65;
+            @include breakpoint(from-small) {
+                justify-content: center;
+            }
+            @include breakpoint(from-medium) {
+                grid-column: 3 / -3;
+            }
+            & li {
+                &:first-child {
+                    list-style: none;
+                }
+            }
+            &-date {
+                font-size: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+                i {
+                    margin-right: var(--space-2xs);
+                    font-size: inherit;
+                    line-height: inherit;
+                }
+                span {
+                    font-size: inherit;
+                    font-weight: inherit;
+                    line-height: inherit;
+                }
+            }
+            &-tags {
+                font-size: inherit;
+                font-weight: inherit;
+                line-height: inherit;
+            }
+        }
+        &__image {
+            position: relative;
+            z-index: 0;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+            &-decoration {
+                height: 200px;
+                position: absolute;
+                top: 0;
+                z-index: -1;
+                @include breakpoint(from-medium) {
+                    display: block;
+                }
+            }
+            // &-featured {}
+        }
+    }
+}
