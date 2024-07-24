@@ -10,7 +10,9 @@
     }
     
     &__item {
-        // &.active &-link {}
+        &.active &-link {
+            text-decoration: underline;
+        }
         &-link {
             color: var(--color-white);
             font-weight: var(--font-w-500);

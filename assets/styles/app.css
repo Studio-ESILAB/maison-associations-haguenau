@@ -1280,6 +1280,9 @@ ol {
     flex-direction: row;
   }
 }
+.c-menu__item.active .c-menu__item-link {
+  text-decoration: underline;
+}
 .c-menu__item-link {
   color: var(--color-white);
   font-weight: var(--font-w-500);
