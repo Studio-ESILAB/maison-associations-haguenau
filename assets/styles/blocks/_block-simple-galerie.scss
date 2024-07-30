@@ -1,13 +1,8 @@
-.block-simple-new {
+.block-simple-galerie {
     
     // &__header {}
     
     &__content {
-        &-excerpt {
-            p {
-                font-weight: var(--font-w-500);
-            }
-        }
         &-texts {
             h1, h2, h3, h4, h5, h6 {
                 margin: var(--space-l) 0 var(--space-s) 0;
