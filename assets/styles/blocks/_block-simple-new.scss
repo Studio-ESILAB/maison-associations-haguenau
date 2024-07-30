@@ -1,4 +1,5 @@
-.block-simple-new {
+.block-simple-new,
+.block-simple-galerie {
     
     // &__header {}
     
@@ -8,7 +9,8 @@
                 font-weight: var(--font-w-500);
             }
         }
-        &-texts {
+        &-texts,
+        &-description {
             h1, h2, h3, h4, h5, h6 {
                 margin: var(--space-l) 0 var(--space-s) 0;
                 &:nth-child(1) {
@@ -28,5 +30,7 @@
                 }
             }
         }
+        // &-texts {}
+        // &-description {}
     }
 }

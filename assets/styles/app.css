@@ -1323,25 +1323,62 @@ ol {
   border-radius: inherit;
 }
 
-.block-simple-new__content-excerpt p {
+.block-simple-new__content-excerpt p,
+.block-simple-galerie__content-excerpt p {
   font-weight: var(--font-w-500);
 }
-.block-simple-new__content-texts h1, .block-simple-new__content-texts h2, .block-simple-new__content-texts h3, .block-simple-new__content-texts h4, .block-simple-new__content-texts h5, .block-simple-new__content-texts h6 {
+.block-simple-new__content-texts h1, .block-simple-new__content-texts h2, .block-simple-new__content-texts h3, .block-simple-new__content-texts h4, .block-simple-new__content-texts h5, .block-simple-new__content-texts h6, .block-simple-new__content-description h1, .block-simple-new__content-description h2, .block-simple-new__content-description h3, .block-simple-new__content-description h4, .block-simple-new__content-description h5, .block-simple-new__content-description h6,
+.block-simple-galerie__content-texts h1,
+.block-simple-galerie__content-texts h2,
+.block-simple-galerie__content-texts h3,
+.block-simple-galerie__content-texts h4,
+.block-simple-galerie__content-texts h5,
+.block-simple-galerie__content-texts h6,
+.block-simple-galerie__content-description h1,
+.block-simple-galerie__content-description h2,
+.block-simple-galerie__content-description h3,
+.block-simple-galerie__content-description h4,
+.block-simple-galerie__content-description h5,
+.block-simple-galerie__content-description h6 {
   margin: var(--space-l) 0 var(--space-s) 0;
 }
-.block-simple-new__content-texts h1:nth-child(1), .block-simple-new__content-texts h2:nth-child(1), .block-simple-new__content-texts h3:nth-child(1), .block-simple-new__content-texts h4:nth-child(1), .block-simple-new__content-texts h5:nth-child(1), .block-simple-new__content-texts h6:nth-child(1) {
+.block-simple-new__content-texts h1:nth-child(1), .block-simple-new__content-texts h2:nth-child(1), .block-simple-new__content-texts h3:nth-child(1), .block-simple-new__content-texts h4:nth-child(1), .block-simple-new__content-texts h5:nth-child(1), .block-simple-new__content-texts h6:nth-child(1), .block-simple-new__content-description h1:nth-child(1), .block-simple-new__content-description h2:nth-child(1), .block-simple-new__content-description h3:nth-child(1), .block-simple-new__content-description h4:nth-child(1), .block-simple-new__content-description h5:nth-child(1), .block-simple-new__content-description h6:nth-child(1),
+.block-simple-galerie__content-texts h1:nth-child(1),
+.block-simple-galerie__content-texts h2:nth-child(1),
+.block-simple-galerie__content-texts h3:nth-child(1),
+.block-simple-galerie__content-texts h4:nth-child(1),
+.block-simple-galerie__content-texts h5:nth-child(1),
+.block-simple-galerie__content-texts h6:nth-child(1),
+.block-simple-galerie__content-description h1:nth-child(1),
+.block-simple-galerie__content-description h2:nth-child(1),
+.block-simple-galerie__content-description h3:nth-child(1),
+.block-simple-galerie__content-description h4:nth-child(1),
+.block-simple-galerie__content-description h5:nth-child(1),
+.block-simple-galerie__content-description h6:nth-child(1) {
   margin-top: 0;
 }
-.block-simple-new__content-texts h4, .block-simple-new__content-texts h5, .block-simple-new__content-texts h6 {
+.block-simple-new__content-texts h4, .block-simple-new__content-texts h5, .block-simple-new__content-texts h6, .block-simple-new__content-description h4, .block-simple-new__content-description h5, .block-simple-new__content-description h6,
+.block-simple-galerie__content-texts h4,
+.block-simple-galerie__content-texts h5,
+.block-simple-galerie__content-texts h6,
+.block-simple-galerie__content-description h4,
+.block-simple-galerie__content-description h5,
+.block-simple-galerie__content-description h6 {
   margin: var(--space-s) 0;
 }
-.block-simple-new__content-texts p {
+.block-simple-new__content-texts p, .block-simple-new__content-description p,
+.block-simple-galerie__content-texts p,
+.block-simple-galerie__content-description p {
   margin: var(--space-s) 0;
 }
-.block-simple-new__content-texts p:first-of-type {
+.block-simple-new__content-texts p:first-of-type, .block-simple-new__content-description p:first-of-type,
+.block-simple-galerie__content-texts p:first-of-type,
+.block-simple-galerie__content-description p:first-of-type {
   margin-top: 0;
 }
-.block-simple-new__content-texts p:last-of-type {
+.block-simple-new__content-texts p:last-of-type, .block-simple-new__content-description p:last-of-type,
+.block-simple-galerie__content-texts p:last-of-type,
+.block-simple-galerie__content-description p:last-of-type {
   margin-bottom: 0;
 }
 
