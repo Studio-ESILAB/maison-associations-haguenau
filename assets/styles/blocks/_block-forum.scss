@@ -1,0 +1,270 @@
+.block-forum {
+    
+    // &__container {}
+    
+    &__forum {
+        width: 100%;
+        &-sidebar {
+            flex-direction: row;
+            flex-wrap: wrap;
+            border: none;
+            @include breakpoint(from-small) {
+                margin-top: var(--space-2xl);
+                margin-bottom: 0;
+                grid-column: 1 / 3;
+                flex-direction: column;
+                border-right: solid 1px rgba(18, 49, 78, 0.20);
+            }
+        }
+        &-tags {
+            width: calc((100% - var(--grid-gap)) / 2);
+            @include breakpoint(from-small) {
+                width: 100%;
+                &:not(:first-child) {
+                    margin-top: var(--space-m);
+                }
+            }
+            &-title {
+                display: block;
+                font-size: var(--font-s-small);
+                font-weight: var(--font-w-600);
+                line-height: var(--font-lh-small);
+                opacity: 0.65;
+            }
+            &-list {
+                max-height: 15vh;
+                display: block;
+                list-style: none;
+                overflow: scroll;
+                border: solid 1px rgba(18, 49, 78, 0.20);
+                @include breakpoint(from-small) {
+                    max-height: none;
+                    border: none;
+                }
+            }
+            &-item {
+                display: block;
+                &:hover {
+                    background-color: rgba(18, 49, 78, 0.10);
+                }
+                &.active {
+                    background-color: rgba(18, 49, 78, 0.10);
+                    .block-forum__forum-tags-link {
+                        font-weight: var(--font-w-600);
+                    }
+                }
+            }
+            &-link {
+                width: 100%;
+                height: 100%;
+                display: block;
+                font-weight: var(--font-w-p);
+            }
+        }
+        &-content {
+            @include breakpoint(from-small) {
+                margin-left: var(--space-s);
+                grid-column: 3 / -1;
+            }
+            &-header {
+                @include breakpoint(from-small) {
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+                @include breakpoint(from-medium) {
+                    justify-content: flex-end;
+                }
+            }
+            &-title {
+                width: 100%;
+                margin-right: auto;
+                margin-left: 0;
+                @include breakpoint(from-medium) {
+                    width: auto;
+                }
+            }
+            &-form,
+            .c-form {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                @include breakpoint(from-medium) {
+                    width: auto;
+                }
+                &__field {
+                    &--search {
+                        flex: 1 1 85%;
+                    }
+                    &--select {
+                        flex: 1 1 15%;
+                    }
+                    &-filter {
+                        font-size: var(--font-s-p);
+                        font-weight: var(--font-w-600);
+                        line-height: var(--font-lh-p);
+                    }
+                }
+            }
+            // &-new {}
+            // &-list-container {}
+            &-list-header {
+                margin-bottom: var(--space-xs);
+                gap: var(--space-xs);
+                @include breakpoint(from-medium) {
+                    display: flex;
+                }
+                &__texts {
+                    flex: 1 2 65%;
+                    font-weight: var(--font-w-h6);
+                    opacity: 0.65;
+                    @include breakpoint(from-medium) {
+                        flex: 1 2 65%;
+                    }
+                }
+                &__metas {
+                    flex: 1 2 15vw;
+                    opacity: 0.65;
+                    &-comments,
+                    &-views {
+                        flex: 1 1 50%;
+                        font-weight: var(--font-w-h6);
+                        text-align: center;
+                    }
+                }
+            }
+            &-list {
+                list-style: none;
+                .c-topic-card {
+                    // &__image {}
+                    // &__texts {}
+                    &__metas {
+                        flex-direction: row;
+                        &-comments,
+                        &-views {
+                            @include breakpoint(from-medium) {
+                                flex: 1 1 50%;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                & > :last-child {
+                    & > * {
+                        border-bottom: solid 1px;
+                    }
+                }
+            }
+        }
+    }
+    
+    &__pagination {
+        gap: var(--space-2xs);
+        &-prev,
+        &-next {
+            width: 40px;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            border-radius: 100%;
+            &:hover {
+                color: var(--color-white);
+                background-color: var(--color-night);
+            }
+        }
+        // &-prev {}
+        // &-next {}
+        &:has(.block-forum__pagination-pages-item--active:first-child) & {
+            &-prev {
+                display: none;
+            }
+        }
+        &:has(.block-forum__pagination-pages-item--active:last-child) & {
+            &-next {
+                display: none;
+            }
+        }
+        &-pages {
+            gap: var(--space-2xs);
+            list-style: none;
+            &-item {
+                width: 40px;
+                height: auto;
+                aspect-ratio: 1 / 1;
+                display: block;
+                border-radius: 100%;
+                background-color: var(--color-white);
+                transition: 0.5s var(--Power4EaseOut);
+                &:hover,
+                &--active {
+                    color: var(--color-white);
+                    background-color: var(--color-night);
+                }
+                &--more {
+                    &:hover {
+                        color: inherit;
+                        background-color: inherit;
+                    }
+                }
+            }
+            &-link {
+                width: 100%;
+                height: 100%;
+                color: inherit;
+                border-radius: inherit;
+            }
+        }
+    }
+    
+    // &__title {
+    //     // &-title {}
+    //     &-subtitle {
+    //         grid-column: 1 / -1;
+    //         @include breakpoint(from-small) {
+    //             grid-column: 2 / 8;
+    //         }
+    //         @include breakpoint(from-medium) {
+    //             grid-column: 3 / 11;
+    //         }
+    //     }
+    // }
+
+    // &__content {}
+    
+    // .swiper,
+    // &__slider {
+    //     &-wrapper,
+    //     &-swiper-wrapper {
+    //         display: flex;
+    //         gap: var(--grid-gap);
+    //     }
+    //     &-slide,
+    //     &-swiper-slide {
+    //         &-image {
+    //             &-link {
+    //                 width: 100%;
+    //                 height: 100%;
+    //                 display: block;
+    //                 img {
+    //                     width: 100%;
+    //                     height: 100%;
+    //                     object-fit: cover;
+    //                     object-position: center center;
+    //                 }
+    //             }
+    //         }
+    //         // &-title {}
+    //     }
+    //     &-footer {
+    //         @include breakpoint(from-small) {
+    //             flex-direction: row;
+    //         }
+    //     }
+    //     // &-arrows {}
+    //     // &-scrollbar {}
+    //     // &-link {}
+    // }
+    
+    // &__list {
+    //     list-style: none;
+    //     // &-item {}
+    // }
+}

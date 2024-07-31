@@ -11,9 +11,20 @@
         display: flex;
         flex-direction: column;
         gap: var(--space-2xs);
+        // &--text {}
+        // &--select {}
         &--checkbox {
             flex-direction: row;
         }
+        // &--email {}
+        // &--password {}
+        &--remember {
+            @include breakpoint(from-medium) {
+                grid-column: span 6;
+            }
+        }
+        // &--search {}
+        // &--filter {}
         &-label {
             cursor: pointer;
         }
@@ -31,10 +42,9 @@
                 border-color: var(--color-night);
             }
         }
-        &--remember {
-            @include breakpoint(from-medium) {
-                grid-column: span 6;
-            }
+        &-filter {
+            text-align: right;
+            border: none;
         }
     }
     
