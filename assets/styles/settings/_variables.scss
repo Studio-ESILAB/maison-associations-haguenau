@@ -11,10 +11,8 @@
     & {--color-error: #ff0000;}
     
     // fonts
-    // & {--font-f-heading: "NAME", sans-serif;}
-    // & {--font-f-body: "NAME", sans-serif;}
-    & {--font-f-heading: sans-serif;}
-    & {--font-f-body: sans-serif;}
+    & {--font-f-heading: "Montserrat", sans-serif;}
+    & {--font-f-body: "Roboto", sans-serif;}
     
     // & {--font-size: calc(15px + 0.390625vw);}
     & {--font-size: 16px;}
@@ -29,7 +27,7 @@
     & {--font-s-small: 0.85rem;}
     & {--font-s-big: 2rem;}
     @include breakpoint(from-small) {
-        & {--font-s-h1: 4rem;}
+        & {--font-s-h1: 3.5rem;}
         & {--font-s-h2: 3rem;}
         & {--font-s-h3: 2rem;}
         & {--font-s-h4: 1.5rem;}
@@ -40,7 +38,7 @@
         & {--font-s-big: 2rem;}
     }
     @include breakpoint(from-medium) {
-        & {--font-s-h1: 5rem;}
+        & {--font-s-h1: 4.5rem;}
         & {--font-s-h2: 3rem;}
         & {--font-s-h3: 2.5rem;}
         & {--font-s-h4: 2rem;}
