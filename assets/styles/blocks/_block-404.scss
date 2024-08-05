@@ -1,0 +1,22 @@
+.block-404 {
+    min-height: 100vh;
+    
+    // &__container {}
+    
+    &__content {
+        // @include breakpoint(from-small) {
+        //     padding: var(--space-xl);
+        // }
+        // @include breakpoint(from-medium) {
+        //     padding: var(--space-2xl) var(--space-4xl);
+        // }
+        &-title {
+            font-size: var(--font-s-404);
+        }
+        &-text {
+            font-family: var(--font-f-body);
+            font-weight: var(--font-w-p);
+        }
+        // &-link {}
+    }
+}

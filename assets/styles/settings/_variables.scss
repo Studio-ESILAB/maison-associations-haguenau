@@ -26,6 +26,7 @@
     & {--font-s-p: 1rem;}
     & {--font-s-small: 0.85rem;}
     & {--font-s-big: 2rem;}
+    & {--font-s-404: calc(var(--font-s-h1) * 3);}
     @include breakpoint(from-small) {
         & {--font-s-h1: 3.5rem;}
         & {--font-s-h2: 3rem;}
@@ -36,6 +37,7 @@
         & {--font-s-p: 1rem;}
         & {--font-s-small: 0.85rem;}
         & {--font-s-big: 2rem;}
+        & {--font-s-404: calc(var(--font-s-h1) * 3.5);}
     }
     @include breakpoint(from-medium) {
         & {--font-s-h1: 4.5rem;}
@@ -47,6 +49,7 @@
         & {--font-s-p: 1rem;}
         & {--font-s-small: 0.85rem;}
         & {--font-s-big: 2rem;}
+        & {--font-s-404: calc(var(--font-s-h1) * 4);}
     }
     // @include breakpoint(from-large) {}
     

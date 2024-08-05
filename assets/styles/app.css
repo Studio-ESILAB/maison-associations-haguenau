@@ -59,6 +59,9 @@
 :root {
   --font-s-big: 2rem;
 }
+:root {
+  --font-s-404: calc(var(--font-s-h1) * 3);
+}
 @media (min-width: 700px) {
   :root {
     --font-s-h1: 3.5rem;
@@ -86,6 +89,9 @@
   }
   :root {
     --font-s-big: 2rem;
+  }
+  :root {
+    --font-s-404: calc(var(--font-s-h1) * 3.5);
   }
 }
 @media (min-width: 1025px) {
@@ -115,6 +121,9 @@
   }
   :root {
     --font-s-big: 2rem;
+  }
+  :root {
+    --font-s-404: calc(var(--font-s-h1) * 4);
   }
 }
 :root {
@@ -1577,6 +1586,17 @@ ol {
   height: 100%;
   color: inherit;
   border-radius: inherit;
+}
+
+.block-404 {
+  min-height: 100vh;
+}
+.block-404__content-title {
+  font-size: var(--font-s-404);
+}
+.block-404__content-text {
+  font-family: var(--font-f-body);
+  font-weight: var(--font-w-p);
 }
 
 .c-menu {
