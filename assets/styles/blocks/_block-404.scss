@@ -4,12 +4,6 @@
     // &__container {}
     
     &__content {
-        // @include breakpoint(from-small) {
-        //     padding: var(--space-xl);
-        // }
-        // @include breakpoint(from-medium) {
-        //     padding: var(--space-2xl) var(--space-4xl);
-        // }
         &-title {
             font-size: var(--font-s-404);
         }
