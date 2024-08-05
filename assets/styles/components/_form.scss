@@ -16,6 +16,7 @@
         &--checkbox {
             flex-direction: row;
         }
+        // &--textarea {}
         // &--email {}
         // &--password {}
         &--remember {
@@ -25,11 +26,16 @@
         }
         // &--search {}
         // &--filter {}
+        &--comment {
+            width: 100%;
+        }
         &-label {
             cursor: pointer;
         }
-        &-input {
+        &-input,
+        &-textarea {
             padding: 16px;
+            font-family: var(--font-f-body);
             border: solid 1px rgba(18, 49, 78, 0.2);
             border-radius: var(--space-2xs);
             cursor: pointer;
