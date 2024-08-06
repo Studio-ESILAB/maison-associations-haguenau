@@ -1629,7 +1629,7 @@ ol {
   bottom: -1px;
   right: 0;
   left: 0;
-  background-color: var(--color-night);
+  background-color: var(--color-white);
   transform-origin: bottom right;
   transform: scaleX(0);
   transition: transform 0.5s var(--Power4EaseOut);
@@ -2070,6 +2070,9 @@ ol {
 .p-header--light * {
   color: var(--color-night) !important;
 }
+.p-header--light .c-menu__item-link::before {
+  background-color: var(--color-night);
+}
 .p-header__logo {
   grid-column: 1/-1;
 }
@@ -2197,9 +2200,6 @@ ol {
   grid-template: repeat(4, 1fr)/repeat(2, 1fr);
   grid-auto-flow: column dense;
   gap: var(--space-2xs);
-}
-.p-footer__menu .c-menu__item-link::before {
-  background-color: var(--color-white);
 }
 .p-footer__infos {
   margin-top: var(--space-m);

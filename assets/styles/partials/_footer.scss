@@ -41,13 +41,11 @@
             grid-template: repeat(4, 1fr) / repeat(2, 1fr);
             grid-auto-flow: column dense;
             gap: var(--space-2xs);
-            &__item {
-                &-link {
-                    &::before {
-                        background-color: var(--color-white);
-                    }
-                }
-            }
+            // &__item {
+            //     // &-link {
+            //     //     // &::before {}
+            //     // }
+            // }
         }
     }
     
