@@ -1,16 +1,30 @@
 .p-hero {
     height: 100vh;
+    position: relative;
+    z-index: 0;
     color: var(--color-white);
-    background-image: url("../images/hero-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    
+    &--small {
+        height: 75vh;
+    }
     
     &--light {
-        height: 75vh;
         color: var(--color-night);
-        background-color: var(--color-white);
-        background-image: url("../images/image-fallback.svg");
+    }
+    
+    &__background {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+        }
     }
     
     // &__container {}
@@ -38,14 +52,9 @@
             grid-column: 1 / 6;
         }
     }
-    
+    // &__title {}
     // &__subtitle {}
-}
-
-body.user-logged {
-    .p-hero {
-        height: 75vh;
-    }
+    // &__link {}
 }
 
 .p-hero {
@@ -132,6 +141,28 @@ body.user-logged {
                 }
             }
             // &-featured {}
+        }
+    }
+}
+
+body.err-404 {
+    .p-hero {
+        min-height: 100vh;
+        &__title,
+        &__subtitle,
+        &__link {
+            grid-column: 1 / -1;
+        }
+        &__title {
+            font-size: var(--font-s-404);
+        }
+        &__subtitle {
+            font-family: var(--font-f-body);
+            font-weight: var(--font-w-p);
+        }
+        &__link {
+            margin-right: auto;
+            margin-left: auto;
         }
     }
 }
