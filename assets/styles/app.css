@@ -992,13 +992,13 @@ ol {
   z-index: -1;
 }
 .block-last-news__shapes-rectangle {
-  position: inherit;
+  position: absolute;
   top: 5vh;
   left: 10vw;
   transform: rotate(-45deg);
 }
 .block-last-news__shapes-circle {
-  position: inherit;
+  position: absolute;
   top: -10vh;
   right: 10vw;
   transform: rotate(120deg);
