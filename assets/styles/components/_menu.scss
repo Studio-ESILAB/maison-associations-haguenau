@@ -11,14 +11,36 @@
     
     &__item {
         &.active &-link {
-            text-decoration: underline;
+            &::before {
+                transform-origin: bottom left;
+                transform: scaleX(1);
+            }
         }
         &-link {
+            position: relative;
             color: var(--color-white);
             font-weight: var(--font-w-500);
             line-height: 1.2;
             text-decoration: none;
             white-space: nowrap;
+            &::before {
+                content: '';
+                height: 2px;
+                position: absolute;
+                bottom: -1px;
+                right: 0;
+                left: 0;
+                background-color: var(--color-night);
+                transform-origin: bottom right;
+                transform: scaleX(0);
+                transition: transform 0.5s var(--Power4EaseOut);
+            }
+            &:hover {
+                &::before {
+                    transform-origin: bottom left;
+                    transform: scaleX(1);
+                }
+            }
         }
     }
 }
