@@ -1151,8 +1151,22 @@ ol {
   border-radius: inherit;
 }
 
-.block-cta__container {
+.block-cta {
+  position: relative;
+  z-index: 0;
+}
+.block-cta__background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
   background-color: var(--color-night);
+}
+.block-cta__background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
 }
 .block-cta__content {
   color: var(--color-white);
