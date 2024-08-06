@@ -1,22 +1,10 @@
 .block-cta {
-    position: relative;
-    z-index: 0;
     
-    &__background {
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        z-index: -1;
+    &__container {
+        position: relative;
+        z-index: 0;
         background-color: var(--color-night);
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center center;
-        }
     }
-    
-    // &__container {}
     
     &__content {
         color: var(--color-white);
@@ -30,6 +18,18 @@
         @include breakpoint(from-medium) {
             padding: var(--space-2xl) var(--space-4xl);
             grid-column: 1 / 8;
+        }
+        &-background {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: right center;
+            }
         }
         // &-title {}
         // &-text {}

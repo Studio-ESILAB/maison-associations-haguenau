@@ -1151,22 +1151,10 @@ ol {
   border-radius: inherit;
 }
 
-.block-cta {
+.block-cta__container {
   position: relative;
   z-index: 0;
-}
-.block-cta__background {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  z-index: -1;
   background-color: var(--color-night);
-}
-.block-cta__background img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
 }
 .block-cta__content {
   color: var(--color-white);
@@ -1187,6 +1175,18 @@ ol {
     padding: var(--space-2xl) var(--space-4xl);
     grid-column: 1/8;
   }
+}
+.block-cta__content-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+}
+.block-cta__content-background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
 }
 
 .block-partners .swiper-wrapper, .block-partners .swiper-swiper-wrapper, .block-partners__slider-wrapper, .block-partners__slider-swiper-wrapper {
