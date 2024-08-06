@@ -981,6 +981,28 @@ ol {
   display: block;
 }
 
+.block-last-news {
+  position: relative;
+}
+.block-last-news__shapes {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+.block-last-news__shapes-rectangle {
+  position: inherit;
+  top: 5vh;
+  left: 10vw;
+  transform: rotate(-45deg);
+}
+.block-last-news__shapes-circle {
+  position: inherit;
+  top: -10vh;
+  right: 10vw;
+  transform: rotate(120deg);
+}
 .block-last-news__list {
   list-style: none;
 }

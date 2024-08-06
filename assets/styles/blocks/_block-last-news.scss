@@ -1,4 +1,25 @@
 .block-last-news {
+    position: relative;
+    
+    &__shapes {
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        &-rectangle {
+            position: inherit;
+            top: 5vh;
+            left: 10vw;
+            transform: rotate(-45deg);
+        }
+        &-circle {
+            position: inherit;
+            top: -10vh;
+            right: 10vw;
+            transform: rotate(120deg);
+        }
+    }
     
     // &__title {
     //     // &-title {}
