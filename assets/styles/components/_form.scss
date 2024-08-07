@@ -73,9 +73,7 @@
             }
         }
         &--register {
-            @include breakpoint(from-medium) {
-                justify-content: center;
-            }
+            justify-content: center;
         }
     }
     

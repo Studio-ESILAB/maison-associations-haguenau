@@ -1869,10 +1869,8 @@ ol {
     justify-content: flex-end;
   }
 }
-@media (min-width: 1025px) {
-  .c-form__link--register {
-    justify-content: center;
-  }
+.c-form__link--register {
+  justify-content: center;
 }
 .c-form__submit {
   grid-column: 1/-1;
