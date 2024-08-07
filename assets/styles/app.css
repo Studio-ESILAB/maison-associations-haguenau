@@ -324,7 +324,19 @@ img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-black);
+  background: var(--color-night);
+}
+
+::-moz-selection {
+  color: var(--color-night);
+  text-shadow: none;
+  background-color: var(--color-yellow);
+}
+
+::selection {
+  color: var(--color-night);
+  text-shadow: none;
+  background-color: var(--color-yellow);
 }
 
 html {

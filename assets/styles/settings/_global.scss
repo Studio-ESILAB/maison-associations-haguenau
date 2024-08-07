@@ -8,20 +8,20 @@
     background: var(--color-white);
 }
 ::-webkit-scrollbar-thumb {
-    background: var(--color-black);
+    background: var(--color-night);
 }
 
 // selection
-// ::-moz-selection {
-//     color: var(--color--white);
-//     text-shadow: none;
-//     background-color: var(--color--black);
-// }
-// ::selection {
-//     color: var(--color--white);
-//     text-shadow: none;
-//     background-color: var(--color--black);
-// }
+::-moz-selection {
+    color: var(--color-night);
+    text-shadow: none;
+    background-color: var(--color-yellow);
+}
+::selection {
+    color: var(--color-night);
+    text-shadow: none;
+    background-color: var(--color-yellow);
+}
 
 html {
     color: var(--color-night);
