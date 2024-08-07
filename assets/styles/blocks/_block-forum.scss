@@ -118,7 +118,10 @@
                         }
                         input {
                             &::placeholder {
-                                padding-left: calc(var(--space-xs) + var(--space-3xs));
+                                padding-left: calc(var(--space-xs) * 2);
+                                @include breakpoint(from-medium) {
+                                    padding-left: calc(var(--space-xs) + var(--space-2xs));
+                                }
                             }
                         }
                     }

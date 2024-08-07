@@ -1495,7 +1495,12 @@ ol {
   opacity: 0;
 }
 .block-forum__forum-content .c-form__field--search input::placeholder {
-  padding-left: calc(var(--space-xs) + var(--space-3xs));
+  padding-left: calc(var(--space-xs) * 2);
+}
+@media (min-width: 1025px) {
+  .block-forum__forum-content .c-form__field--search input::placeholder {
+    padding-left: calc(var(--space-xs) + var(--space-2xs));
+  }
 }
 .block-forum__forum-content .c-form__field--select {
   flex: 1 1 15%;
