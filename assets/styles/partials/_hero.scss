@@ -4,6 +4,18 @@
     z-index: 0;
     color: var(--color-white);
     
+    &--simple {
+        height: auto;
+        z-index: -1;
+        background-color: var(--color-light);
+        @include breakpoint(from-small) {
+            padding-bottom: 24vh;
+        }
+        @include breakpoint(from-medium) {
+            height: 90vh;
+        }
+    }
+    
     &--small {
         height: 62vh;
     }
@@ -57,13 +69,17 @@
     // &__link {}
 }
 
+// HERO SIMPLE
 .p-hero {
-    &--simple {
-        height: auto;
-        color: var(--color-night);
-        background: none;
-    }
     &--simple & {
+        &__background {
+            @include breakpoint(from-small) {
+                display: initial;
+            }
+            img {
+                object-position: center bottom;
+            }
+        }
         &__container {
             grid-column: 1 / -1;
         }
@@ -92,11 +108,6 @@
             @include breakpoint(from-medium) {
                 grid-column: 3 / -3;
             }
-            // & li {
-            //     &:first-child {
-            //         list-style: none;
-            //     }
-            // }
             &-date {
                 gap: var(--space-2xs);
                 font-size: inherit;
@@ -118,26 +129,6 @@
                     opacity: 0.65;
                 }
             }
-        }
-        &__image {
-            position: relative;
-            z-index: 0;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center center;
-            }
-            &-decoration {
-                height: 200px;
-                position: absolute;
-                top: 0;
-                z-index: -1;
-                @include breakpoint(from-medium) {
-                    display: block;
-                }
-            }
-            // &-featured {}
         }
     }
 }

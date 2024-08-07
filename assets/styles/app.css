@@ -1290,6 +1290,17 @@ ol {
   list-style: none;
 }
 
+@media (min-width: 1025px) {
+  .block-simple-new__content-featured {
+    margin-top: -24vh;
+  }
+}
+.block-simple-new__content-featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
 .block-simple-new__content-excerpt p {
   font-weight: var(--font-w-500);
 }
@@ -1312,6 +1323,17 @@ ol {
   margin-bottom: 0;
 }
 
+@media (min-width: 1025px) {
+  .block-simple-galerie__content-featured {
+    margin-top: -24vh;
+  }
+}
+.block-simple-galerie__content-featured img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
 .block-simple-galerie__content-texts h1, .block-simple-galerie__content-texts h2, .block-simple-galerie__content-texts h3, .block-simple-galerie__content-texts h4, .block-simple-galerie__content-texts h5, .block-simple-galerie__content-texts h6 {
   margin: var(--space-l) 0 var(--space-s) 0;
 }
@@ -2404,6 +2426,21 @@ ol {
   z-index: 0;
   color: var(--color-white);
 }
+.p-hero--simple {
+  height: auto;
+  z-index: -1;
+  background-color: var(--color-light);
+}
+@media (min-width: 700px) {
+  .p-hero--simple {
+    padding-bottom: 24vh;
+  }
+}
+@media (min-width: 1025px) {
+  .p-hero--simple {
+    height: 90vh;
+  }
+}
 .p-hero--small {
   height: 62vh;
 }
@@ -2445,10 +2482,13 @@ ol {
   }
 }
 
-.p-hero--simple {
-  height: auto;
-  color: var(--color-night);
-  background: none;
+@media (min-width: 700px) {
+  .p-hero--simple .p-hero__background {
+    display: initial;
+  }
+}
+.p-hero--simple .p-hero__background img {
+  object-position: center bottom;
 }
 .p-hero--simple .p-hero__container {
   grid-column: 1/-1;
@@ -2504,27 +2544,6 @@ ol {
   font-weight: var(--font-w-600);
   line-height: var(--font-lh-small);
   opacity: 0.65;
-}
-.p-hero--simple .p-hero__image {
-  position: relative;
-  z-index: 0;
-}
-.p-hero--simple .p-hero__image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-}
-.p-hero--simple .p-hero__image-decoration {
-  height: 200px;
-  position: absolute;
-  top: 0;
-  z-index: -1;
-}
-@media (min-width: 1025px) {
-  .p-hero--simple .p-hero__image-decoration {
-    display: block;
-  }
 }
 
 body.err-404 .p-hero {

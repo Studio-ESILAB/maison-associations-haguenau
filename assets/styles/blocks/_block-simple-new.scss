@@ -3,6 +3,17 @@
     // &__header {}
     
     &__content {
+        &-featured {
+            @include breakpoint(from-medium) {
+                margin-top: -24vh;
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center center;
+            }
+        }
         &-excerpt {
             p {
                 font-weight: var(--font-w-500);
