@@ -10,8 +10,11 @@
         }
     }
     &--icon {
-        i {
-            margin-right: var(--space-2xs);
+        .c-button__link {
+            display: flex;
+            gap: var(--space-2xs);
+            // &-icon {}
+            // &-text {}
         }
     }
     
@@ -24,10 +27,16 @@
         &:is(button) {
             width: 100%;
             cursor: pointer;
+            .c-button__link-icon {
+                width: 68px;
+                height: auto;
+            }
         }
         &:hover {
             border-color: var(--color-night);
         }
+        // &-icon {}
+        // &-text {}
     }
     
     &--yellow {

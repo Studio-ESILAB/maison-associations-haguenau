@@ -54,36 +54,40 @@
         // &-suptitle {}
         // &-title {}
         &-infos {
-            gap: var(--space-s);
-            list-style: disc;
-            font-size: var(--font-s-small);
-            font-weight: var(--font-w-600);
-            line-height: var(--font-lh-small);
-            & li {
-                &:first-child {
-                    list-style: none;
+            gap: var(--space-2xs);
+            &-item {
+                gap: inherit;
+                &::before {
+                    content: '';
+                    width: 3px;
+                    height: 3px;
+                    aspect-ratio: 1 / 1;
+                    display: block;
+                    border-radius: 100%;
+                    background-color: var(--color-night);
+                }
+                &:first-of-type {
+                    &::before {
+                        content: none;
+                    }
                 }
             }
             &-date {
-                font-size: inherit;
-                font-weight: inherit;
-                line-height: inherit;
-                i {
-                    margin-right: var(--space-2xs);
-                    font-size: inherit;
-                    line-height: inherit;
+                gap: 0;
+                &-icon {
+                    margin-right: var(--space-3xs);
                 }
-                span {
-                    font-size: inherit;
-                    font-weight: inherit;
-                    line-height: inherit;
+                &-text {
+                    font-size: var(--font-s-small);
+                    font-weight: var(--font-w-600);
+                    line-height: var(--font-lh-small);
                     opacity: 0.65;
                 }
             }
             &-tag {
-                font-size: inherit;
-                font-weight: inherit;
-                line-height: inherit;
+                font-size: var(--font-s-small);
+                font-weight: var(--font-w-600);
+                line-height: var(--font-lh-small);
                 opacity: 0.65;
             }
         }

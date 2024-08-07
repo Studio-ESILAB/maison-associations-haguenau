@@ -67,12 +67,12 @@
                 }
             }
             &-link {
-                display: inline-block;
+                display: inline-flex;
+                gap: var(--space-2xs);
                 color: inherit;
-                font-weight: var(--font-w-500);
-                text-decoration: none;
-                i {
-                    margin-right: var(--space-2xs);
+                // &-icon {}
+                &-text {
+                    font-weight: var(--font-w-500);
                 }
             }
         }

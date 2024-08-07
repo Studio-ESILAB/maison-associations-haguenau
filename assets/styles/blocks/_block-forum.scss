@@ -95,6 +95,32 @@
                 &__field {
                     &--search {
                         flex: 1 1 85%;
+                        position: relative;
+                        z-index: 0;
+                        .c-form__field--search-icon {
+                            width: auto;
+                            height: calc(100% - (var(--space-xs) * 2));
+                            position: absolute;
+                            top: 50%;
+                            left: var(--space-xs);
+                            z-index: 0;
+                            transform: translateY(-50%);
+                            user-select: none;
+                            pointer-events: none;
+                            opacity: 1;
+                            transition: 0.5s var(--Power4EaseOut);
+                        }
+                        &:has(input:not(:placeholder-shown)) {
+                            .c-form__field--search-icon {
+                                transform: translateY(-50%) translateX(-100%);
+                                opacity: 0;
+                            }
+                        }
+                        input {
+                            &::placeholder {
+                                padding-left: calc(var(--space-xs) + var(--space-3xs));
+                            }
+                        }
                     }
                     &--select {
                         flex: 1 1 15%;
@@ -115,15 +141,13 @@
                     display: flex;
                 }
                 &__texts {
-                    flex: 1 2 65%;
+                    flex: 1 2 70%;
                     font-weight: var(--font-w-h6);
                     opacity: 0.65;
-                    @include breakpoint(from-medium) {
-                        flex: 1 2 65%;
-                    }
                 }
                 &__metas {
                     flex: 1 2 15vw;
+                    gap: inherit;
                     opacity: 0.65;
                     &-comments,
                     &-views {
@@ -144,7 +168,10 @@
                         &-views {
                             @include breakpoint(from-medium) {
                                 flex: 1 1 50%;
-                                text-align: center;
+                            }
+                            // &-icon {}
+                            &-text {
+                                font-weight: var(--font-w-p);
                             }
                         }
                     }
@@ -168,63 +195,6 @@
                         }
                     }
                 }
-            }
-        }
-    }
-    
-    &__pagination {
-        gap: var(--space-2xs);
-        &-prev,
-        &-next {
-            width: 40px;
-            height: auto;
-            aspect-ratio: 1 / 1;
-            border-radius: 100%;
-            &:hover {
-                color: var(--color-white);
-                background-color: var(--color-night);
-            }
-        }
-        // &-prev {}
-        // &-next {}
-        &:has(.block-forum__pagination-pages-item--active:first-child) & {
-            &-prev {
-                display: none;
-            }
-        }
-        &:has(.block-forum__pagination-pages-item--active:last-child) & {
-            &-next {
-                display: none;
-            }
-        }
-        &-pages {
-            gap: var(--space-2xs);
-            list-style: none;
-            &-item {
-                width: 40px;
-                height: auto;
-                aspect-ratio: 1 / 1;
-                display: block;
-                border-radius: 100%;
-                background-color: var(--color-white);
-                transition: 0.5s var(--Power4EaseOut);
-                &:hover,
-                &--active {
-                    color: var(--color-white);
-                    background-color: var(--color-night);
-                }
-                &--more {
-                    &:hover {
-                        color: inherit;
-                        background-color: inherit;
-                    }
-                }
-            }
-            &-link {
-                width: 100%;
-                height: 100%;
-                color: inherit;
-                border-radius: inherit;
             }
         }
     }

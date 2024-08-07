@@ -1,9 +1,16 @@
 .block-cta {
     
     &__container {
+        min-height: 75vh;
         position: relative;
         z-index: 0;
         background-color: var(--color-night);
+        @include breakpoint(from-small) {
+            min-height: 50vh;
+        }
+        @include breakpoint(from-medium) {
+            min-height: fit-content;
+        }
     }
     
     &__content {
@@ -19,20 +26,29 @@
             padding: var(--space-2xl) var(--space-4xl);
             grid-column: 1 / 8;
         }
-        &-background {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            z-index: -1;
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: right center;
-            }
-        }
         // &-title {}
         // &-text {}
         // &-link {}
+    }
+    
+    &__background {
+        width: 100%;
+        height: 30%;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+        @include breakpoint(from-small) {
+            height: 50%;
+        }
+        @include breakpoint(from-medium) {
+            height: 100%;
+            bottom: unset;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: right center;
+        }
     }
 }

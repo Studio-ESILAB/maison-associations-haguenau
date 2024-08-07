@@ -29,6 +29,7 @@
         grid-column: 1 / -1;
         @include breakpoint(from-small) {
             grid-column: 6 / -1;
+            display: initial;
         }
         @include breakpoint(from-medium) {
             grid-column: 9 / -1;

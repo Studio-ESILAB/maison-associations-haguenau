@@ -13,6 +13,9 @@
         }
         & * {
             color: var(--color-night) !important;
+            &:is(path) {
+                fill: var(--color-night);
+            }
         }
         .c-menu {
             &__item {

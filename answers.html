@@ -66,7 +66,9 @@
                                 <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
                             </div>
                             <span class="p-header__menu-login-name">Nom Prénom</span>
-                            <span class="p-header__menu-login-icon"><i class="fa-solid fa-chevron-down"></i></span>
+                            <svg class="p-header__menu-login-icon" fill="none" width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#12314e" d="M6.49609 6.88615L1.24609 1.63615C0.890625 1.30803 0.890625 0.73381 1.24609 0.405685C1.57422 0.0502167 2.14844 0.0502167 2.47656 0.405685L7.125 5.02678L11.7461 0.405685C12.0742 0.0502167 12.6484 0.0502167 12.9766 0.405685C13.332 0.73381 13.332 1.30803 12.9766 1.63615L7.72656 6.88615C7.39844 7.24162 6.82422 7.24162 6.49609 6.88615Z"/>
+                            </svg>
                         </a>
                     </div>
                     <!-- <div class="p-header__menu-toggle o-p-xs o-br-xl" data-menu="MenuToggle">
@@ -163,15 +165,22 @@
                                     </div>
                                     <div class="c-answer-card__texts">
                                         <a class="c-answer-card__texts-pseudo o-h6 o-tdn" href="answers.html" target="_self">Pseudo</a>
-                                        <ul class="c-answer-card__texts-infos o-flex o-flex--fw o-flex--aibl o-mt-2xs">
-                                            <li class="c-answer-card__texts-infos-date"><i class="fa-regular fa-calendar"></i><span>18. Oct 2023 à 16h42</span></li>
-                                            <li class="c-answer-card__texts-infos-tags">
-                                                <ul class="c-answer-card__texts-infos-tags-list o-flex o-flex--fw">
-                                                    <li class="c-answer-card__texts-infos-tags-item">Catégorie 1</li>
-                                                    <li class="c-answer-card__texts-infos-tags-item">Étiquette 5</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                        <div class="c-topic-card__texts-infos o-flex o-flex--fw o-flex--ng o-mt-2xs">
+                                            <div class="c-topic-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
+                                                <svg class="c-topic-card__texts-infos-date-icon" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
+                                                </svg>
+                                                <p class="c-topic-card__texts-infos-date-text">18. Oct 2023 à 16h42</p>
+                                            </div>
+                                            <div class="c-topic-card__texts-infos-tags o-flex o-flex--fw o-flex--ng o-flex--aic">
+                                                <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                    <p class="c-topic-card__texts-infos-tags-text">Catégorie 1</p>
+                                                </div>
+                                                <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                    <p class="c-topic-card__texts-infos-tags-text">Étiquette 5</p>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="c-answer-card__texts-title o-mt-s">
                                             <p>Lorem ipsum dolor sit amet consectetur. Congue ultrices</p>
                                         </div>
@@ -208,15 +217,22 @@
                                             </div>
                                             <div class="c-answer-card__texts">
                                                 <a class="c-answer-card__texts-pseudo o-h6 o-tdn" href="answers.html" target="_self">Pseudo</a>
-                                                <ul class="c-answer-card__texts-infos o-flex o-flex--fw o-flex--aibl o-mt-2xs">
-                                                    <li class="c-answer-card__texts-infos-date"><i class="fa-regular fa-calendar"></i><span>18. Oct 2023 à 16h42</span></li>
-                                                    <li class="c-answer-card__texts-infos-tags">
-                                                        <ul class="c-answer-card__texts-infos-tags-list o-flex o-flex--fw">
-                                                            <li class="c-answer-card__texts-infos-tags-item">Catégorie 1</li>
-                                                            <li class="c-answer-card__texts-infos-tags-item">Étiquette 5</li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
+                                                <div class="c-topic-card__texts-infos o-flex o-flex--fw o-flex--ng o-mt-2xs">
+                                                    <div class="c-topic-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
+                                                        <svg class="c-topic-card__texts-infos-date-icon" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
+                                                        </svg>
+                                                        <p class="c-topic-card__texts-infos-date-text">18. Oct 2023 à 16h42</p>
+                                                    </div>
+                                                    <div class="c-topic-card__texts-infos-tags o-flex o-flex--fw o-flex--ng o-flex--aic">
+                                                        <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                            <p class="c-topic-card__texts-infos-tags-text">Catégorie 1</p>
+                                                        </div>
+                                                        <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                            <p class="c-topic-card__texts-infos-tags-text">Étiquette 5</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="c-answer-card__texts-text o-mt-s">
                                                     <p>Sit tortor imperdiet et sociis ac cras nunc lacus senectus. In maecenas varius tristique bibendum semper congue ullamcorper. Amet donec et iaculis quis justo. Leo id neque malesuada sit adipiscing. Pellentesque a adipiscing cursus in id eget. Lobortis leo suspendisse libero sit adipiscing. Odio in tempor sagittis quis sem ut. Dolor tellus vestibulum nisl mauris lobortis nibh donec aliquet in. Ac odio nunc facilisi volutpat. Pellentesque enim dignissim vel ultricies fermentum curabitur aliquam. Facilisis sed quis nulla purus. Cursus duis pellentesque interdum etiam sit ipsum.</p>
                                                 </div>
@@ -232,15 +248,22 @@
                                             </div>
                                             <div class="c-answer-card__texts">
                                                 <a class="c-answer-card__texts-pseudo o-h6 o-tdn" href="answers.html" target="_self">Pseudo</a>
-                                                <ul class="c-answer-card__texts-infos o-flex o-flex--fw o-flex--aibl o-mt-2xs">
-                                                    <li class="c-answer-card__texts-infos-date"><i class="fa-regular fa-calendar"></i><span>18. Oct 2023 à 16h42</span></li>
-                                                    <li class="c-answer-card__texts-infos-tags">
-                                                        <ul class="c-answer-card__texts-infos-tags-list o-flex o-flex--fw">
-                                                            <li class="c-answer-card__texts-infos-tags-item">Catégorie 1</li>
-                                                            <li class="c-answer-card__texts-infos-tags-item">Étiquette 5</li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
+                                                <div class="c-topic-card__texts-infos o-flex o-flex--fw o-flex--ng o-mt-2xs">
+                                                    <div class="c-topic-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
+                                                        <svg class="c-topic-card__texts-infos-date-icon" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
+                                                        </svg>
+                                                        <p class="c-topic-card__texts-infos-date-text">18. Oct 2023 à 16h42</p>
+                                                    </div>
+                                                    <div class="c-topic-card__texts-infos-tags o-flex o-flex--fw o-flex--ng o-flex--aic">
+                                                        <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                            <p class="c-topic-card__texts-infos-tags-text">Catégorie 1</p>
+                                                        </div>
+                                                        <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                            <p class="c-topic-card__texts-infos-tags-text">Étiquette 5</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="c-answer-card__texts-text o-mt-s">
                                                     <p>Pellentesque a adipiscing cursus in id eget. Lobortis leo suspendisse libero sit adipiscing. Odio in tempor sagittis quis sem ut. Dolor tellus vestibulum nisl mauris lobortis nibh donec aliquet in. Ac odio nunc facilisi volutpat. Pellentesque enim dignissim vel ultricies fermentum curabitur aliquam. Facilisis sed quis nulla purus. Cursus duis pellentesque interdum etiam sit ipsum.</p>
                                                 </div>
@@ -256,15 +279,22 @@
                                             </div>
                                             <div class="c-answer-card__texts">
                                                 <a class="c-answer-card__texts-pseudo o-h6 o-tdn" href="answers.html" target="_self">Pseudo</a>
-                                                <ul class="c-answer-card__texts-infos o-flex o-flex--fw o-flex--aibl o-mt-2xs">
-                                                    <li class="c-answer-card__texts-infos-date"><i class="fa-regular fa-calendar"></i><span>18. Oct 2023 à 16h42</span></li>
-                                                    <li class="c-answer-card__texts-infos-tags">
-                                                        <ul class="c-answer-card__texts-infos-tags-list o-flex o-flex--fw">
-                                                            <li class="c-answer-card__texts-infos-tags-item">Catégorie 1</li>
-                                                            <li class="c-answer-card__texts-infos-tags-item">Étiquette 5</li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
+                                                <div class="c-topic-card__texts-infos o-flex o-flex--fw o-flex--ng o-mt-2xs">
+                                                    <div class="c-topic-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
+                                                        <svg class="c-topic-card__texts-infos-date-icon" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
+                                                        </svg>
+                                                        <p class="c-topic-card__texts-infos-date-text">18. Oct 2023 à 16h42</p>
+                                                    </div>
+                                                    <div class="c-topic-card__texts-infos-tags o-flex o-flex--fw o-flex--ng o-flex--aic">
+                                                        <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                            <p class="c-topic-card__texts-infos-tags-text">Catégorie 1</p>
+                                                        </div>
+                                                        <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                            <p class="c-topic-card__texts-infos-tags-text">Étiquette 5</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="c-answer-card__texts-text o-mt-s">
                                                     <p>Facilisis sed quis nulla purus. Cursus duis pellentesque interdum etiam sit ipsum.</p>
                                                 </div>
@@ -280,15 +310,22 @@
                                             </div>
                                             <div class="c-answer-card__texts">
                                                 <a class="c-answer-card__texts-pseudo o-h6 o-tdn" href="answers.html" target="_self">Pseudo</a>
-                                                <ul class="c-answer-card__texts-infos o-flex o-flex--fw o-flex--aibl o-mt-2xs">
-                                                    <li class="c-answer-card__texts-infos-date"><i class="fa-regular fa-calendar"></i><span>18. Oct 2023 à 16h42</span></li>
-                                                    <li class="c-answer-card__texts-infos-tags">
-                                                        <ul class="c-answer-card__texts-infos-tags-list o-flex o-flex--fw">
-                                                            <li class="c-answer-card__texts-infos-tags-item">Catégorie 1</li>
-                                                            <li class="c-answer-card__texts-infos-tags-item">Étiquette 5</li>
-                                                        </ul>
-                                                    </li>
-                                                </ul>
+                                                <div class="c-topic-card__texts-infos o-flex o-flex--fw o-flex--ng o-mt-2xs">
+                                                    <div class="c-topic-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
+                                                        <svg class="c-topic-card__texts-infos-date-icon" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
+                                                        </svg>
+                                                        <p class="c-topic-card__texts-infos-date-text">18. Oct 2023 à 16h42</p>
+                                                    </div>
+                                                    <div class="c-topic-card__texts-infos-tags o-flex o-flex--fw o-flex--ng o-flex--aic">
+                                                        <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                            <p class="c-topic-card__texts-infos-tags-text">Catégorie 1</p>
+                                                        </div>
+                                                        <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                            <p class="c-topic-card__texts-infos-tags-text">Étiquette 5</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <div class="c-answer-card__texts-text o-mt-s">
                                                     <p>Leo id neque malesuada sit adipiscing. Pellentesque a adipiscing cursus in id eget. Lobortis leo suspendisse libero sit adipiscing. Odio in tempor sagittis quis sem ut. Dolor tellus vestibulum nisl mauris lobortis nibh donec aliquet in. Ac odio nunc facilisi volutpat. Pellentesque enim dignissim vel ultricies fermentum curabitur aliquam. Facilisis sed quis nulla purus. Cursus duis pellentesque interdum etiam sit ipsum.</p>
                                                 </div>
@@ -299,29 +336,37 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block-forum__pagination o-flex o-mt-l">
-                        <a class="block-forum__pagination-prev o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self"><i class="fa-solid fa-chevron-left"></i></a>
-                        <ul class="block-forum__pagination-pages o-flex">
-                            <li class="block-forum__pagination-pages-item block-forum__pagination-pages-item--active">
-                                <a class="block-forum__pagination-pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">1</a>
+                    <div class="c-pagination o-flex o-mt-l">
+                        <a class="c-pagination__prev o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">
+                            <svg class="c-pagination__prev-icon" fill="none" width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#12314e" d="M.7,7.3c-.3.3-.3.8,0,1.1l6,6c.3.3.8.3,1.1,0,.3-.3.3-.8,0-1L2.3,7.8,7.8,2.3c.3-.3.3-.8,0-1-.3-.3-.8-.3-1,0L.7,7.3Z"/>
+                            </svg>
+                        </a>
+                        <ul class="c-pagination__pages o-flex">
+                            <li class="c-pagination__pages-item c-pagination__pages-item--active">
+                                <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">1</a>
                             </li>
-                            <li class="block-forum__pagination-pages-item">
-                                <a class="block-forum__pagination-pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">2</a>
+                            <li class="c-pagination__pages-item">
+                                <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">2</a>
                             </li>
-                            <li class="block-forum__pagination-pages-item">
-                                <a class="block-forum__pagination-pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">3</a>
+                            <li class="c-pagination__pages-item">
+                                <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">3</a>
                             </li>
-                            <li class="block-forum__pagination-pages-item">
-                                <a class="block-forum__pagination-pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">4</a>
+                            <li class="c-pagination__pages-item">
+                                <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">4</a>
                             </li>
-                            <li class="block-forum__pagination-pages-item block-forum__pagination-pages-item--more">
-                                <p class="block-forum__pagination-pages-link o-flex o-flex--aic o-flex--jcc">...</p>
+                            <li class="c-pagination__pages-item c-pagination__pages-item--more">
+                                <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">...</a>
                             </li>
-                            <li class="block-forum__pagination-pages-item">
-                                <a class="block-forum__pagination-pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">12</a>
+                            <li class="c-pagination__pages-item">
+                                <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">12</a>
                             </li>
                         </ul>
-                        <a class="block-forum__pagination-next o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self"><i class="fa-solid fa-chevron-right"></i></a>
+                        <a class="c-pagination__next o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">
+                            <svg class="c-pagination__next-icon" fill="none" width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#12314e" d="M8.28125 7.26074C8.5625 7.57324 8.5625 8.04199 8.28125 8.32324L2.28125 14.3232C1.96875 14.6357 1.5 14.6357 1.21875 14.3232C0.90625 14.042 0.90625 13.5732 1.21875 13.292L6.6875 7.82324L1.21875 2.32324C0.90625 2.04199 0.90625 1.57324 1.21875 1.29199C1.5 0.979492 1.96875 0.979492 2.25 1.29199L8.28125 7.26074Z"/>
+                            </svg>
+                        </a>
                     </div>
                 </div>
             </section>
@@ -364,27 +409,42 @@
                 </div>
                 <div class="p-footer__infos">
                     <p class="p-footer__infos-title o-h5">Infos pratiques</p>
-                    <ul class="p-footer__infos-list o-mt-s">
-                        <li class="p-footer__infos-list-item"><i class="fa-solid fa-location-dot"></i>1 Place Joseph Thierry, 67500 Haguenau</li>
-                        <li class="p-footer__infos-list-item"><a href="tel:0388733041" target="_self"><i class="fa-solid fa-phone"></i>03 88 73 30 41</a></li>
-                        <li class="p-footer__infos-list-item"><i class="fa-regular fa-clock"></i>Lundi - vendredi : 13h30 - 17h30</li>
-                    </ul>
+                    <div class="p-footer__infos-list o-mt-s">
+                        <div class="p-footer__infos-list-item o-flex">
+                            <svg class="p-footer__infos-list-item-icon" fill="none" width="14" height="18" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#ffffff" d="M11.6562 6.5C11.6562 3.87695 9.49805 1.71875 6.875 1.71875C4.21875 1.71875 2.09375 3.87695 2.09375 6.5C2.09375 6.93164 2.22656 7.5625 2.5918 8.42578C2.92383 9.22266 3.42188 10.1523 3.98633 11.082C4.94922 12.6094 6.04492 14.0703 6.875 15.1328C7.67188 14.0703 8.76758 12.6094 9.73047 11.082C10.2949 10.1523 10.793 9.22266 11.125 8.42578C11.4902 7.5625 11.6562 6.93164 11.6562 6.5ZM13.25 6.5C13.25 9.42188 9.36523 14.5684 7.63867 16.7266C7.24023 17.2246 6.47656 17.2246 6.07812 16.7266C4.38477 14.5684 0.5 9.42188 0.5 6.5C0.5 2.98047 3.35547 0.125 6.875 0.125C10.3945 0.125 13.25 2.98047 13.25 6.5ZM7.9375 6.5C7.9375 5.93555 7.43945 5.4375 6.875 5.4375C6.27734 5.4375 5.8125 5.93555 5.8125 6.5C5.8125 7.09766 6.27734 7.5625 6.875 7.5625C7.43945 7.5625 7.9375 7.09766 7.9375 6.5ZM4.21875 6.5C4.21875 5.57031 4.7168 4.70703 5.54688 4.20898C6.34375 3.74414 7.37305 3.74414 8.20312 4.20898C9 4.70703 9.53125 5.57031 9.53125 6.5C9.53125 7.46289 9 8.32617 8.20312 8.82422C7.37305 9.28906 6.34375 9.28906 5.54688 8.82422C4.7168 8.32617 4.21875 7.46289 4.21875 6.5Z"/>
+                            </svg>
+                            <p class="p-footer__infos-list-item-text">1 Place Joseph Thierry, 67500 Haguenau</p>
+                        </div>
+                        <div class="p-footer__infos-list-item o-flex">
+                            <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#ffffff" d="M12.9512 9.28906L16.6699 10.8828C17.2676 11.1152 17.5996 11.7461 17.4668 12.377L16.6699 16.0957C16.5371 16.6934 15.9727 17.1582 15.375 17.1582C15.1426 17.1582 14.9434 17.125 14.7441 17.125C14.4121 17.125 14.0801 17.0918 13.7812 17.0586C6.31055 16.2617 0.5 9.95312 0.5 2.25C0.5 1.65234 0.931641 1.08789 1.5293 0.955078L5.24805 0.158203C5.87891 0.0253906 6.50977 0.357422 6.74219 0.955078L8.33594 4.67383C8.56836 5.20508 8.43555 5.83594 7.9707 6.20117L6.60938 7.33008C7.50586 8.85742 8.76758 10.1191 10.2949 11.0156L11.4238 9.6543C11.7891 9.18945 12.4199 9.05664 12.9512 9.28906ZM15.1426 15.5312L15.8398 12.2441L12.5195 10.8164L11.5566 12.0117C11.0586 12.6094 10.1953 12.7754 9.49805 12.377C7.73828 11.3477 6.27734 9.88672 5.24805 8.12695C4.84961 7.42969 5.01562 6.56641 5.61328 6.06836L6.80859 5.10547L5.38086 1.78516L2.09375 2.48242C2.19336 9.6543 7.9707 15.4316 15.1426 15.5312Z"/>
+                            </svg>
+                            <a class="p-footer__infos-list-item-text" href="tel:0388733041" target="_self">03 88 73 30 41</a>
+                        </div>
+                        <div class="p-footer__infos-list-item o-flex">
+                            <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#ffffff" d="M15.9062 9.625C15.9062 7.16797 14.5781 4.91016 12.4531 3.64844C10.2949 2.41992 7.67188 2.41992 5.54688 3.64844C3.38867 4.91016 2.09375 7.16797 2.09375 9.625C2.09375 12.1152 3.38867 14.373 5.54688 15.6348C7.67188 16.8633 10.2949 16.8633 12.4531 15.6348C14.5781 14.373 15.9062 12.1152 15.9062 9.625ZM0.5 9.625C0.5 6.60352 2.09375 3.81445 4.75 2.28711C7.37305 0.759766 10.5938 0.759766 13.25 2.28711C15.873 3.81445 17.5 6.60352 17.5 9.625C17.5 12.6797 15.873 15.4688 13.25 16.9961C10.5938 18.5234 7.37305 18.5234 4.75 16.9961C2.09375 15.4688 0.5 12.6797 0.5 9.625ZM8.20312 5.10938C8.20312 4.67773 8.53516 4.3125 9 4.3125C9.43164 4.3125 9.79688 4.67773 9.79688 5.10938V9.22656L12.6191 11.0859C12.9844 11.3516 13.084 11.8496 12.8516 12.2148C12.5859 12.5801 12.0879 12.6797 11.7227 12.4141L8.53516 10.2891C8.33594 10.1562 8.20312 9.89062 8.20312 9.625V5.10938Z"/>
+                            </svg>
+                            <p class="p-footer__infos-list-item-text">Lundi - vendredi : 13h30 - 17h30</p>
+                        </div>
+                    </div>
                 </div>
                 <div class="p-footer__submenu o-mt-3xl">
                     <ul class="c-menu c-menu--row">
-                        <li class="c-menu__item">
+                        <li class="c-menu__item o-flex o-flex--ng">
                             <a class="c-menu__item-link" href="#" target="_self">Données personnelles</a>
                         </li>
-                        <li class="c-menu__item">
+                        <li class="c-menu__item o-flex o-flex--ng">
                             <a class="c-menu__item-link" href="#" target="_self">Accessibilité</a>
                         </li>
-                        <li class="c-menu__item">
+                        <li class="c-menu__item o-flex o-flex--ng">
                             <a class="c-menu__item-link" href="#" target="_self">Politique cookies</a>
                         </li>
-                        <li class="c-menu__item">
+                        <li class="c-menu__item o-flex o-flex--ng">
                             <a class="c-menu__item-link" href="#" target="_self">Mentions légales</a>
                         </li>
-                        <li class="c-menu__item">
+                        <li class="c-menu__item o-flex o-flex--ng">
                             <a class="c-menu__item-link" href="#" target="_self">Plan du site</a>
                         </li>
                     </ul>
