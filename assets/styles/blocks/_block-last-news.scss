@@ -1,26 +1,4 @@
 .block-last-news {
-    position: relative;
-    z-index: 0;
-    
-    &__shapes {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        &-rectangle {
-            position: absolute;
-            top: 5vh;
-            left: 10vw;
-            transform: rotate(-45deg);
-        }
-        &-circle {
-            position: absolute;
-            top: -10vh;
-            right: 10vw;
-            transform: rotate(120deg);
-        }
-    }
     
     // &__title {
     //     // &-title {}
