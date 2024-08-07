@@ -1,4 +1,4 @@
-import modular from "modujs";
+import modular from "./modujs";
 import * as modules from "./modules";
 import globals from "./globals";
 import { html } from "./utils/environment";
