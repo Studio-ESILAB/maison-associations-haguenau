@@ -19,7 +19,6 @@ function init() {
     // app.init(app);
 
     // Menu toggler
-    console.log("Menu init");
     const Content = document.querySelector("[data-content]");
     const MenuContainer = document.querySelector("[data-menu-container]");
     const MenuToggle = document.querySelector("[data-menu-toggle]");
