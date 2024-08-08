@@ -78,7 +78,6 @@
                 background-color: var(--color-night);
                 transition: 0.5s var(--Power3EaseInOut);
                 &--closed {
-                    // display: none;
                     opacity: 0;
                     transform: translateX(calc(100% + var(--grid-margin)));
                 }
