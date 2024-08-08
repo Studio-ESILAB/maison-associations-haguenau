@@ -2208,7 +2208,7 @@ ol {
   background-color: var(--color-night);
 }
 .p-header__logo {
-  grid-column: 1/-1;
+  grid-column: 1/3;
 }
 @media (min-width: 1025px) {
   .p-header__logo {
@@ -2233,7 +2233,9 @@ ol {
   display: none;
 }
 .p-header__menu {
-  grid-column: 1/-1;
+  grid-column: 3/-1;
+  position: relative;
+  z-index: 0;
 }
 @media (min-width: 1025px) {
   .p-header__menu {
@@ -2241,20 +2243,46 @@ ol {
   }
 }
 .p-header__menu .c-menu {
-  justify-content: center;
+  width: 100%;
   grid-column: 1/-1;
+  justify-content: center;
+}
+@media (min-width: 700px) {
+  .p-header__menu .c-menu {
+    grid-column-start: 4;
+  }
+}
+@media (max-width: 1025px) {
+  .p-header__menu .c-menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 1;
+    border: solid 2px var(--color-white);
+    background-color: var(--color-night);
+    transition: 0.5s var(--Power3EaseInOut);
+  }
+  .p-header__menu .c-menu--closed {
+    opacity: 0;
+    transform: translateX(calc(100% + var(--grid-margin)));
+  }
 }
 @media (min-width: 1025px) {
   .p-header__menu .c-menu {
+    padding: 0;
+    display: flex;
     grid-column: 1/10;
   }
 }
 .p-header__menu-login {
+  display: none;
   grid-column: 1/-1;
 }
 @media (min-width: 1025px) {
   .p-header__menu-login {
     margin-top: 0;
+    display: initial;
     grid-column: 10/-1;
   }
 }
@@ -2285,6 +2313,43 @@ ol {
 .p-header__menu-login-text, .p-header__menu-login-name {
   font-weight: var(--font-w-500);
   white-space: nowrap;
+}
+.p-header__menu-toggle {
+  width: 20px;
+  height: 20px;
+  grid-column-end: -1;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  user-select: none;
+  background-color: var(--color-yellow);
+}
+@media (min-width: 1025px) {
+  .p-header__menu-toggle {
+    display: none;
+  }
+}
+.p-header__menu-toggle--active .p-header__menu-toggle-open {
+  opacity: 0;
+}
+.p-header__menu-toggle--active .p-header__menu-toggle-close {
+  opacity: 1;
+}
+.p-header__menu-toggle-icon {
+  width: auto;
+  height: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 0;
+  transform: translateY(-50%) translateX(-50%);
+  transition: 0.5s var(--Power4EaseOut);
+}
+.p-header__menu-toggle-open {
+  opacity: 1;
+}
+.p-header__menu-toggle-close {
+  opacity: 0;
 }
 
 .p-footer {

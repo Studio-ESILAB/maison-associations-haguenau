@@ -31,7 +31,7 @@
     // &__container {}
     
     &__logo {
-        grid-column: 1 / -1;
+        grid-column: 1 / 3;
         @include breakpoint(from-medium) {
             grid-column: 1 / 3;
         }
@@ -55,14 +55,37 @@
     }
     
     &__menu {
-        grid-column: 1 / -1;
+        grid-column: 3 / -1;
+        position: relative;
+        z-index: 0;
         @include breakpoint(from-medium) {
             grid-column: 3 / -1;
         }
         .c-menu {
-            justify-content: center;
+            width: 100%;
             grid-column: 1 / -1;
+            justify-content: center;
+            @include breakpoint(from-small) {
+                grid-column-start: 4;
+            }
+            @include breakpoint(to-medium) {
+                position: absolute;
+                top: 0;
+                right: 0;
+                z-index: 0;
+                opacity: 1;
+                border: solid 2px var(--color-white);
+                background-color: var(--color-night);
+                transition: 0.5s var(--Power3EaseInOut);
+                &--closed {
+                    // display: none;
+                    opacity: 0;
+                    transform: translateX(calc(100% + var(--grid-margin)));
+                }
+            }
             @include breakpoint(from-medium) {
+                padding: 0;
+                display: flex;
                 grid-column: 1 / 10;
             }
             // &__item {
@@ -70,9 +93,11 @@
             // }
         }
         &-login {
+            display: none;
             grid-column: 1 / -1;
             @include breakpoint(from-medium) {
                 margin-top: 0;
+                display: initial;
                 grid-column: 10 / -1;
             }
             &-link {
@@ -103,6 +128,43 @@
                 white-space: nowrap;
             }
             // &-icon {}
+        }
+        &-toggle {
+            width: 20px;
+            height: 20px;
+            grid-column-end: -1;
+            position: relative;
+            z-index: 0;
+            cursor: pointer;
+            user-select: none;
+            background-color: var(--color-yellow);
+            @include breakpoint(from-medium) {
+                display: none;
+            }
+            &--active {
+                .p-header__menu-toggle-open {
+                    opacity: 0;
+                }
+                .p-header__menu-toggle-close {
+                    opacity: 1;
+                }
+            }
+            &-icon {
+                width: auto;
+                height: inherit;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 0;
+                transform: translateY(-50%) translateX(-50%);
+                transition: 0.5s var(--Power4EaseOut);
+            }
+            &-open {
+                opacity: 1;
+            }
+            &-close {
+                opacity: 0;
+            }
         }
     }
 }
