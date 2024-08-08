@@ -2243,20 +2243,19 @@ ol {
   }
 }
 .p-header__menu .c-menu {
-  width: 100%;
-  grid-column: 1/-1;
+  width: 50%;
   justify-content: center;
 }
 @media (min-width: 700px) {
   .p-header__menu .c-menu {
-    grid-column-start: 4;
+    width: 33.3333333333%;
   }
 }
 @media (max-width: 1025px) {
   .p-header__menu .c-menu {
-    position: absolute;
-    top: 0;
-    right: 0;
+    position: fixed;
+    top: var(--space-m);
+    right: var(--grid-margin);
     z-index: 0;
     opacity: 1;
     border: solid 2px var(--color-white);
@@ -2270,6 +2269,7 @@ ol {
 }
 @media (min-width: 1025px) {
   .p-header__menu .c-menu {
+    width: 100%;
     padding: 0;
     display: flex;
     grid-column: 1/10;
@@ -2318,7 +2318,9 @@ ol {
   width: 20px;
   height: 20px;
   grid-column-end: -1;
-  position: relative;
+  position: fixed;
+  top: calc(var(--space-m) + var(--space-2xs));
+  right: calc(var(--grid-margin) + var(--space-2xs));
   z-index: 0;
   cursor: pointer;
   user-select: none;

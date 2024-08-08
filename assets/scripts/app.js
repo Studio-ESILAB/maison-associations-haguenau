@@ -19,11 +19,9 @@ function init() {
     // app.init(app);
 
     // Menu toggler
-    const Content = document.querySelector("[data-content]");
     const MenuContainer = document.querySelector("[data-menu-container]");
     const MenuToggle = document.querySelector("[data-menu-toggle]");
     MenuToggle.addEventListener("click", () => {
-        Content.classList.toggle("o-oh");
         MenuContainer.classList.toggle("c-menu--closed");
         MenuToggle.classList.toggle("p-header__menu-toggle--active");
     });
