@@ -17,11 +17,8 @@
     
     .swiper,
     &__slider {
-        &-wrapper,
-        &-swiper-wrapper {
-            display: flex;
-            gap: var(--grid-gap);
-        }
+        // &-wrapper,
+        // &-swiper-wrapper {}
         &-slide,
         &-swiper-slide {
             &-image {
@@ -40,13 +37,50 @@
             // &-title {}
         }
         &-footer {
+            gap: var(--space-4xl);
             @include breakpoint(from-small) {
                 flex-direction: row;
             }
         }
-        // &-arrows {}
-        // &-scrollbar {}
-        // &-link {}
+        &-pagination {
+            height: 2px;
+            position: initial;
+            background-color: rgba(18, 49, 78, 0.1);
+            &-progressbar-fill {
+                background-color: var(--color-night) !important;
+            }
+        }
+    }
+    
+    &__slider-buttons {
+        min-width: fit-content;
+        &-item {
+            aspect-ratio: 1 / 1;
+            border: solid 1px rgb(18, 49, 78, 0.2);
+            border-radius: 100%;
+            background-color: var(--color-white);
+            cursor: pointer;
+            transition: 0.5s var(--Power4EaseOut);
+            &:hover {
+                border-color: var(--color-yellow);
+                background-color: var(--color-yellow);
+                svg {
+                    path {
+                        stroke: var(--color-night);
+                    }
+                }
+            }
+            // &-prev {}
+            // &-next {}
+        }
+    }
+    
+    &__slider-pagination {
+        flex: 1 1 60%;
+    }
+    
+    &__slider-link {
+        min-width: fit-content;
     }
     
     &__list {

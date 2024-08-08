@@ -24,6 +24,7 @@
     
     <!-- STYLES -->
     <link rel="stylesheet" id="site-css" href="./assets/styles/app.css" type="text/css" media="screen, print, speech">
+    <link rel="stylesheet" id="slider-css" href="./assets/styles/slider.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
@@ -236,13 +237,13 @@
             </section>
             
             <!-- SECTION - PORTFOLIO -->
-            <section class="block-portfolio o-mt-4xl o-mb-4xl">
+            <section class="block-portfolio o-mt-4xl o-mb-4xl" data-module-slider>
                 <div class="block-portfolio__title o-wrapper o-grid o-grid--aic">
                     <h2 class="block-portfolio__title-title o-large o-tac">Notre portfolio</h2>
                     <p class="block-portfolio__title-subtitle o-subtitle o-tac">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
                 </div>
-                <div class="block-portfolio__content o-wrapper o-flex o-flex--col o-flex--aic o-mt-xl">
-                    <div class="swiper block-portfolio__slider o-full">
+                <div class="block-portfolio__content o-mt-xl">
+                    <div class="swiper block-portfolio__slider o-full" data-slider="slider">
                         <div class="swiper-wrapper block-portfolio__slider-swiper-wrapper">
                             <div class="swiper-slide block-portfolio__slider-swiper-slide">
                                 <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
@@ -268,14 +269,46 @@
                                 </div>
                                 <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
                             </div>
-                        </div>
-                        <div class="block-portfolio__slider-footer o-full o-flex o-flex--col o-flex--aic o-flex--jcsb o-mt-l">
-                            <div class="block-portfolio__slider-arrows">
-                                <div class="swiper-button-prev"></div>
-                                <div class="swiper-button-next"></div>
+                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                    </a>
+                                </div>
+                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
                             </div>
-                            <div class="block-portfolio__slider-scrollbar">
-                                <div class="swiper-scrollbar"></div>
+                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                    </a>
+                                </div>
+                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                            </div>
+                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                    </a>
+                                </div>
+                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                            </div>
+                        </div>
+                        <div class="block-portfolio__slider-footer o-wrapper o-flex o-flex--col o-flex--aic o-flex--jcsb o-mt-l">
+                            <div class="block-portfolio__slider-buttons o-flex">
+                                <div class="block-portfolio__slider-buttons-item block-portfolio__slider-buttons-prev o-p-xs" data-slider="prev">
+                                    <svg fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke="#12314e" d="M16.25 8.875H1.75M1.75 8.875L8.75 1.875M1.75 8.875L8.75 16.125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="block-portfolio__slider-buttons-item block-portfolio__slider-buttons-next o-p-xs" data-slider="next">
+                                    <svg fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                        <path stroke="#12314e" d="M1.75 8.875H16.25M16.25 8.875L9.25 1.875M16.25 8.875L9.25 16.125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="block-portfolio__slider-pagination">
+                                <div class="swiper-pagination" data-slider="pagination"></div>
                             </div>
                             <div class="c-button block-portfolio__slider-link">
                                 <a class="c-button__link o-p-xs o-pl-s o-pr-s o-br-3xl o-tdn" href="portfolio.html" target="_self">Voir le portfolio</a>
