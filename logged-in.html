@@ -32,53 +32,57 @@
         
         <!-- HEADER -->
         <header class="p-header" data-module-menu>
-            <div class="p-header__container o-wrapper o-grid o-grid--aic o-pt-m o-pb-xs" data-menu="HeaderContainer">
+            <div class="p-header__background" data-menu="headercontainer"></div>
+            <div class="p-header__container o-wrapper o-grid o-grid--aic o-pt-m o-pb-s">
                 <div class="p-header__logo">
                     <a class="p-header__logo-link" href="index.html" target="_self">
                         <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
                     </a>
                 </div>
                 <nav class="p-header__menu o-grid o-grid--aic">
-                    <ul class="c-menu c-menu--row" data-menu="MenuContainer">
-                        <li class="c-menu__item" data-menu="MenuLink">
+                    <ul class="c-menu c-menu--closed c-menu--row o-p-m" data-menu="menucontainer">
+                        <li class="c-menu__item">
                             <a class="c-menu__item-link" href="#" target="_self">À propos</a>
                         </li>
-                        <li class="c-menu__item" data-menu="MenuLink">
+                        <li class="c-menu__item">
                             <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
                         </li>
-                        <li class="c-menu__item" data-menu="MenuLink">
+                        <li class="c-menu__item">
                             <a class="c-menu__item-link" href="#" target="_self">Services</a>
                         </li>
-                        <li class="c-menu__item" data-menu="MenuLink">
+                        <li class="c-menu__item">
                             <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
                         </li>
-                        <li class="c-menu__item" data-menu="MenuLink">
+                        <li class="c-menu__item">
                             <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
                         </li>
-                        <li class="c-menu__item" data-menu="MenuLink">
+                        <li class="c-menu__item">
                             <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
                         </li>
                     </ul>
                     <div class="p-header__menu-login o-mt-m">
-                        <a class="p-header__menu-login-link o-flex o-flex--aic o-tdn" href="index.html" target="_self">
-                            <div class="p-header__menu-login-image o-mr-2xs o-oh">
-                                <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
-                            </div>
-                            <span class="p-header__menu-login-name">Nom Prénom</span>
-                            <svg class="p-header__menu-login-icon" fill="none" width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" d="M6.49609 6.88615L1.24609 1.63615C0.890625 1.30803 0.890625 0.73381 1.24609 0.405685C1.57422 0.0502167 2.14844 0.0502167 2.47656 0.405685L7.125 5.02678L11.7461 0.405685C12.0742 0.0502167 12.6484 0.0502167 12.9766 0.405685C13.332 0.73381 13.332 1.30803 12.9766 1.63615L7.72656 6.88615C7.39844 7.24162 6.82422 7.24162 6.49609 6.88615Z"/>
+                        <a class="p-header__menu-login-link o-flex o-flex--aic o-tdn" href="log-in.html" target="_self">
+                            <svg class="p-header__menu-login-icon" fill="none" width="22" height="21" viewBox="0 0 22 21" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#ffffff" d="M16.8594 16.1322C18.2656 14.6869 19.125 12.6947 19.125 10.5072C19.125 6.05412 15.4531 2.38225 11 2.38225C6.50781 2.38225 2.875 6.05412 2.875 10.5072C2.875 12.6947 3.69531 14.6869 5.10156 16.1322C5.84375 14.2963 7.64062 13.0072 9.75 13.0072H12.25C14.3203 13.0072 16.1172 14.2963 16.8594 16.1322ZM15.2969 17.4213C15.0234 15.976 13.7344 14.8822 12.25 14.8822H9.75C8.22656 14.8822 6.9375 15.976 6.66406 17.4213C7.91406 18.2026 9.39844 18.6322 11 18.6322C12.5625 18.6322 14.0469 18.2026 15.2969 17.4213ZM11 20.5072C7.40625 20.5072 4.125 18.6322 2.32812 15.5072C0.53125 12.4213 0.53125 8.63225 2.32812 5.50725C4.125 2.42131 7.40625 0.507248 11 0.507248C14.5547 0.507248 17.8359 2.42131 19.6328 5.50725C21.4297 8.63225 21.4297 12.4213 19.6328 15.5072C17.8359 18.6322 14.5547 20.5072 11 20.5072ZM11 9.88225C11.5469 9.88225 12.0547 9.60881 12.3281 9.101C12.6016 8.63225 12.6016 8.04631 12.3281 7.5385C12.0547 7.06975 11.5469 6.75725 11 6.75725C10.4141 6.75725 9.90625 7.06975 9.63281 7.5385C9.35938 8.04631 9.35938 8.63225 9.63281 9.101C9.90625 9.60881 10.4141 9.88225 11 9.88225ZM7.5625 8.31975C7.5625 7.10881 8.1875 5.976 9.28125 5.351C10.3359 4.76506 11.625 4.76506 12.7188 5.351C13.7734 5.976 14.4375 7.10881 14.4375 8.31975C14.4375 9.56975 13.7734 10.7026 12.7188 11.3276C11.625 11.9135 10.3359 11.9135 9.28125 11.3276C8.1875 10.7026 7.5625 9.56975 7.5625 8.31975Z"/>
                             </svg>
+                            <span class="p-header__menu-login-text">Se connecter</span>
                         </a>
                     </div>
-                    <!-- <div class="p-header__menu-toggle o-p-xs o-br-xl" data-menu="MenuToggle">
-                        <svg fill="#000000" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M0 88C0 74.7 10.7 64 24 64H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24C10.7 112 0 101.3 0 88zM0 248c0-13.3 10.7-24 24-24H424c13.3 0 24 10.7 24 24s-10.7 24-24 24H24c-13.3 0-24-10.7-24-24zM448 408c0 13.3-10.7 24-24 24H24c-13.3 0-24-10.7-24-24s10.7-24 24-24H424c13.3 0 24 10.7 24 24z"/></svg>
-                        <svg fill="#000000" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M345 137c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0l-119 119L73 103c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l119 119L39 375c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l119-119L311 409c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-119-119L345 137z"/></svg>
-                    </div> -->
+                    <div class="p-header__menu-toggle o-flex o-flex--ng o-flex--jce o-p-m o-br-3xl" data-menu="menutoggle">
+                        <svg class="p-header__menu-toggle-icon p-header__menu-toggle-open" fill="none" width="14" height="14" viewBox="0 0 13.9 12.3" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#12314e" d="M13.1,10.6c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
+                            <path fill="#12314e" d="M13.1,6.2c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
+                            <path fill="#12314e" d="M13.1,1.7c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
+                        </svg>
+                        <svg class="p-header__menu-toggle-icon p-header__menu-toggle-close" fill="none" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="#12314e" d="M12.8,2.9c.5-.5.5-1.3,0-1.8s-1.3-.5-1.8,0l-4.1,4.1L2.9,1.2c-.5-.5-1.3-.5-1.8,0s-.5,1.3,0,1.8l4.1,4.1L1.2,11.1c-.5.5-.5,1.3,0,1.8s1.3.5,1.8,0l4.1-4.1,4.1,4.1c.5.5,1.3.5,1.8,0s.5-1.3,0-1.8l-4.1-4.1,4.1-4.1Z"/>
+                        </svg>
+                    </div>
                 </nav>
             </div>
         </header>
         
-        <main class="c-main">
+        <main class="c-main o-oh">
             
             <!-- SECTION - HERO -->
             <section class="p-hero p-hero--small o-flex o-flex--col o-flex--jce">

@@ -2207,6 +2207,26 @@ ol {
 .p-header--light .c-menu__item-link::before {
   background-color: var(--color-night);
 }
+@media (max-width: 1025px) {
+  .p-header__background {
+    width: 100%;
+    height: var(--header-height);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s var(--Power4EaseOut);
+  }
+}
+@media (min-width: 1025px) {
+  .p-header__background {
+    display: none;
+  }
+}
+.p-header:has(.p-header__menu-toggle--active) .p-header__background {
+  transform: translateY(0%) !important;
+  background-color: var(--color-night) !important;
+}
 .p-header__logo {
   grid-column: 1/3;
 }
@@ -2254,8 +2274,8 @@ ol {
 @media (max-width: 1025px) {
   .p-header__menu .c-menu {
     position: fixed;
-    top: var(--space-m);
-    right: var(--grid-margin);
+    top: var(--space-s);
+    right: calc(var(--grid-margin) - var(--space-2xs));
     z-index: 0;
     opacity: 1;
     border: solid 2px var(--color-white);
@@ -2319,8 +2339,8 @@ ol {
   height: 20px;
   grid-column-end: -1;
   position: fixed;
-  top: calc(var(--space-m) + var(--space-2xs));
-  right: calc(var(--grid-margin) + var(--space-2xs));
+  top: var(--space-m);
+  right: var(--grid-margin);
   z-index: 0;
   cursor: pointer;
   user-select: none;

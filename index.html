@@ -31,31 +31,32 @@
     <div data-load="container">
         
         <!-- HEADER -->
-        <header class="p-header">
-            <div class="p-header__container o-wrapper o-grid o-grid--aic o-pt-m o-pb-xs">
+        <header class="p-header" data-module-menu>
+            <div class="p-header__background" data-menu="headercontainer"></div>
+            <div class="p-header__container o-wrapper o-grid o-grid--aic o-pt-m o-pb-s">
                 <div class="p-header__logo">
                     <a class="p-header__logo-link" href="index.html" target="_self">
                         <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
                     </a>
                 </div>
                 <nav class="p-header__menu o-grid o-grid--aic">
-                    <ul class="c-menu c-menu--closed c-menu--row o-p-m" data-menu-container>
-                        <li class="c-menu__item" data-menu-link>
+                    <ul class="c-menu c-menu--closed c-menu--row o-p-m" data-menu="menucontainer">
+                        <li class="c-menu__item">
                             <a class="c-menu__item-link" href="#" target="_self">À propos</a>
                         </li>
-                        <li class="c-menu__item" data-menu-link>
+                        <li class="c-menu__item">
                             <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
                         </li>
-                        <li class="c-menu__item" data-menu-link>
+                        <li class="c-menu__item">
                             <a class="c-menu__item-link" href="#" target="_self">Services</a>
                         </li>
-                        <li class="c-menu__item" data-menu-link>
+                        <li class="c-menu__item">
                             <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
                         </li>
-                        <li class="c-menu__item" data-menu-link>
+                        <li class="c-menu__item">
                             <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
                         </li>
-                        <li class="c-menu__item" data-menu-link>
+                        <li class="c-menu__item">
                             <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
                         </li>
                     </ul>
@@ -67,7 +68,7 @@
                             <span class="p-header__menu-login-text">Se connecter</span>
                         </a>
                     </div>
-                    <div class="p-header__menu-toggle o-flex o-flex--ng o-flex--jce o-p-m o-br-3xl" data-menu-toggle>
+                    <div class="p-header__menu-toggle o-flex o-flex--ng o-flex--jce o-p-m o-br-3xl" data-menu="menutoggle">
                         <svg class="p-header__menu-toggle-icon p-header__menu-toggle-open" fill="none" width="14" height="14" viewBox="0 0 13.9 12.3" xmlns="http://www.w3.org/2000/svg">
                             <path fill="#12314e" d="M13.1,10.6c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
                             <path fill="#12314e" d="M13.1,6.2c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>

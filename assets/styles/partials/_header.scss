@@ -28,6 +28,27 @@
         }
     }
     
+    &__background {
+        @include breakpoint(to-medium) {
+            width: 100%;
+            height: var(--header-height);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: 0.5s var(--Power4EaseOut);
+        }
+        @include breakpoint(from-medium) {
+            display: none;
+        }
+    }
+    &:has(.p-header__menu-toggle--active) & {
+        &__background {
+            transform: translateY(0%) !important;
+            background-color: var(--color-night) !important;
+        }
+    }
+    
     // &__container {}
     
     &__logo {
@@ -69,8 +90,8 @@
             }
             @include breakpoint(to-medium) {
                 position: fixed;
-                top: var(--space-m);
-                right: var(--grid-margin);
+                top: var(--space-s);
+                right: calc(var(--grid-margin) - var(--space-2xs));
                 z-index: 0;
                 opacity: 1;
                 border: solid 2px var(--color-white);
@@ -133,8 +154,8 @@
             height: 20px;
             grid-column-end: -1;
             position: fixed;
-            top: calc(var(--space-m) + var(--space-2xs));
-            right: calc(var(--grid-margin) + var(--space-2xs));
+            top: var(--space-m);
+            right: var(--grid-margin);
             z-index: 0;
             cursor: pointer;
             user-select: none;
