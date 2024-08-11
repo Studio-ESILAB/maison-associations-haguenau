@@ -2619,7 +2619,7 @@ ol {
 }
 @media (min-width: 700px) {
   .p-hero--simple {
-    padding-bottom: 24vh;
+    padding-bottom: 200px;
   }
 }
 @media (min-width: 1025px) {
