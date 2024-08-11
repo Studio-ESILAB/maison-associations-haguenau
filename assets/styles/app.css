@@ -2613,13 +2613,14 @@ ol {
   color: var(--color-white);
 }
 .p-hero--simple {
+  padding-top: var(--header-height);
   height: auto;
   z-index: -1;
   background-color: var(--color-light);
 }
 @media (min-width: 700px) {
   .p-hero--simple {
-    padding: 200px 0;
+    padding-bottom: 200px;
   }
 }
 @media (min-width: 1025px) {
@@ -2633,7 +2634,9 @@ ol {
   bottom: 0;
 }
 .p-hero--small {
-  height: 62vh;
+  height: auto;
+  min-height: 62vh;
+  padding-top: var(--header-height);
 }
 .p-hero--light {
   color: var(--color-night);

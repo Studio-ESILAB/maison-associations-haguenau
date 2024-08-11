@@ -5,11 +5,12 @@
     color: var(--color-white);
     
     &--simple {
+        padding-top: var(--header-height);
         height: auto;
         z-index: -1;
         background-color: var(--color-light);
         @include breakpoint(from-small) {
-            padding: 200px 0;
+            padding-bottom: 200px;
         }
         @include breakpoint(from-medium) {
             min-height: 90vh;
@@ -22,7 +23,9 @@
     }
     
     &--small {
-        height: 62vh;
+        height: auto;
+        min-height: 62vh;
+        padding-top: var(--header-height);
     }
     
     &--light {
