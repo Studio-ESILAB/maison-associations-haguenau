@@ -9,7 +9,7 @@
         z-index: -1;
         background-color: var(--color-light);
         @include breakpoint(from-small) {
-            padding-bottom: 200px;
+            padding: 200px 0;
         }
         @include breakpoint(from-medium) {
             min-height: 90vh;
