@@ -2306,21 +2306,14 @@ ol {
 .p-header--light .c-menu__item-link::before {
   background-color: var(--color-night);
 }
-@media (max-width: 1025px) {
-  .p-header__background {
-    width: 100%;
-    height: var(--header-height);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    transition: 0.5s var(--Power4EaseOut);
-  }
-}
-@media (min-width: 1025px) {
-  .p-header__background {
-    display: none;
-  }
+.p-header__background {
+  width: 100%;
+  height: var(--header-height);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.5s var(--Power4EaseOut);
 }
 .p-header:has(.p-header__menu-toggle--active) .p-header__background {
   transform: translateY(0%) !important;

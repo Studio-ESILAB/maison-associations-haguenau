@@ -29,18 +29,13 @@
     }
     
     &__background {
-        @include breakpoint(to-medium) {
-            width: 100%;
-            height: var(--header-height);
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            transition: 0.5s var(--Power4EaseOut);
-        }
-        @include breakpoint(from-medium) {
-            display: none;
-        }
+        width: 100%;
+        height: var(--header-height);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        transition: 0.5s var(--Power4EaseOut);
     }
     &:has(.p-header__menu-toggle--active) & {
         &__background {
