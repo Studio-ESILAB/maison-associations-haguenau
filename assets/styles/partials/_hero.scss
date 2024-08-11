@@ -12,7 +12,7 @@
             padding-bottom: 200px;
         }
         @include breakpoint(from-medium) {
-            height: 90vh;
+            min-height: 90vh;
         }
         .p-hero__background {
             height: 200px;

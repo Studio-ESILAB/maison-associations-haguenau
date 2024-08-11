@@ -2624,7 +2624,7 @@ ol {
 }
 @media (min-width: 1025px) {
   .p-hero--simple {
-    height: 90vh;
+    min-height: 90vh;
   }
 }
 .p-hero--simple .p-hero__background {
