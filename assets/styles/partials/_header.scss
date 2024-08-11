@@ -4,7 +4,6 @@
     top: 0;
     z-index: 9999;
     &--light {
-        background-color: var(--color-white);
         #logo {
             display: none !important;
             &-light {
@@ -36,6 +35,18 @@
         left: 0;
         z-index: -1;
         transition: 0.5s var(--Power4EaseOut);
+    }
+    &:has(.p-header__background--active) {
+        .p-header__menu {
+            * {
+                color: var(--color-white) !important;
+            }
+            @include breakpoint(from-medium) {
+                path {
+                    fill: var(--color-white) !important;
+                }
+            }
+        }
     }
     &:has(.p-header__menu-toggle--active) & {
         &__background {

@@ -2288,9 +2288,6 @@ ol {
   top: 0;
   z-index: 9999;
 }
-.p-header--light {
-  background-color: var(--color-white);
-}
 .p-header--light #logo {
   display: none !important;
 }
@@ -2314,6 +2311,14 @@ ol {
   left: 0;
   z-index: -1;
   transition: 0.5s var(--Power4EaseOut);
+}
+.p-header:has(.p-header__background--active) .p-header__menu * {
+  color: var(--color-white) !important;
+}
+@media (min-width: 1025px) {
+  .p-header:has(.p-header__background--active) .p-header__menu path {
+    fill: var(--color-white) !important;
+  }
 }
 .p-header:has(.p-header__menu-toggle--active) .p-header__background {
   transform: translateY(0%) !important;
