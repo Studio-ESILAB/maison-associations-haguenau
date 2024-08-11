@@ -29,7 +29,7 @@
     
     &__slider {
         @include breakpoint(from-medium) {
-            margin-top: -24vh;
+            margin-top: -200px;
         }
         // &-wrapper,
         // &-swiper-wrapper {}
@@ -53,15 +53,15 @@
             &-item {
                 aspect-ratio: 1 / 1;
                 position: absolute;
-                top: 50%;
+                top: 15%;
                 z-index: 1;
                 border: solid 1px rgb(18, 49, 78, 0.2);
                 border-radius: 100%;
                 background-color: var(--color-white);
                 cursor: pointer;
                 transition: 0.5s var(--Power4EaseOut);
-                @include breakpoint(from-medium) {
-                    top: calc(50% - 24vh);
+                @include breakpoint(from-small) {
+                    top: 30%;
                 }
                 &:hover {
                     border-color: var(--color-yellow);
@@ -75,17 +75,24 @@
             }
             &-prev {
                 left: calc(0px - var(--space-s));
-                transform: translateY(-50%) translateX(-100%);
+                @include breakpoint(from-small) {
+                    transform: translateY(-50%) translateX(-100%);
+                }
             }
             &-next {
                 right: calc(0px - var(--space-s));
-                transform: translateY(-50%) translateX(100%);
+                @include breakpoint(from-small) {
+                    transform: translateY(-50%) translateX(100%);
+                }
             }
         }
     }
     
     &__slider-thumbs {
-        margin: var(--space-m) calc(var(--space-4xl) * 2) 0 calc(var(--space-4xl) * 2) !important;
+        margin: var(--space-m) !important;
+        @include breakpoint(from-medium) {
+            margin: var(--space-m) calc(var(--space-4xl) * 2) 0 calc(var(--space-4xl) * 2) !important;
+        }
         // &-wrapper,
         // &-swiper-wrapper {}
         &-slide,

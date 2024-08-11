@@ -1322,7 +1322,7 @@ ol {
 
 @media (min-width: 1025px) {
   .block-simple-new__content-featured {
-    margin-top: -24vh;
+    margin-top: -200px;
   }
 }
 .block-simple-new__content-featured img {
@@ -1377,7 +1377,7 @@ ol {
 }
 @media (min-width: 1025px) {
   .block-simple-galerie__slider {
-    margin-top: -24vh;
+    margin-top: -200px;
   }
 }
 .block-simple-galerie__slider-slide-image-link, .block-simple-galerie__slider-swiper-slide-image-link {
@@ -1394,7 +1394,7 @@ ol {
 .block-simple-galerie__slider-buttons-item {
   aspect-ratio: 1/1;
   position: absolute;
-  top: 50%;
+  top: 15%;
   z-index: 1;
   border: solid 1px rgba(18, 49, 78, 0.2);
   border-radius: 100%;
@@ -1402,9 +1402,9 @@ ol {
   cursor: pointer;
   transition: 0.5s var(--Power4EaseOut);
 }
-@media (min-width: 1025px) {
+@media (min-width: 700px) {
   .block-simple-galerie__slider-buttons-item {
-    top: calc(50% - 24vh);
+    top: 30%;
   }
 }
 .block-simple-galerie__slider-buttons-item:hover {
@@ -1416,14 +1416,27 @@ ol {
 }
 .block-simple-galerie__slider-buttons-prev {
   left: calc(0px - var(--space-s));
-  transform: translateY(-50%) translateX(-100%);
+}
+@media (min-width: 700px) {
+  .block-simple-galerie__slider-buttons-prev {
+    transform: translateY(-50%) translateX(-100%);
+  }
 }
 .block-simple-galerie__slider-buttons-next {
   right: calc(0px - var(--space-s));
-  transform: translateY(-50%) translateX(100%);
+}
+@media (min-width: 700px) {
+  .block-simple-galerie__slider-buttons-next {
+    transform: translateY(-50%) translateX(100%);
+  }
 }
 .block-simple-galerie__slider-thumbs {
-  margin: var(--space-m) calc(var(--space-4xl) * 2) 0 calc(var(--space-4xl) * 2) !important;
+  margin: var(--space-m) !important;
+}
+@media (min-width: 1025px) {
+  .block-simple-galerie__slider-thumbs {
+    margin: var(--space-m) calc(var(--space-4xl) * 2) 0 calc(var(--space-4xl) * 2) !important;
+  }
 }
 .block-simple-galerie__slider-thumbs-slide-image, .block-simple-galerie__slider-thumbs-swiper-slide-image {
   width: 100%;
@@ -2613,6 +2626,11 @@ ol {
   .p-hero--simple {
     height: 90vh;
   }
+}
+.p-hero--simple .p-hero__background {
+  height: 200px;
+  top: unset;
+  bottom: 0;
 }
 .p-hero--small {
   height: 62vh;
