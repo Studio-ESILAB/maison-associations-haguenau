@@ -1099,6 +1099,11 @@ ol {
 .block-portfolio__list {
   list-style: none;
 }
+@media (max-width: 1025px) {
+  .block-portfolio__list-item {
+    grid-column: span 4;
+  }
+}
 
 .block-cta__container {
   min-height: 75vh;
