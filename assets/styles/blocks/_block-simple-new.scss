@@ -4,7 +4,7 @@
     
     &__content {
         &-featured {
-            @include breakpoint(from-medium) {
+            @include breakpoint(from-small) {
                 margin-top: -200px;
             }
             img {

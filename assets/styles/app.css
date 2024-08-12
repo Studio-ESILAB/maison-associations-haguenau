@@ -1322,7 +1322,7 @@ ol {
   list-style: none;
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 700px) {
   .block-simple-new__content-featured {
     margin-top: -200px;
   }
