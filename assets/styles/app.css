@@ -2668,7 +2668,7 @@ ol {
   grid-column: 1/-1;
   color: inherit;
 }
-@media (min-width: 1025px) {
+@media (min-width: 700px) {
   .p-hero__title, .p-hero__subtitle {
     grid-column: 1/6;
   }
@@ -2697,6 +2697,7 @@ ol {
 }
 @media (min-width: 700px) {
   .p-hero--simple .p-hero__title {
+    grid-column: 1/-1;
     text-align: center;
   }
 }
