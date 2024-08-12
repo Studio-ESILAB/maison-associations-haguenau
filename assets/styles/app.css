@@ -1332,6 +1332,10 @@ ol {
   list-style: none;
 }
 
+.block-simple-new__content {
+  position: relative;
+  z-index: 0;
+}
 @media (min-width: 700px) {
   .block-simple-new__content-featured {
     margin-top: -200px;
@@ -1370,11 +1374,6 @@ ol {
   z-index: 0;
 }
 @media (min-width: 700px) {
-  .block-simple-galerie__content {
-    margin-top: -200px;
-  }
-}
-@media (min-width: 1025px) {
   .block-simple-galerie__content {
     margin-top: -200px;
   }
@@ -2656,7 +2655,6 @@ ol {
 .p-hero--simple {
   padding-top: var(--header-height);
   height: auto;
-  z-index: -1;
   background-color: var(--color-light);
 }
 @media (min-width: 700px) {
