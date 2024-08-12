@@ -79,12 +79,18 @@
             &-prev {
                 left: calc(0px - var(--space-s));
                 @include breakpoint(from-small) {
+                    transform: translateY(-50%);
+                }
+                @include breakpoint(from-medium) {
                     transform: translateY(-50%) translateX(-100%);
                 }
             }
             &-next {
                 right: calc(0px - var(--space-s));
                 @include breakpoint(from-small) {
+                    transform: translateY(-50%);
+                }
+                @include breakpoint(from-medium) {
                     transform: translateY(-50%) translateX(100%);
                 }
             }
