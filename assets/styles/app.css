@@ -1510,17 +1510,7 @@ ol {
   opacity: 0.65;
 }
 .block-forum__forum-tags-list {
-  max-height: 15vh;
-  display: block;
   list-style: none;
-  overflow: scroll;
-  border: solid 1px rgba(18, 49, 78, 0.2);
-}
-@media (min-width: 700px) {
-  .block-forum__forum-tags-list {
-    max-height: none;
-    border: none;
-  }
 }
 .block-forum__forum-tags-item {
   display: block;
@@ -1562,7 +1552,7 @@ ol {
   margin-right: auto;
   margin-left: 0;
 }
-@media (min-width: 1025px) {
+@media (min-width: 700px) {
   .block-forum__forum-content-title {
     width: auto;
   }

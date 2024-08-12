@@ -32,15 +32,7 @@
                 opacity: 0.65;
             }
             &-list {
-                max-height: 15vh;
-                display: block;
                 list-style: none;
-                overflow: scroll;
-                border: solid 1px rgba(18, 49, 78, 0.20);
-                @include breakpoint(from-small) {
-                    max-height: none;
-                    border: none;
-                }
             }
             &-item {
                 display: block;
@@ -79,7 +71,7 @@
                 width: 100%;
                 margin-right: auto;
                 margin-left: 0;
-                @include breakpoint(from-medium) {
+                @include breakpoint(from-small) {
                     width: auto;
                 }
             }
