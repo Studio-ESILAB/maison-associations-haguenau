@@ -1290,7 +1290,7 @@ ol {
 }
 .block-last-topics__sidebar-menu-link {
   display: inline-flex;
-  gap: var(--space-2xs);
+  gap: var(--space-xs);
   color: inherit;
 }
 .block-last-topics__sidebar-menu-link-text {
