@@ -39,6 +39,14 @@
         transition: 0.5s var(--Power4EaseOut);
     }
     &:has(.p-header__background--active) {
+        .p-header__logo {
+            #logo {
+                display: block !important;
+                &-light {
+                    display: none !important;
+                }
+            }
+        }
         .p-header__menu {
             * {
                 color: var(--color-white) !important;
@@ -51,6 +59,14 @@
         }
     }
     &:has(.p-header__menu-toggle--active) & {
+        &__logo {
+            #logo {
+                display: block !important;
+                &-light {
+                    display: none !important;
+                }
+            }
+        }
         &__background {
             transform: translateY(0%) !important;
             background-color: var(--color-night) !important;

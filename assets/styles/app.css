@@ -2326,6 +2326,12 @@ ol {
   z-index: -1;
   transition: 0.5s var(--Power4EaseOut);
 }
+.p-header:has(.p-header__background--active) .p-header__logo #logo {
+  display: block !important;
+}
+.p-header:has(.p-header__background--active) .p-header__logo #logo-light {
+  display: none !important;
+}
 .p-header:has(.p-header__background--active) .p-header__menu * {
   color: var(--color-white) !important;
 }
@@ -2333,6 +2339,12 @@ ol {
   .p-header:has(.p-header__background--active) .p-header__menu path {
     fill: var(--color-white) !important;
   }
+}
+.p-header:has(.p-header__menu-toggle--active) .p-header__logo #logo {
+  display: block !important;
+}
+.p-header:has(.p-header__menu-toggle--active) .p-header__logo #logo-light {
+  display: none !important;
 }
 .p-header:has(.p-header__menu-toggle--active) .p-header__background {
   transform: translateY(0%) !important;
