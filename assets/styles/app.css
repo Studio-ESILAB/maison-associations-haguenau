@@ -1059,12 +1059,9 @@ ol {
   object-fit: cover;
   object-position: center center;
 }
-.block-portfolio .swiper-footer, .block-portfolio__slider-footer {
-  gap: var(--space-4xl);
-}
-@media (min-width: 700px) {
+@media (min-width: 1025px) {
   .block-portfolio .swiper-footer, .block-portfolio__slider-footer {
-    flex-direction: row;
+    gap: var(--space-4xl);
   }
 }
 .block-portfolio .swiper-pagination, .block-portfolio__slider-pagination {

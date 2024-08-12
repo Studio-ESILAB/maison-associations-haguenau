@@ -37,9 +37,8 @@
             // &-title {}
         }
         &-footer {
-            gap: var(--space-4xl);
-            @include breakpoint(from-small) {
-                flex-direction: row;
+            @include breakpoint(from-medium) {
+                gap: var(--space-4xl);
             }
         }
         &-pagination {
