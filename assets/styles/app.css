@@ -2306,11 +2306,13 @@ ol {
 .p-header--light #logo-light {
   display: block !important;
 }
-.p-header--light * {
-  color: var(--color-night) !important;
-}
-.p-header--light *:is(path) {
-  fill: var(--color-night);
+@media (min-width: 1025px) {
+  .p-header--light * {
+    color: var(--color-night) !important;
+  }
+  .p-header--light *:is(path) {
+    fill: var(--color-night);
+  }
 }
 .p-header--light .c-menu__item-link::before {
   background-color: var(--color-night);

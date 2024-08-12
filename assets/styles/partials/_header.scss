@@ -10,10 +10,12 @@
                 display: block !important;
             }
         }
-        & * {
-            color: var(--color-night) !important;
-            &:is(path) {
-                fill: var(--color-night);
+        @include breakpoint(from-medium) {
+            & * {
+                color: var(--color-night) !important;
+                &:is(path) {
+                    fill: var(--color-night);
+                }
             }
         }
         .c-menu {
