@@ -1357,6 +1357,16 @@ ol {
   position: relative;
   z-index: 0;
 }
+@media (min-width: 700px) {
+  .block-simple-galerie__content {
+    margin-top: -200px;
+  }
+}
+@media (min-width: 1025px) {
+  .block-simple-galerie__content {
+    margin-top: -200px;
+  }
+}
 .block-simple-galerie__content-texts h1, .block-simple-galerie__content-texts h2, .block-simple-galerie__content-texts h3, .block-simple-galerie__content-texts h4, .block-simple-galerie__content-texts h5, .block-simple-galerie__content-texts h6 {
   margin: var(--space-l) 0 var(--space-s) 0;
 }
@@ -1374,11 +1384,6 @@ ol {
 }
 .block-simple-galerie__content-texts p:last-of-type {
   margin-bottom: 0;
-}
-@media (min-width: 1025px) {
-  .block-simple-galerie__slider {
-    margin-top: -200px;
-  }
 }
 .block-simple-galerie__slider-slide-image-link, .block-simple-galerie__slider-swiper-slide-image-link {
   width: 100%;
