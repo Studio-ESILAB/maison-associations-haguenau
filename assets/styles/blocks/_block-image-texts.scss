@@ -23,6 +23,9 @@
         @include breakpoint(to-medium) {
             grid-column: span 4;
         }
+        @include breakpoint(from-small) {
+            margin-top: 0;
+        }
         @include breakpoint(from-medium) {
             grid-column: 8 / -1;
         }
