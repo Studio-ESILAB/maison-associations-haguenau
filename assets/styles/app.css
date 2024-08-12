@@ -2403,9 +2403,36 @@ ol {
     grid-column: 1/10;
   }
 }
+@media (max-width: 1025px) {
+  .p-header__menu .c-menu__item--login {
+    display: block;
+  }
+  .p-header__menu .c-menu__item--login-link {
+    display: inline-flex;
+    gap: var(--space-xs);
+    color: var(--color-white);
+  }
+  .p-header__menu .c-menu__item--login-link::before {
+    content: none;
+  }
+  .p-header__menu .c-menu__item--login-image {
+    width: 38px;
+    max-width: 38px;
+    height: auto;
+    aspect-ratio: 1;
+    display: block;
+    border-radius: 100%;
+  }
+  .p-header__menu .c-menu__item--login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: inherit;
+  }
+}
 .p-header__menu-login {
   display: none;
-  grid-column: 1/-1;
 }
 @media (min-width: 1025px) {
   .p-header__menu-login {
