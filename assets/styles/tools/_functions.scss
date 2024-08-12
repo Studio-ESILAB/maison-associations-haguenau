@@ -1,5 +1,0 @@
-// PX to REM Sizes
-@function rem($value) {
-    $remValue: calc($value / 16) + rem;
-    @return $remValue;
-}
