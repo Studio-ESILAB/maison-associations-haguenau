@@ -1,5 +1,37 @@
 # Maison des Associations de Haguenau
 
+## Structure et arborescence
+    .
+    ├── assets
+    │   ├── images
+    │   │   ├── icons
+    │   │   │   └── ...         # Fichiers des icônes
+    │   │   ├── logos
+    │   │   │   └── ...         # Fichiers des logos
+    │   │   ├── svg
+    │   │   │   └── ...         # Fichiers des shapes
+    │   │   └── ...             # Fichiers des images principales
+    │   ├── scripts
+    │   │   └── ...             # Fichiers des scripts
+    │   └── styles
+    │       └── ...             # Fichiers des styles
+    │
+    ├── favicons
+    │   └── ...                 # Fichiers des favicons
+    │
+    ├── 404.html                # Page d'erreur 404
+    ├── answers.html            # Page du topic
+    ├── forum.html              # Page du forum
+    ├── galerie.html            # Page de la galerie
+    ├── index.html              # Page d'accueil (déconnecté)
+    ├── log-in.html             # Page de connexion
+    ├── logged-in.html          # Page d'accueil (connecté)
+    ├── new.html                # Page d'actualité
+    ├── news.html               # Page des actualités
+    ├── portfolio.html          # Page du portfolio
+    │
+    └── README.md
+
 ## Utilisation
 L'essentiel du style appliqué se fait par l'ajout de classes directement en HTML sur les balises concernées pour faciliter et minimiser l'utilisation du CSS.
 
