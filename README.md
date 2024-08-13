@@ -44,12 +44,12 @@ L'ajout d'un conteneur sur un élément se fait avec le préfixe "`o-wrapper`". 
 > *Exemples :* `o-wrapper`, `o-wrapper-small`.
 ```html
 <div class="o-wrapper">
-    <div></div>
+    ...
 </div>
 ```
 ```html
 <div class="o-wrapper o-wrapper-small">
-    <div></div>
+    ...
 </div>
 ```
 
@@ -71,10 +71,19 @@ Concernant les enfants de l'élément `grid`, différentes options sont égaleme
 > *Exemples :* `o-grid`, `o-grid--ng`, `o-grid--aic`.
 ```html
 <div class="o-grid o-grid--ng o-grid--aic">
-    <div class="o-full"></div>
-    <div class="o-large"></div>
-    <div class="o-demi"></div>
-    <div class="o-tiers"></div>
+    <div class="o-full">
+        ...
+    </div>
+</div>
+```
+```html
+<div class="o-grid o-grid--ng o-grid--aic">
+    <div class="o-demi">
+        ...
+    </div>
+    <div class="o-demi">
+        ...
+    </div>
 </div>
 ```
 
@@ -94,7 +103,9 @@ L'ajout de `flex` sur un élément se fait avec le préfixe "`o-flex`" suivi d'u
 - `o-flex--aibl` Ajoute `align-items: baseline;`.
 > *Exemples :* `o-flex`, `o-flex--col`, `o-flex--jcc`, `o-flex--aic`.
 ```html
-<div class="o-flex o-flex--col o-flex--jcc o-flex--aic"></div>
+<div class="o-flex o-flex--col o-flex--jcc o-flex--aic">
+    ...
+</div>
 ```
 
 ### Margin
@@ -103,10 +114,14 @@ Est à disposition un ensemble de tailles allant de 3xs à 4xl.
 L'ajout d'une marge se fait avec le préfixe "`o-m`" suivi d'une `direction` (`t`,`b`,`r`,`l`) ou directement de la `taille` souhaitée.
 > *Exemples :* `o-m-2xl`, `o-mt-m`, `o-mb-3xs`.
 ```html
-<div class="o-m-2xl"></div>
+<div class="o-m-2xl">
+    ...
+</div>
 ```
 ```html
-<div class="o-mt-m o-mb-3xs"></div>
+<div class="o-mt-m o-mb-3xs">
+    ...
+</div>
 ```
 
 ### Padding
@@ -115,10 +130,14 @@ Est à disposition un ensemble de tailles allant de 3xs à 4xl.
 L'ajout d'un padding se fait avec le préfixe "`o-p`" suivi d'une `direction` (`t`,`b`,`r`,`l`) ou directement de la `taille` souhaitée.
 > *Exemples :* `o-p-m`, `o-pl-2xs`, `o-pr-xl`.
 ```html
-<div class="o-p-m"></div>
+<div class="o-p-m">
+    ...
+</div>
 ```
 ```html
-<div class="o-pl-2xs o-pr-xl"></div>
+<div class="o-pl-2xs o-pr-xl">
+    ...
+</div>
 ```
 
 ### Border-radius
@@ -127,7 +146,9 @@ Est à disposition un ensemble de tailles allant de 3xs à 4xl.
 L'ajout d'un border-radius se fait avec le préfixe "`o-br`" suivi de la `taille` souhaitée.
 > *Exemples :* `o-br-m`, `o-br-2xs`, `o-br-3xl`.
 ```html
-<div class="o-br-m"></div>
+<div class="o-br-m">
+    ...
+</div>
 ```
 
 ### Typos
