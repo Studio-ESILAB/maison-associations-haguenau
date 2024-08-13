@@ -32,6 +32,8 @@
     │
     └── README.md
 
+> Pour accèder à la page d'accueil (connecté), il faut cliquer sur "Se connecter" depuis le menu de la page de connexion (log-in.html).
+
 ## Utilisation
 L'essentiel du style appliqué se fait par l'ajout de classes directement en HTML sur les balises concernées pour faciliter et minimiser l'utilisation du CSS.
 
