@@ -100,7 +100,7 @@ L'ajout de `flex` sur un élément se fait avec le préfixe "`o-flex`" suivi d'u
 ### Margin
 Est à disposition un ensemble de tailles allant de 3xs à 4xl.
 
-L'ajout d'une marge se fait avec le préfixe "`o-m`" suivi d'une `direction` (`t`,`b`,`r`,`l`) ou directement de la `taille` souhaitée (*ex :* `-2xl`).
+L'ajout d'une marge se fait avec le préfixe "`o-m`" suivi d'une `direction` (`t`,`b`,`r`,`l`) ou directement de la `taille` souhaitée.
 > *Exemples :* `o-m-2xl`, `o-mt-m`, `o-mb-3xs`.
 ```html
 <div class="o-m-2xl"></div>
@@ -112,7 +112,7 @@ L'ajout d'une marge se fait avec le préfixe "`o-m`" suivi d'une `direction` (`t
 ### Padding
 Est à disposition un ensemble de tailles allant de 3xs à 4xl.
 
-L'ajout d'un padding se fait avec le préfixe "`o-p`" suivi d'une `direction` (`t`,`b`,`r`,`l`) ou directement de la `taille` souhaitée (*ex :* `-m`).
+L'ajout d'un padding se fait avec le préfixe "`o-p`" suivi d'une `direction` (`t`,`b`,`r`,`l`) ou directement de la `taille` souhaitée.
 > *Exemples :* `o-p-m`, `o-pl-2xs`, `o-pr-xl`.
 ```html
 <div class="o-p-m"></div>
@@ -124,10 +124,31 @@ L'ajout d'un padding se fait avec le préfixe "`o-p`" suivi d'une `direction` (`
 ### Border-radius
 Est à disposition un ensemble de tailles allant de 3xs à 4xl.
 
-L'ajout d'un border-radius se fait avec le préfixe "`o-br`" suivi de la `taille` souhaitée (*ex :* `-xs`).
+L'ajout d'un border-radius se fait avec le préfixe "`o-br`" suivi de la `taille` souhaitée.
 > *Exemples :* `o-br-m`, `o-br-2xs`, `o-br-3xl`.
 ```html
 <div class="o-br-m"></div>
+```
+
+### Typos
+Est à disposition un ensemble de tailles de titres et de textes allant de h1 à h6 et un style "small" et "big".
+
+L'ajout d'une taille de titres se fait avec le préfixe "`o-`" suivi de la `taille` souhaitée de h1 à h6.
+
+- `o-h1` Ajoute `font-size: var(--font-s-h1);`.
+- `o-h2` Ajoute `font-size: var(--font-s-h2);`.
+- `o-h3` Ajoute `font-size: var(--font-s-h3);`.
+- `o-h4` Ajoute `font-size: var(--font-s-h4);`.
+- `o-h5` Ajoute `font-size: var(--font-s-h5);`.
+- `o-h6` Ajoute `font-size: var(--font-s-h6);`.
+- `o-small` Ajoute `font-size: var(--font-s-small);`.
+- `o-big` Ajoute `font-size: var(--font-s-big);`.
+
+> *Exemples :* `o-h3`, `o-h2`, `o-big`.
+```html
+<h2 class="o-h3"></h2>
+<h4 class="o-h2"></h2>
+<p class="o-big"></h2>
 ```
 
 ## Authors
