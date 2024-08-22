@@ -174,4 +174,4 @@ L'ajout d'une taille de titres se fait avec le préfixe "`o-`" suivi de la `tail
 
 ## Authors
 
-- [@Studio-ESILAB](https://github.com/Studio-ESILAB)
+- [@Studio-ESILAB](https://github.com/esilab)
