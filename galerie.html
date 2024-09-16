@@ -29,251 +29,252 @@
 </head>
 
 <body data-module-scroll data-module-load-disabled data-load="wrapper">
-    <div data-load="container">
-        
-        <!-- HEADER -->
-        <header class="p-header p-header--light" data-module-menu>
-            <div class="p-header__background" data-menu="headerbackground"></div>
-            <div class="p-header__container o-wrapper o-grid o-grid--aic o-pt-m o-pb-xs">
-                <div class="p-header__logo">
-                    <a id="logo" class="p-header__logo-link o-dn" href="index.html" target="_self">
-                        <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
-                    </a>
-                    <a id="logo-light" class="p-header__logo-link" href="index.html" target="_self">
-                        <img src="./assets/images/logos/logo-light.svg" alt="Logo de la Maison des Associations de Haguenau">
-                    </a>
-                </div>
-                <nav class="p-header__menu o-grid o-grid--aic">
-                    <ul class="c-menu c-menu--closed c-menu--row o-p-m" data-menu="menucontainer">
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">À propos</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Services</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
-                        </li>
-                        <li class="c-menu__item c-menu__item--login o-dn">
-                            <a class="c-menu__item--login-link o-flex o-flex--aic o-tdn" href="index.html" target="_self">
-                                <div class="c-menu__item--login-image o-oh">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
-                                </div>
-                                <span class="c-menu__item--login-name">Nom Prénom</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="p-header__menu-login o-mt-m">
-                        <a class="p-header__menu-login-link o-flex o-flex--aic o-tdn" href="index.html" target="_self">
-                            <div class="p-header__menu-login-image o-oh">
-                                <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
-                            </div>
-                            <span class="p-header__menu-login-name">Nom Prénom</span>
-                            <svg class="p-header__menu-login-icon" fill="none" width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" d="M6.49609 6.88615L1.24609 1.63615C0.890625 1.30803 0.890625 0.73381 1.24609 0.405685C1.57422 0.0502167 2.14844 0.0502167 2.47656 0.405685L7.125 5.02678L11.7461 0.405685C12.0742 0.0502167 12.6484 0.0502167 12.9766 0.405685C13.332 0.73381 13.332 1.30803 12.9766 1.63615L7.72656 6.88615C7.39844 7.24162 6.82422 7.24162 6.49609 6.88615Z"/>
-                            </svg>
+    <div id="smooth-wrapper" data-load="container">
+        <div id="smooth-content">
+            <!-- HEADER -->
+            <header class="p-header p-header--light" data-module-menu>
+                <div class="p-header__background" data-menu="headerbackground"></div>
+                <div class="p-header__container o-wrapper o-grid o-grid--aic o-pt-m o-pb-xs">
+                    <div class="p-header__logo">
+                        <a id="logo" class="p-header__logo-link o-dn" href="index.html" target="_self">
+                            <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
+                        </a>
+                        <a id="logo-light" class="p-header__logo-link" href="index.html" target="_self">
+                            <img src="./assets/images/logos/logo-light.svg" alt="Logo de la Maison des Associations de Haguenau">
                         </a>
                     </div>
-                    <div class="p-header__menu-toggle o-flex o-flex--ng o-flex--jce o-p-m o-br-3xl" data-menu="menutoggle">
-                        <svg class="p-header__menu-toggle-icon p-header__menu-toggle-open" fill="none" width="14" height="14" viewBox="0 0 13.9 12.3" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#12314e" d="M13.1,10.6c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
-                            <path fill="#12314e" d="M13.1,6.2c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
-                            <path fill="#12314e" d="M13.1,1.7c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
-                        </svg>
-                        <svg class="p-header__menu-toggle-icon p-header__menu-toggle-close" fill="none" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#12314e" d="M12.8,2.9c.5-.5.5-1.3,0-1.8s-1.3-.5-1.8,0l-4.1,4.1L2.9,1.2c-.5-.5-1.3-.5-1.8,0s-.5,1.3,0,1.8l4.1,4.1L1.2,11.1c-.5.5-.5,1.3,0,1.8s1.3.5,1.8,0l4.1-4.1,4.1,4.1c.5.5,1.3.5,1.8,0s.5-1.3,0-1.8l-4.1-4.1,4.1-4.1Z"/>
-                        </svg>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        
-        <main class="c-main o-oh">
+                    <nav class="p-header__menu o-grid o-grid--aic">
+                        <ul class="c-menu c-menu--closed c-menu--row o-p-m" data-menu="menucontainer">
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">À propos</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Services</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
+                            </li>
+                            <li class="c-menu__item c-menu__item--login o-dn">
+                                <a class="c-menu__item--login-link o-flex o-flex--aic o-tdn" href="index.html" target="_self">
+                                    <div class="c-menu__item--login-image o-oh">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
+                                    </div>
+                                    <span class="c-menu__item--login-name">Nom Prénom</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="p-header__menu-login o-mt-m">
+                            <a class="p-header__menu-login-link o-flex o-flex--aic o-tdn" href="index.html" target="_self">
+                                <div class="p-header__menu-login-image o-oh">
+                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
+                                </div>
+                                <span class="p-header__menu-login-name">Nom Prénom</span>
+                                <svg class="p-header__menu-login-icon" fill="none" width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M6.49609 6.88615L1.24609 1.63615C0.890625 1.30803 0.890625 0.73381 1.24609 0.405685C1.57422 0.0502167 2.14844 0.0502167 2.47656 0.405685L7.125 5.02678L11.7461 0.405685C12.0742 0.0502167 12.6484 0.0502167 12.9766 0.405685C13.332 0.73381 13.332 1.30803 12.9766 1.63615L7.72656 6.88615C7.39844 7.24162 6.82422 7.24162 6.49609 6.88615Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="p-header__menu-toggle o-flex o-flex--ng o-flex--jce o-p-m o-br-3xl" data-menu="menutoggle">
+                            <svg class="p-header__menu-toggle-icon p-header__menu-toggle-open" fill="none" width="14" height="14" viewBox="0 0 13.9 12.3" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#12314e" d="M13.1,10.6c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
+                                <path fill="#12314e" d="M13.1,6.2c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
+                                <path fill="#12314e" d="M13.1,1.7c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
+                            </svg>
+                            <svg class="p-header__menu-toggle-icon p-header__menu-toggle-close" fill="none" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#12314e" d="M12.8,2.9c.5-.5.5-1.3,0-1.8s-1.3-.5-1.8,0l-4.1,4.1L2.9,1.2c-.5-.5-1.3-.5-1.8,0s-.5,1.3,0,1.8l4.1,4.1L1.2,11.1c-.5.5-.5,1.3,0,1.8s1.3.5,1.8,0l4.1-4.1,4.1,4.1c.5.5,1.3.5,1.8,0s.5-1.3,0-1.8l-4.1-4.1,4.1-4.1Z"/>
+                            </svg>
+                        </div>
+                    </nav>
+                </div>
+            </header>
             
-            <!-- GALERIE -->
-            <article class="block-simple-galerie o-mb-4xl">
-                <header class="block-simple-galerie__header">
-                    <section class="p-hero p-hero--simple p-hero--light o-flex o-flex--col o-flex--jce">
-                        <div class="p-hero__background o-dn">
-                            <img src="./assets/images/galerie-hero-background.png" alt="Attribut alt de l'image de fond de la galerie">
+            <main class="c-main o-oh">
+                
+                <!-- GALERIE -->
+                <article class="block-simple-galerie o-mb-4xl">
+                    <header class="block-simple-galerie__header">
+                        <section class="p-hero p-hero--simple p-hero--light o-flex o-flex--col o-flex--jce">
+                            <div class="p-hero__background o-dn">
+                                <img src="./assets/images/galerie-hero-background.png" alt="Attribut alt de l'image de fond de la galerie">
+                            </div>
+                            <div class="p-hero__container o-wrapper o-grid o-pt-xl">
+                                <div class="p-hero__breadcrumb o-full o-flex o-mb-m">
+                                    <a class="p-hero__breadcrumb-start o-tdn" href="index.html" target="_self">Accueil</a>
+                                    <span class="p-hero__breadcrumb-separator">/</span>
+                                    <p class="p-hero__breadcrumb-end">Portfolio</p>
+                                </div>
+                                <h1 class="p-hero__title o-h2">Lorem ipsum dolor sit amet consectetur. Congue ultrices</h1>
+                                <div class="p-hero__infos o-flex o-flex--ng o-mt-m o-mb-xl">
+                                    <div class="p-hero__infos-item p-hero__infos-date o-flex o-flex--ng o-flex--aic">
+                                        <svg class="p-hero__infos-date-icon" opacity="0.80" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
+                                        </svg>
+                                        <p class="p-hero__infos-date-text">Le 5 juin 2024</p>
+                                    </div>
+                                    <div class="p-hero__infos-item p-hero__infos-tags o-flex o-flex--ng o-flex--aic">
+                                        <p class="p-hero__infos-tags-tag">Catégorie 4, Catégorie 2</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </header>
+                    <div class="block-simple-galerie__content o-wrapper o-wrapper-small o-mt-xl" data-module-slider>
+                        <div class="swiper block-simple-galerie__slider o-full" data-slider="slidergalerie">
+                            <div class="swiper-wrapper block-simple-galerie__slider-swiper-wrapper">
+                                <div class="swiper-slide block-simple-galerie__slider-swiper-slide">
+                                    <div class="block-simple-galerie__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide block-simple-galerie__slider-swiper-slide">
+                                    <div class="block-simple-galerie__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide block-simple-galerie__slider-swiper-slide">
+                                    <div class="block-simple-galerie__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide block-simple-galerie__slider-swiper-slide">
+                                    <div class="block-simple-galerie__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="p-hero__container o-wrapper o-grid o-pt-xl">
-                            <div class="p-hero__breadcrumb o-full o-flex o-mb-m">
-                                <a class="p-hero__breadcrumb-start o-tdn" href="index.html" target="_self">Accueil</a>
-                                <span class="p-hero__breadcrumb-separator">/</span>
-                                <p class="p-hero__breadcrumb-end">Portfolio</p>
-                            </div>
-                            <h1 class="p-hero__title o-h2">Lorem ipsum dolor sit amet consectetur. Congue ultrices</h1>
-                            <div class="p-hero__infos o-flex o-flex--ng o-mt-m o-mb-xl">
-                                <div class="p-hero__infos-item p-hero__infos-date o-flex o-flex--ng o-flex--aic">
-                                    <svg class="p-hero__infos-date-icon" opacity="0.80" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
-                                    </svg>
-                                    <p class="p-hero__infos-date-text">Le 5 juin 2024</p>
+                        <div thumbsSlider="" class="swiper block-simple-galerie__slider-thumbs" data-slider="slidergaleriethumbs">
+                            <div class="swiper-wrapper block-simple-galerie__slider-thumbs-swiper-wrapper">
+                                <div class="swiper-slide block-simple-galerie__slider-thumbs-swiper-slide">
+                                    <div class="block-simple-galerie__slider-thumbs-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
+                                    </div>
                                 </div>
-                                <div class="p-hero__infos-item p-hero__infos-tags o-flex o-flex--ng o-flex--aic">
-                                    <p class="p-hero__infos-tags-tag">Catégorie 4, Catégorie 2</p>
+                                <div class="swiper-slide">
+                                    <div class="block-simple-galerie__slider-thumbs-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="block-simple-galerie__slider-thumbs-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <div class="block-simple-galerie__slider-thumbs-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </section>
-                </header>
-                <div class="block-simple-galerie__content o-wrapper o-wrapper-small o-mt-xl" data-module-slider>
-                    <div class="swiper block-simple-galerie__slider o-full" data-slider="slidergalerie">
-                        <div class="swiper-wrapper block-simple-galerie__slider-swiper-wrapper">
-                            <div class="swiper-slide block-simple-galerie__slider-swiper-slide">
-                                <div class="block-simple-galerie__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
-                                </div>
+                        <div class="block-simple-galerie__slider-buttons o-flex">
+                            <div class="block-simple-galerie__slider-buttons-item block-simple-galerie__slider-buttons-prev o-p-xs" data-slider="prev">
+                                <svg fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke="#12314e" d="M16.25 8.875H1.75M1.75 8.875L8.75 1.875M1.75 8.875L8.75 16.125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                             </div>
-                            <div class="swiper-slide block-simple-galerie__slider-swiper-slide">
-                                <div class="block-simple-galerie__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
-                                </div>
+                            <div class="block-simple-galerie__slider-buttons-item block-simple-galerie__slider-buttons-next o-p-xs" data-slider="next">
+                                <svg fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke="#12314e" d="M1.75 8.875H16.25M16.25 8.875L9.25 1.875M16.25 8.875L9.25 16.125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
                             </div>
-                            <div class="swiper-slide block-simple-galerie__slider-swiper-slide">
-                                <div class="block-simple-galerie__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
-                                </div>
+                        </div>
+                        <div class="block-simple-galerie__content-texts o-mt-xl o-mb-xl">
+                            <p>Sit tortor imperdiet et sociis ac cras nunc lacus senectus. In maecenas varius tristique bibendum semper congue ullamcorper. Amet donec et iaculis quis justo. Leo id neque malesuada sit adipiscing. Pellentesque a adipiscing cursus in id eget. Lobortis leo suspendisse libero sit adipiscing. Odio in tempor sagittis quis sem ut. Dolor tellus vestibulum nisl mauris lobortis nibh donec aliquet in. Ac odio nunc facilisi volutpat. Pellentesque enim dignissim vel ultricies fermentum curabitur aliquam. Facilisis sed quis nulla purus. Cursus duis pellentesque interdum etiam sit ipsum.</p>
+                        </div>
+                    </div>
+                </article>
+            
+            </main>
+            
+            <!-- FOOTER -->
+            <footer class="p-footer">
+                <div class="p-footer__container o-wrapper o-grid o-grid--row-gap o-grid--ais o-pt-3xl o-pb-3xl">
+                    <div class="p-footer__logo">
+                        <a class="p-footer__logo-link" href="index.html" target="_self">
+                            <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
+                        </a>
+                    </div>
+                    <div class="p-footer__menu">
+                        <p class="p-footer__menu-title o-h5">Maison des associations</p>
+                        <ul class="c-menu c-menu--col o-mt-s">
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">À propos</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Services</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Espace adhérents</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-footer__infos">
+                        <p class="p-footer__infos-title o-h5">Infos pratiques</p>
+                        <div class="p-footer__infos-list o-mt-s">
+                            <div class="p-footer__infos-list-item o-flex">
+                                <svg class="p-footer__infos-list-item-icon" fill="none" width="14" height="18" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M11.6562 6.5C11.6562 3.87695 9.49805 1.71875 6.875 1.71875C4.21875 1.71875 2.09375 3.87695 2.09375 6.5C2.09375 6.93164 2.22656 7.5625 2.5918 8.42578C2.92383 9.22266 3.42188 10.1523 3.98633 11.082C4.94922 12.6094 6.04492 14.0703 6.875 15.1328C7.67188 14.0703 8.76758 12.6094 9.73047 11.082C10.2949 10.1523 10.793 9.22266 11.125 8.42578C11.4902 7.5625 11.6562 6.93164 11.6562 6.5ZM13.25 6.5C13.25 9.42188 9.36523 14.5684 7.63867 16.7266C7.24023 17.2246 6.47656 17.2246 6.07812 16.7266C4.38477 14.5684 0.5 9.42188 0.5 6.5C0.5 2.98047 3.35547 0.125 6.875 0.125C10.3945 0.125 13.25 2.98047 13.25 6.5ZM7.9375 6.5C7.9375 5.93555 7.43945 5.4375 6.875 5.4375C6.27734 5.4375 5.8125 5.93555 5.8125 6.5C5.8125 7.09766 6.27734 7.5625 6.875 7.5625C7.43945 7.5625 7.9375 7.09766 7.9375 6.5ZM4.21875 6.5C4.21875 5.57031 4.7168 4.70703 5.54688 4.20898C6.34375 3.74414 7.37305 3.74414 8.20312 4.20898C9 4.70703 9.53125 5.57031 9.53125 6.5C9.53125 7.46289 9 8.32617 8.20312 8.82422C7.37305 9.28906 6.34375 9.28906 5.54688 8.82422C4.7168 8.32617 4.21875 7.46289 4.21875 6.5Z"/>
+                                </svg>
+                                <p class="p-footer__infos-list-item-text">1 Place Joseph Thierry, 67500 Haguenau</p>
                             </div>
-                            <div class="swiper-slide block-simple-galerie__slider-swiper-slide">
-                                <div class="block-simple-galerie__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
-                                </div>
+                            <div class="p-footer__infos-list-item o-flex">
+                                <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M12.9512 9.28906L16.6699 10.8828C17.2676 11.1152 17.5996 11.7461 17.4668 12.377L16.6699 16.0957C16.5371 16.6934 15.9727 17.1582 15.375 17.1582C15.1426 17.1582 14.9434 17.125 14.7441 17.125C14.4121 17.125 14.0801 17.0918 13.7812 17.0586C6.31055 16.2617 0.5 9.95312 0.5 2.25C0.5 1.65234 0.931641 1.08789 1.5293 0.955078L5.24805 0.158203C5.87891 0.0253906 6.50977 0.357422 6.74219 0.955078L8.33594 4.67383C8.56836 5.20508 8.43555 5.83594 7.9707 6.20117L6.60938 7.33008C7.50586 8.85742 8.76758 10.1191 10.2949 11.0156L11.4238 9.6543C11.7891 9.18945 12.4199 9.05664 12.9512 9.28906ZM15.1426 15.5312L15.8398 12.2441L12.5195 10.8164L11.5566 12.0117C11.0586 12.6094 10.1953 12.7754 9.49805 12.377C7.73828 11.3477 6.27734 9.88672 5.24805 8.12695C4.84961 7.42969 5.01562 6.56641 5.61328 6.06836L6.80859 5.10547L5.38086 1.78516L2.09375 2.48242C2.19336 9.6543 7.9707 15.4316 15.1426 15.5312Z"/>
+                                </svg>
+                                <a class="p-footer__infos-list-item-text" href="tel:0388733041" target="_self">03 88 73 30 41</a>
+                            </div>
+                            <div class="p-footer__infos-list-item o-flex">
+                                <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M15.9062 9.625C15.9062 7.16797 14.5781 4.91016 12.4531 3.64844C10.2949 2.41992 7.67188 2.41992 5.54688 3.64844C3.38867 4.91016 2.09375 7.16797 2.09375 9.625C2.09375 12.1152 3.38867 14.373 5.54688 15.6348C7.67188 16.8633 10.2949 16.8633 12.4531 15.6348C14.5781 14.373 15.9062 12.1152 15.9062 9.625ZM0.5 9.625C0.5 6.60352 2.09375 3.81445 4.75 2.28711C7.37305 0.759766 10.5938 0.759766 13.25 2.28711C15.873 3.81445 17.5 6.60352 17.5 9.625C17.5 12.6797 15.873 15.4688 13.25 16.9961C10.5938 18.5234 7.37305 18.5234 4.75 16.9961C2.09375 15.4688 0.5 12.6797 0.5 9.625ZM8.20312 5.10938C8.20312 4.67773 8.53516 4.3125 9 4.3125C9.43164 4.3125 9.79688 4.67773 9.79688 5.10938V9.22656L12.6191 11.0859C12.9844 11.3516 13.084 11.8496 12.8516 12.2148C12.5859 12.5801 12.0879 12.6797 11.7227 12.4141L8.53516 10.2891C8.33594 10.1562 8.20312 9.89062 8.20312 9.625V5.10938Z"/>
+                                </svg>
+                                <p class="p-footer__infos-list-item-text">Lundi - vendredi : 13h30 - 17h30</p>
                             </div>
                         </div>
                     </div>
-                    <div thumbsSlider="" class="swiper block-simple-galerie__slider-thumbs" data-slider="slidergaleriethumbs">
-                        <div class="swiper-wrapper block-simple-galerie__slider-thumbs-swiper-wrapper">
-                            <div class="swiper-slide block-simple-galerie__slider-thumbs-swiper-slide">
-                                <div class="block-simple-galerie__slider-thumbs-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="block-simple-galerie__slider-thumbs-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="block-simple-galerie__slider-thumbs-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="block-simple-galerie__slider-thumbs-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de la galerie">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="block-simple-galerie__slider-buttons o-flex">
-                        <div class="block-simple-galerie__slider-buttons-item block-simple-galerie__slider-buttons-prev o-p-xs" data-slider="prev">
-                            <svg fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke="#12314e" d="M16.25 8.875H1.75M1.75 8.875L8.75 1.875M1.75 8.875L8.75 16.125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                        <div class="block-simple-galerie__slider-buttons-item block-simple-galerie__slider-buttons-next o-p-xs" data-slider="next">
-                            <svg fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                <path stroke="#12314e" d="M1.75 8.875H16.25M16.25 8.875L9.25 1.875M16.25 8.875L9.25 16.125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="block-simple-galerie__content-texts o-mt-xl o-mb-xl">
-                        <p>Sit tortor imperdiet et sociis ac cras nunc lacus senectus. In maecenas varius tristique bibendum semper congue ullamcorper. Amet donec et iaculis quis justo. Leo id neque malesuada sit adipiscing. Pellentesque a adipiscing cursus in id eget. Lobortis leo suspendisse libero sit adipiscing. Odio in tempor sagittis quis sem ut. Dolor tellus vestibulum nisl mauris lobortis nibh donec aliquet in. Ac odio nunc facilisi volutpat. Pellentesque enim dignissim vel ultricies fermentum curabitur aliquam. Facilisis sed quis nulla purus. Cursus duis pellentesque interdum etiam sit ipsum.</p>
+                    <div class="p-footer__submenu o-mt-3xl">
+                        <ul class="c-menu c-menu--row">
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Données personnelles</a>
+                            </li>
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Accessibilité</a>
+                            </li>
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Politique cookies</a>
+                            </li>
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Mentions légales</a>
+                            </li>
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Plan du site</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </article>
-        
-        </main>
-        
-        <!-- FOOTER -->
-        <footer class="p-footer">
-            <div class="p-footer__container o-wrapper o-grid o-grid--row-gap o-grid--ais o-pt-3xl o-pb-3xl">
-                <div class="p-footer__logo">
-                    <a class="p-footer__logo-link" href="index.html" target="_self">
-                        <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
-                    </a>
-                </div>
-                <div class="p-footer__menu">
-                    <p class="p-footer__menu-title o-h5">Maison des associations</p>
-                    <ul class="c-menu c-menu--col o-mt-s">
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">À propos</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Services</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Espace adhérents</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="p-footer__infos">
-                    <p class="p-footer__infos-title o-h5">Infos pratiques</p>
-                    <div class="p-footer__infos-list o-mt-s">
-                        <div class="p-footer__infos-list-item o-flex">
-                            <svg class="p-footer__infos-list-item-icon" fill="none" width="14" height="18" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" d="M11.6562 6.5C11.6562 3.87695 9.49805 1.71875 6.875 1.71875C4.21875 1.71875 2.09375 3.87695 2.09375 6.5C2.09375 6.93164 2.22656 7.5625 2.5918 8.42578C2.92383 9.22266 3.42188 10.1523 3.98633 11.082C4.94922 12.6094 6.04492 14.0703 6.875 15.1328C7.67188 14.0703 8.76758 12.6094 9.73047 11.082C10.2949 10.1523 10.793 9.22266 11.125 8.42578C11.4902 7.5625 11.6562 6.93164 11.6562 6.5ZM13.25 6.5C13.25 9.42188 9.36523 14.5684 7.63867 16.7266C7.24023 17.2246 6.47656 17.2246 6.07812 16.7266C4.38477 14.5684 0.5 9.42188 0.5 6.5C0.5 2.98047 3.35547 0.125 6.875 0.125C10.3945 0.125 13.25 2.98047 13.25 6.5ZM7.9375 6.5C7.9375 5.93555 7.43945 5.4375 6.875 5.4375C6.27734 5.4375 5.8125 5.93555 5.8125 6.5C5.8125 7.09766 6.27734 7.5625 6.875 7.5625C7.43945 7.5625 7.9375 7.09766 7.9375 6.5ZM4.21875 6.5C4.21875 5.57031 4.7168 4.70703 5.54688 4.20898C6.34375 3.74414 7.37305 3.74414 8.20312 4.20898C9 4.70703 9.53125 5.57031 9.53125 6.5C9.53125 7.46289 9 8.32617 8.20312 8.82422C7.37305 9.28906 6.34375 9.28906 5.54688 8.82422C4.7168 8.32617 4.21875 7.46289 4.21875 6.5Z"/>
-                            </svg>
-                            <p class="p-footer__infos-list-item-text">1 Place Joseph Thierry, 67500 Haguenau</p>
-                        </div>
-                        <div class="p-footer__infos-list-item o-flex">
-                            <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" d="M12.9512 9.28906L16.6699 10.8828C17.2676 11.1152 17.5996 11.7461 17.4668 12.377L16.6699 16.0957C16.5371 16.6934 15.9727 17.1582 15.375 17.1582C15.1426 17.1582 14.9434 17.125 14.7441 17.125C14.4121 17.125 14.0801 17.0918 13.7812 17.0586C6.31055 16.2617 0.5 9.95312 0.5 2.25C0.5 1.65234 0.931641 1.08789 1.5293 0.955078L5.24805 0.158203C5.87891 0.0253906 6.50977 0.357422 6.74219 0.955078L8.33594 4.67383C8.56836 5.20508 8.43555 5.83594 7.9707 6.20117L6.60938 7.33008C7.50586 8.85742 8.76758 10.1191 10.2949 11.0156L11.4238 9.6543C11.7891 9.18945 12.4199 9.05664 12.9512 9.28906ZM15.1426 15.5312L15.8398 12.2441L12.5195 10.8164L11.5566 12.0117C11.0586 12.6094 10.1953 12.7754 9.49805 12.377C7.73828 11.3477 6.27734 9.88672 5.24805 8.12695C4.84961 7.42969 5.01562 6.56641 5.61328 6.06836L6.80859 5.10547L5.38086 1.78516L2.09375 2.48242C2.19336 9.6543 7.9707 15.4316 15.1426 15.5312Z"/>
-                            </svg>
-                            <a class="p-footer__infos-list-item-text" href="tel:0388733041" target="_self">03 88 73 30 41</a>
-                        </div>
-                        <div class="p-footer__infos-list-item o-flex">
-                            <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" d="M15.9062 9.625C15.9062 7.16797 14.5781 4.91016 12.4531 3.64844C10.2949 2.41992 7.67188 2.41992 5.54688 3.64844C3.38867 4.91016 2.09375 7.16797 2.09375 9.625C2.09375 12.1152 3.38867 14.373 5.54688 15.6348C7.67188 16.8633 10.2949 16.8633 12.4531 15.6348C14.5781 14.373 15.9062 12.1152 15.9062 9.625ZM0.5 9.625C0.5 6.60352 2.09375 3.81445 4.75 2.28711C7.37305 0.759766 10.5938 0.759766 13.25 2.28711C15.873 3.81445 17.5 6.60352 17.5 9.625C17.5 12.6797 15.873 15.4688 13.25 16.9961C10.5938 18.5234 7.37305 18.5234 4.75 16.9961C2.09375 15.4688 0.5 12.6797 0.5 9.625ZM8.20312 5.10938C8.20312 4.67773 8.53516 4.3125 9 4.3125C9.43164 4.3125 9.79688 4.67773 9.79688 5.10938V9.22656L12.6191 11.0859C12.9844 11.3516 13.084 11.8496 12.8516 12.2148C12.5859 12.5801 12.0879 12.6797 11.7227 12.4141L8.53516 10.2891C8.33594 10.1562 8.20312 9.89062 8.20312 9.625V5.10938Z"/>
-                            </svg>
-                            <p class="p-footer__infos-list-item-text">Lundi - vendredi : 13h30 - 17h30</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-footer__submenu o-mt-3xl">
-                    <ul class="c-menu c-menu--row">
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Données personnelles</a>
-                        </li>
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Accessibilité</a>
-                        </li>
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Politique cookies</a>
-                        </li>
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Mentions légales</a>
-                        </li>
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Plan du site</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
         
         <!-- SCRIPTS -->
         <script type="module" id="site-js" src="./assets/scripts/app.js"></script>

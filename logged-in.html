@@ -29,665 +29,666 @@
 </head>
 
 <body class="user-logged" data-module-scroll data-module-load-disabled data-load="wrapper">
-    <div data-load="container">
-        
-        <!-- HEADER -->
-        <header class="p-header" data-module-menu>
-            <div class="p-header__background" data-menu="headerbackground"></div>
-            <div class="p-header__container o-wrapper o-grid o-grid--aic o-pt-m o-pb-xs">
-                <div class="p-header__logo">
-                    <a id="logo" class="p-header__logo-link" href="index.html" target="_self">
-                        <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
-                    </a>
-                    <a id="logo-light" class="p-header__logo-link o-dn" href="index.html" target="_self">
-                        <img src="./assets/images/logos/logo-light.svg" alt="Logo de la Maison des Associations de Haguenau">
-                    </a>
-                </div>
-                <nav class="p-header__menu o-grid o-grid--aic">
-                    <ul class="c-menu c-menu--closed c-menu--row o-p-m" data-menu="menucontainer">
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">À propos</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Services</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
-                        </li>
-                        <li class="c-menu__item c-menu__item--login o-dn">
-                            <a class="c-menu__item--login-link o-flex o-flex--aic o-tdn" href="index.html" target="_self">
-                                <div class="c-menu__item--login-image o-oh">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
-                                </div>
-                                <span class="c-menu__item--login-name">Nom Prénom</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="p-header__menu-login">
-                        <a class="p-header__menu-login-link o-flex o-flex--aic o-tdn" href="index.html" target="_self">
-                            <div class="p-header__menu-login-image o-oh">
-                                <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
-                            </div>
-                            <span class="p-header__menu-login-name">Nom Prénom</span>
-                            <svg class="p-header__menu-login-icon" fill="none" width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" d="M6.49609 6.88615L1.24609 1.63615C0.890625 1.30803 0.890625 0.73381 1.24609 0.405685C1.57422 0.0502167 2.14844 0.0502167 2.47656 0.405685L7.125 5.02678L11.7461 0.405685C12.0742 0.0502167 12.6484 0.0502167 12.9766 0.405685C13.332 0.73381 13.332 1.30803 12.9766 1.63615L7.72656 6.88615C7.39844 7.24162 6.82422 7.24162 6.49609 6.88615Z"/>
-                            </svg>
+    <div id="smooth-wrapper" data-load="container">
+        <div id="smooth-content">
+            <!-- HEADER -->
+            <header class="p-header" data-module-menu>
+                <div class="p-header__background" data-menu="headerbackground"></div>
+                <div class="p-header__container o-wrapper o-grid o-grid--aic o-pt-m o-pb-xs">
+                    <div class="p-header__logo">
+                        <a id="logo" class="p-header__logo-link" href="index.html" target="_self">
+                            <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
+                        </a>
+                        <a id="logo-light" class="p-header__logo-link o-dn" href="index.html" target="_self">
+                            <img src="./assets/images/logos/logo-light.svg" alt="Logo de la Maison des Associations de Haguenau">
                         </a>
                     </div>
-                    <div class="p-header__menu-toggle o-flex o-flex--ng o-flex--jce o-p-m o-br-3xl" data-menu="menutoggle">
-                        <svg class="p-header__menu-toggle-icon p-header__menu-toggle-open" fill="none" width="14" height="14" viewBox="0 0 13.9 12.3" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#12314e" d="M13.1,10.6c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
-                            <path fill="#12314e" d="M13.1,6.2c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
-                            <path fill="#12314e" d="M13.1,1.7c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
-                        </svg>
-                        <svg class="p-header__menu-toggle-icon p-header__menu-toggle-close" fill="none" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#12314e" d="M12.8,2.9c.5-.5.5-1.3,0-1.8s-1.3-.5-1.8,0l-4.1,4.1L2.9,1.2c-.5-.5-1.3-.5-1.8,0s-.5,1.3,0,1.8l4.1,4.1L1.2,11.1c-.5.5-.5,1.3,0,1.8s1.3.5,1.8,0l4.1-4.1,4.1,4.1c.5.5,1.3.5,1.8,0s.5-1.3,0-1.8l-4.1-4.1,4.1-4.1Z"/>
-                        </svg>
+                    <nav class="p-header__menu o-grid o-grid--aic">
+                        <ul class="c-menu c-menu--closed c-menu--row o-p-m" data-menu="menucontainer">
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">À propos</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Services</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
+                            </li>
+                            <li class="c-menu__item c-menu__item--login o-dn">
+                                <a class="c-menu__item--login-link o-flex o-flex--aic o-tdn" href="index.html" target="_self">
+                                    <div class="c-menu__item--login-image o-oh">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
+                                    </div>
+                                    <span class="c-menu__item--login-name">Nom Prénom</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="p-header__menu-login">
+                            <a class="p-header__menu-login-link o-flex o-flex--aic o-tdn" href="index.html" target="_self">
+                                <div class="p-header__menu-login-image o-oh">
+                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
+                                </div>
+                                <span class="p-header__menu-login-name">Nom Prénom</span>
+                                <svg class="p-header__menu-login-icon" fill="none" width="14" height="8" viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M6.49609 6.88615L1.24609 1.63615C0.890625 1.30803 0.890625 0.73381 1.24609 0.405685C1.57422 0.0502167 2.14844 0.0502167 2.47656 0.405685L7.125 5.02678L11.7461 0.405685C12.0742 0.0502167 12.6484 0.0502167 12.9766 0.405685C13.332 0.73381 13.332 1.30803 12.9766 1.63615L7.72656 6.88615C7.39844 7.24162 6.82422 7.24162 6.49609 6.88615Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="p-header__menu-toggle o-flex o-flex--ng o-flex--jce o-p-m o-br-3xl" data-menu="menutoggle">
+                            <svg class="p-header__menu-toggle-icon p-header__menu-toggle-open" fill="none" width="14" height="14" viewBox="0 0 13.9 12.3" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#12314e" d="M13.1,10.6c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
+                                <path fill="#12314e" d="M13.1,6.2c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
+                                <path fill="#12314e" d="M13.1,1.7c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
+                            </svg>
+                            <svg class="p-header__menu-toggle-icon p-header__menu-toggle-close" fill="none" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#12314e" d="M12.8,2.9c.5-.5.5-1.3,0-1.8s-1.3-.5-1.8,0l-4.1,4.1L2.9,1.2c-.5-.5-1.3-.5-1.8,0s-.5,1.3,0,1.8l4.1,4.1L1.2,11.1c-.5.5-.5,1.3,0,1.8s1.3.5,1.8,0l4.1-4.1,4.1,4.1c.5.5,1.3.5,1.8,0s.5-1.3,0-1.8l-4.1-4.1,4.1-4.1Z"/>
+                            </svg>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            
+            <main class="c-main o-oh">
+                
+                <!-- SECTION - HERO -->
+                <section class="p-hero p-hero--small o-flex o-flex--col o-flex--jce">
+                    <div class="p-hero__background">
+                        <img src="./assets/images/hero-background-logged.png" alt="Attribut alt de l'image de fond du hero">
                     </div>
-                </nav>
-            </div>
-        </header>
-        
-        <main class="c-main o-oh">
-            
-            <!-- SECTION - HERO -->
-            <section class="p-hero p-hero--small o-flex o-flex--col o-flex--jce">
-                <div class="p-hero__background">
-                    <img src="./assets/images/hero-background-logged.png" alt="Attribut alt de l'image de fond du hero">
-                </div>
-                <div class="p-hero__container o-wrapper o-grid o-pt-xl o-pb-xl">
-                    <h1 class="p-hero__title o-h2">Maison des Associations de Haguenau</h1>
-                </div>
-            </section>
-            
-            <!-- SECTION - LAST-TOPICS -->
-            <section class="block-last-topics o-flex o-flex--fw o-flex--aic o-mt-4xl o-mb-4xl">
-                <div class="block-last-topics__container o-wrapper o-grid o-grid--row-gap">
-                    <div class="block-last-topics__sidebar o-pt-4xl o-pb-m o-pr-m o-pl-m o-oh">
-                        <div class="block-last-topics__sidebar-background">
-                            <img src="./assets/images/dashboard-background.png" alt="Attribut alt de l'image de fond du dashboard">
-                        </div>
-                        <div class="block-last-topics__sidebar-user">
-                            <div class="block-last-topics__sidebar-user-profile o-mb-m o-oh">
-                                <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
+                    <div class="p-hero__container o-wrapper o-grid o-pt-xl o-pb-xl">
+                        <h1 class="p-hero__title o-h2">Maison des Associations de Haguenau</h1>
+                    </div>
+                </section>
+                
+                <!-- SECTION - LAST-TOPICS -->
+                <section class="block-last-topics o-flex o-flex--fw o-flex--aic o-mt-4xl o-mb-4xl">
+                    <div class="block-last-topics__container o-wrapper o-grid o-grid--row-gap">
+                        <div class="block-last-topics__sidebar o-pt-4xl o-pb-m o-pr-m o-pl-m o-oh">
+                            <div class="block-last-topics__sidebar-background">
+                                <img src="./assets/images/dashboard-background.png" alt="Attribut alt de l'image de fond du dashboard">
                             </div>
-                            <p class="block-last-topics__sidebar-user-name o-h5">Bienvenue, Nom Prénom</p>
-                            <p class="block-last-topics__sidebar-user-since o-small o-mt-2xs">Membre depuis mai 2023</p>
+                            <div class="block-last-topics__sidebar-user">
+                                <div class="block-last-topics__sidebar-user-profile o-mb-m o-oh">
+                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
+                                </div>
+                                <p class="block-last-topics__sidebar-user-name o-h5">Bienvenue, Nom Prénom</p>
+                                <p class="block-last-topics__sidebar-user-since o-small o-mt-2xs">Membre depuis mai 2023</p>
+                            </div>
+                            <div class="block-last-topics__sidebar-menu o-mt-s">
+                                <ul class="block-last-topics__sidebar-menu-list o-flex o-flex--col">
+                                    <li class="block-last-topics__sidebar-menu-item o-pt-xs o-pb-xs">
+                                        <a class="block-last-topics__sidebar-menu-link o-flex o-flex--ng o-tdn" href="#" target="_self">
+                                            <svg class="block-last-topics__sidebar-menu-link-icon" fill="none" width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="#ffffff" d="M1.6875 2.5625V5.9375H5.0625V2.5625H1.6875ZM0 2.5625C0 1.64844 0.738281 0.875 1.6875 0.875H5.0625C5.97656 0.875 6.75 1.64844 6.75 2.5625V5.9375C6.75 6.88672 5.97656 7.625 5.0625 7.625H1.6875C0.738281 7.625 0 6.88672 0 5.9375V2.5625ZM1.6875 11.5625V14.9375H5.0625V11.5625H1.6875ZM0 11.5625C0 10.6484 0.738281 9.875 1.6875 9.875H5.0625C5.97656 9.875 6.75 10.6484 6.75 11.5625V14.9375C6.75 15.8867 5.97656 16.625 5.0625 16.625H1.6875C0.738281 16.625 0 15.8867 0 14.9375V11.5625ZM14.0625 2.5625H10.6875V5.9375H14.0625V2.5625ZM10.6875 0.875H14.0625C14.9766 0.875 15.75 1.64844 15.75 2.5625V5.9375C15.75 6.88672 14.9766 7.625 14.0625 7.625H10.6875C9.73828 7.625 9 6.88672 9 5.9375V2.5625C9 1.64844 9.73828 0.875 10.6875 0.875ZM10.6875 11.5625V14.9375H14.0625V11.5625H10.6875ZM9 11.5625C9 10.6484 9.73828 9.875 10.6875 9.875H14.0625C14.9766 9.875 15.75 10.6484 15.75 11.5625V14.9375C15.75 15.8867 14.9766 16.625 14.0625 16.625H10.6875C9.73828 16.625 9 15.8867 9 14.9375V11.5625Z"/>
+                                            </svg>
+                                            <span class="block-last-topics__sidebar-menu-link-text">Tableau de bord</span>
+                                        </a>
+                                    </li>
+                                    <li class="block-last-topics__sidebar-menu-item o-pt-xs o-pb-xs">
+                                        <a class="block-last-topics__sidebar-menu-link o-flex o-flex--ng o-tdn" href="#" target="_self">
+                                            <svg class="block-last-topics__sidebar-menu-link-icon" fill="none" width="22" height="21" viewBox="0 0 22 21" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="#ffffff" d="M16.8594 16.1322C18.2656 14.6869 19.125 12.6947 19.125 10.5072C19.125 6.05412 15.4531 2.38225 11 2.38225C6.50781 2.38225 2.875 6.05412 2.875 10.5072C2.875 12.6947 3.69531 14.6869 5.10156 16.1322C5.84375 14.2963 7.64062 13.0072 9.75 13.0072H12.25C14.3203 13.0072 16.1172 14.2963 16.8594 16.1322ZM15.2969 17.4213C15.0234 15.976 13.7344 14.8822 12.25 14.8822H9.75C8.22656 14.8822 6.9375 15.976 6.66406 17.4213C7.91406 18.2026 9.39844 18.6322 11 18.6322C12.5625 18.6322 14.0469 18.2026 15.2969 17.4213ZM11 20.5072C7.40625 20.5072 4.125 18.6322 2.32812 15.5072C0.53125 12.4213 0.53125 8.63225 2.32812 5.50725C4.125 2.42131 7.40625 0.507248 11 0.507248C14.5547 0.507248 17.8359 2.42131 19.6328 5.50725C21.4297 8.63225 21.4297 12.4213 19.6328 15.5072C17.8359 18.6322 14.5547 20.5072 11 20.5072ZM11 9.88225C11.5469 9.88225 12.0547 9.60881 12.3281 9.101C12.6016 8.63225 12.6016 8.04631 12.3281 7.5385C12.0547 7.06975 11.5469 6.75725 11 6.75725C10.4141 6.75725 9.90625 7.06975 9.63281 7.5385C9.35938 8.04631 9.35938 8.63225 9.63281 9.101C9.90625 9.60881 10.4141 9.88225 11 9.88225ZM7.5625 8.31975C7.5625 7.10881 8.1875 5.976 9.28125 5.351C10.3359 4.76506 11.625 4.76506 12.7188 5.351C13.7734 5.976 14.4375 7.10881 14.4375 8.31975C14.4375 9.56975 13.7734 10.7026 12.7188 11.3276C11.625 11.9135 10.3359 11.9135 9.28125 11.3276C8.1875 10.7026 7.5625 9.56975 7.5625 8.31975Z"/>
+                                            </svg>
+                                            <span class="block-last-topics__sidebar-menu-link-text">Mes infos</span>
+                                        </a>
+                                    </li>
+                                    <li class="block-last-topics__sidebar-menu-item o-pt-xs o-pb-xs">
+                                        <a class="block-last-topics__sidebar-menu-link o-flex o-flex--ng o-tdn" href="#" target="_self">
+                                            <svg class="block-last-topics__sidebar-menu-link-icon" fill="none" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="#ffffff" d="M5.90625 2.5625C5.41406 2.5625 5.0625 2.94922 5.0625 3.40625V14.0938C5.0625 14.4102 4.99219 14.6914 4.88672 14.9375H15.4688C15.9258 14.9375 16.3125 14.5859 16.3125 14.0938V3.40625C16.3125 2.94922 15.9258 2.5625 15.4688 2.5625H5.90625ZM2.53125 14.9375C2.98828 14.9375 3.375 14.5859 3.375 14.0938V3.40625C3.375 2.03516 4.5 0.875 5.90625 0.875H15.4688C16.8398 0.875 18 2.03516 18 3.40625V14.0938C18 15.5 16.8398 16.625 15.4688 16.625H2.53125C1.125 16.625 0 15.5 0 14.0938V3.6875C0 3.23047 0.351562 2.84375 0.84375 2.84375C1.30078 2.84375 1.6875 3.23047 1.6875 3.6875V14.0938C1.6875 14.5859 2.03906 14.9375 2.53125 14.9375ZM6.1875 4.53125C6.1875 4.07422 6.53906 3.6875 7.03125 3.6875H14.3438C14.8008 3.6875 15.1875 4.07422 15.1875 4.53125V7.34375C15.1875 7.83594 14.8008 8.1875 14.3438 8.1875H7.03125C6.53906 8.1875 6.1875 7.83594 6.1875 7.34375V4.53125ZM7.03125 9.3125H9.28125C9.73828 9.3125 10.125 9.69922 10.125 10.1562C10.125 10.6484 9.73828 11 9.28125 11H7.03125C6.53906 11 6.1875 10.6484 6.1875 10.1562C6.1875 9.69922 6.53906 9.3125 7.03125 9.3125ZM12.0938 9.3125H14.3438C14.8008 9.3125 15.1875 9.69922 15.1875 10.1562C15.1875 10.6484 14.8008 11 14.3438 11H12.0938C11.6016 11 11.25 10.6484 11.25 10.1562C11.25 9.69922 11.6016 9.3125 12.0938 9.3125ZM7.03125 12.125H9.28125C9.73828 12.125 10.125 12.5117 10.125 12.9688C10.125 13.4609 9.73828 13.8125 9.28125 13.8125H7.03125C6.53906 13.8125 6.1875 13.4609 6.1875 12.9688C6.1875 12.5117 6.53906 12.125 7.03125 12.125ZM12.0938 12.125H14.3438C14.8008 12.125 15.1875 12.5117 15.1875 12.9688C15.1875 13.4609 14.8008 13.8125 14.3438 13.8125H12.0938C11.6016 13.8125 11.25 13.4609 11.25 12.9688C11.25 12.5117 11.6016 12.125 12.0938 12.125Z"/>
+                                            </svg>
+                                            <span class="block-last-topics__sidebar-menu-link-text">Mes articles</span>
+                                        </a>
+                                    </li>
+                                    <li class="block-last-topics__sidebar-menu-item o-pt-xs o-pb-xs">
+                                        <a class="block-last-topics__sidebar-menu-link o-flex o-flex--ng o-tdn" href="#" target="_self">
+                                            <svg class="block-last-topics__sidebar-menu-link-icon" fill="none" width="24" height="19" viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="#ffffff" d="M4.09375 11.6484C4.05859 11.7188 4.02344 11.7891 3.95312 11.8242C3.88281 12 3.77734 12.1406 3.70703 12.3164C4.30469 12.1758 4.86719 11.9297 5.42969 11.6836C5.60547 11.6133 5.74609 11.543 5.88672 11.4727C6.23828 11.2969 6.58984 11.2617 6.97656 11.332C7.39844 11.4023 7.82031 11.4375 8.3125 11.4375C11.6875 11.4375 13.9375 9.1875 13.9375 6.9375C13.9375 4.72266 11.6875 2.4375 8.3125 2.4375C4.90234 2.4375 2.6875 4.72266 2.6875 6.9375C2.6875 7.92188 3.07422 8.87109 3.8125 9.67969C4.33984 10.207 4.44531 10.9805 4.09375 11.6484ZM1 6.9375C1 3.52734 4.26953 0.75 8.3125 0.75C12.3203 0.75 15.625 3.52734 15.625 6.9375C15.625 10.3828 12.3203 13.125 8.3125 13.125C7.71484 13.125 7.1875 13.0898 6.625 12.9844C6.48438 13.0547 6.30859 13.1602 6.13281 13.2305C4.86719 13.793 3.35547 14.25 1.84375 14.25C1.49219 14.25 1.17578 14.0742 1.03516 13.7578C0.929688 13.4414 0.964844 13.0898 1.21094 12.8438C1.70312 12.2812 2.125 11.6484 2.51172 11.0156C2.54688 10.9453 2.58203 10.875 2.58203 10.8398C1.59766 9.78516 1 8.41406 1 6.9375ZM16.1875 17.625C13.3047 17.625 10.8086 16.2188 9.61328 14.1797C10.2109 14.0742 10.8086 13.9336 11.3711 13.7578C12.2852 15.0234 14.0078 15.9375 16.1523 15.9375C16.6445 15.9375 17.0664 15.9023 17.4883 15.832C17.875 15.7617 18.2266 15.7969 18.5781 15.9727C18.7188 16.043 18.8594 16.1133 19.0352 16.1836C19.5977 16.4297 20.1602 16.6406 20.7578 16.8164C20.6875 16.6406 20.582 16.5 20.5117 16.3242C20.4766 16.2539 20.4062 16.1836 20.3711 16.1133C20.0547 15.4805 20.1602 14.707 20.6523 14.1797C21.3906 13.3711 21.8125 12.4219 21.8125 11.4375C21.8125 9.36328 19.8086 7.21875 16.75 6.97266V6.9375C16.75 6.375 16.6445 5.8125 16.5039 5.28516C20.4062 5.42578 23.5 8.13281 23.5 11.4375C23.5 12.9141 22.8672 14.2852 21.8828 15.3398C21.8828 15.4102 21.918 15.4453 21.9531 15.5156C22.3398 16.1484 22.7617 16.7812 23.2539 17.3438C23.5 17.5898 23.5352 17.9414 23.4297 18.2578C23.2891 18.5742 22.9727 18.75 22.6562 18.75C21.1445 18.75 19.5977 18.293 18.332 17.7305C18.1562 17.6602 17.9805 17.5547 17.8398 17.4844C17.2773 17.5898 16.75 17.625 16.1875 17.625Z"/>
+                                            </svg>
+                                            <span class="block-last-topics__sidebar-menu-link-text">Mes discussions</span>
+                                        </a>
+                                    </li>
+                                    <li class="block-last-topics__sidebar-menu-item o-pt-xs o-pb-xs">
+                                        <a class="block-last-topics__sidebar-menu-link o-flex o-flex--ng o-tdn" href="#" target="_self">
+                                            <svg class="block-last-topics__sidebar-menu-link-icon" fill="none" width="21" height="17" viewBox="0 0 21 17" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="#ffffff" d="M5.625 2.5625C5.30859 2.5625 5.0625 2.84375 5.0625 3.125V11C5.0625 11.3164 5.30859 11.5625 5.625 11.5625H6.15234L8.57812 8.25781C8.75391 8.04688 9 7.90625 9.24609 7.90625C9.52734 7.90625 9.77344 8.04688 9.94922 8.25781L10.3711 8.85547L12.1992 6.04297C12.375 5.83203 12.6211 5.65625 12.9375 5.65625C13.2188 5.65625 13.4648 5.83203 13.6406 6.04297L17.2266 11.5625H18C18.2812 11.5625 18.5625 11.3164 18.5625 11V3.125C18.5625 2.84375 18.2812 2.5625 18 2.5625H5.625ZM3.375 3.125C3.375 1.89453 4.35938 0.875 5.625 0.875H18C19.2305 0.875 20.25 1.89453 20.25 3.125V11C20.25 12.2656 19.2305 13.25 18 13.25H5.625C4.35938 13.25 3.375 12.2656 3.375 11V3.125ZM1.6875 3.96875V11.8438C1.6875 13.5664 3.05859 14.9375 4.78125 14.9375H16.0312C16.4883 14.9375 16.875 15.3242 16.875 15.7812C16.875 16.2734 16.4883 16.625 16.0312 16.625H4.78125C2.10938 16.625 0 14.5156 0 11.8438V3.96875C0 3.51172 0.351562 3.125 0.84375 3.125C1.30078 3.125 1.6875 3.51172 1.6875 3.96875ZM9 4.8125C9 5.44531 8.47266 5.9375 7.875 5.9375C7.24219 5.9375 6.75 5.44531 6.75 4.8125C6.75 4.21484 7.24219 3.6875 7.875 3.6875C8.47266 3.6875 9 4.21484 9 4.8125Z"/>
+                                            </svg>
+                                            <span class="block-last-topics__sidebar-menu-link-text">Mes galeries photos</span>
+                                        </a>
+                                    </li>
+                                    <li class="block-last-topics__sidebar-menu-item o-pt-xs o-pb-xs">
+                                        <a class="block-last-topics__sidebar-menu-link o-flex o-flex--ng o-tdn" href="#" target="_self">
+                                            <svg class="block-last-topics__sidebar-menu-link-icon" fill="none" width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="#ffffff" d="M17.7539 8.84766L13.2539 13.3477C12.9023 13.6992 12.375 13.6992 12.0586 13.3477C11.707 13.0312 11.707 12.5039 12.0586 12.1523L15.1172 9.09375H6.46875C5.97656 9.09375 5.625 8.74219 5.625 8.25C5.625 7.79297 5.97656 7.40625 6.46875 7.40625H15.1172L12.0586 4.34766C11.707 4.03125 11.707 3.50391 12.0586 3.15234C12.375 2.83594 12.9023 2.83594 13.2539 3.15234L17.7539 7.6875C18.0703 8.00391 18.0703 8.53125 17.7539 8.84766ZM5.90625 2.0625H3.09375C2.28516 2.0625 1.6875 2.69531 1.6875 3.46875V13.0312C1.6875 13.8398 2.28516 14.4375 3.09375 14.4375H5.90625C6.36328 14.4375 6.75 14.8242 6.75 15.2812C6.75 15.7734 6.36328 16.125 5.90625 16.125H3.09375C1.37109 16.125 0 14.7539 0 13.0312V3.46875C0 1.78125 1.37109 0.375 3.09375 0.375H5.90625C6.36328 0.375 6.75 0.761719 6.75 1.21875C6.75 1.71094 6.36328 2.0625 5.90625 2.0625Z"/>
+                                            </svg>
+                                            <span class="block-last-topics__sidebar-menu-link-text">Se déconnecter</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="block-last-topics__sidebar-menu o-mt-s">
-                            <ul class="block-last-topics__sidebar-menu-list o-flex o-flex--col">
-                                <li class="block-last-topics__sidebar-menu-item o-pt-xs o-pb-xs">
-                                    <a class="block-last-topics__sidebar-menu-link o-flex o-flex--ng o-tdn" href="#" target="_self">
-                                        <svg class="block-last-topics__sidebar-menu-link-icon" fill="none" width="16" height="17" viewBox="0 0 16 17" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="#ffffff" d="M1.6875 2.5625V5.9375H5.0625V2.5625H1.6875ZM0 2.5625C0 1.64844 0.738281 0.875 1.6875 0.875H5.0625C5.97656 0.875 6.75 1.64844 6.75 2.5625V5.9375C6.75 6.88672 5.97656 7.625 5.0625 7.625H1.6875C0.738281 7.625 0 6.88672 0 5.9375V2.5625ZM1.6875 11.5625V14.9375H5.0625V11.5625H1.6875ZM0 11.5625C0 10.6484 0.738281 9.875 1.6875 9.875H5.0625C5.97656 9.875 6.75 10.6484 6.75 11.5625V14.9375C6.75 15.8867 5.97656 16.625 5.0625 16.625H1.6875C0.738281 16.625 0 15.8867 0 14.9375V11.5625ZM14.0625 2.5625H10.6875V5.9375H14.0625V2.5625ZM10.6875 0.875H14.0625C14.9766 0.875 15.75 1.64844 15.75 2.5625V5.9375C15.75 6.88672 14.9766 7.625 14.0625 7.625H10.6875C9.73828 7.625 9 6.88672 9 5.9375V2.5625C9 1.64844 9.73828 0.875 10.6875 0.875ZM10.6875 11.5625V14.9375H14.0625V11.5625H10.6875ZM9 11.5625C9 10.6484 9.73828 9.875 10.6875 9.875H14.0625C14.9766 9.875 15.75 10.6484 15.75 11.5625V14.9375C15.75 15.8867 14.9766 16.625 14.0625 16.625H10.6875C9.73828 16.625 9 15.8867 9 14.9375V11.5625Z"/>
-                                        </svg>
-                                        <span class="block-last-topics__sidebar-menu-link-text">Tableau de bord</span>
-                                    </a>
+                        <div class="block-last-topics__content o-mt-m">
+                            <h2 class="block-last-topics__content-title o-h3">Dernières discussions</h2>
+                            <ul class="block-last-topics__list o-mt-m o-mb-m">
+                                <li class="block-last-topics__list-item">
+                                    <div class="c-topic-card o-flex o-flex--fw o-flex--jce o-pt-m o-pb-m">
+                                        <div class="c-topic-card__image">
+                                            <a class="c-topic-card__image-link o-oh" href="answers.html">
+                                                <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
+                                            </a>
+                                        </div>
+                                        <div class="c-topic-card__texts">
+                                            <a class="c-topic-card__texts-title o-h6 o-tdn" href="answers.html" target="_self">Lorem ipsum dolor sit amet consectetur, velit mauris consequat placerat sapien.</a>
+                                            <div class="c-topic-card__texts-infos o-flex o-flex--fw o-flex--ng o-mt-2xs">
+                                                <div class="c-topic-card__texts-infos-pseudo o-flex o-flex--ng o-flex--aic">
+                                                    <a href="#" target="_self">Pseudo</a>
+                                                </div>
+                                                <div class="c-topic-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
+                                                    <svg class="c-topic-card__texts-infos-date-icon" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
+                                                    </svg>
+                                                    <p class="c-topic-card__texts-infos-date-text">18. Oct 2023 à 16h42</p>
+                                                </div>
+                                                <div class="c-topic-card__texts-infos-tags o-flex o-flex--fw o-flex--ng o-flex--aic">
+                                                    <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                        <p class="c-topic-card__texts-infos-tags-text">Catégorie 1</p>
+                                                    </div>
+                                                    <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                        <p class="c-topic-card__texts-infos-tags-text">Étiquette 5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-topic-card__metas o-flex o-flex--aie o-mt-s">
+                                            <div class="c-topic-card__metas-comments o-flex o-flex--ng">
+                                                <svg class="c-topic-card__metas-comments-icon" fill="none" width="24" height="19" viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#12314e" d="M4.09375 11.6484C4.05859 11.7188 4.02344 11.7891 3.95312 11.8242C3.88281 12 3.77734 12.1406 3.70703 12.3164C4.30469 12.1758 4.86719 11.9297 5.42969 11.6836C5.60547 11.6133 5.74609 11.543 5.88672 11.4727C6.23828 11.2969 6.58984 11.2617 6.97656 11.332C7.39844 11.4023 7.82031 11.4375 8.3125 11.4375C11.6875 11.4375 13.9375 9.1875 13.9375 6.9375C13.9375 4.72266 11.6875 2.4375 8.3125 2.4375C4.90234 2.4375 2.6875 4.72266 2.6875 6.9375C2.6875 7.92188 3.07422 8.87109 3.8125 9.67969C4.33984 10.207 4.44531 10.9805 4.09375 11.6484ZM1 6.9375C1 3.52734 4.26953 0.75 8.3125 0.75C12.3203 0.75 15.625 3.52734 15.625 6.9375C15.625 10.3828 12.3203 13.125 8.3125 13.125C7.71484 13.125 7.1875 13.0898 6.625 12.9844C6.48438 13.0547 6.30859 13.1602 6.13281 13.2305C4.86719 13.793 3.35547 14.25 1.84375 14.25C1.49219 14.25 1.17578 14.0742 1.03516 13.7578C0.929688 13.4414 0.964844 13.0898 1.21094 12.8438C1.70312 12.2812 2.125 11.6484 2.51172 11.0156C2.54688 10.9453 2.58203 10.875 2.58203 10.8398C1.59766 9.78516 1 8.41406 1 6.9375ZM16.1875 17.625C13.3047 17.625 10.8086 16.2188 9.61328 14.1797C10.2109 14.0742 10.8086 13.9336 11.3711 13.7578C12.2852 15.0234 14.0078 15.9375 16.1523 15.9375C16.6445 15.9375 17.0664 15.9023 17.4883 15.832C17.875 15.7617 18.2266 15.7969 18.5781 15.9727C18.7188 16.043 18.8594 16.1133 19.0352 16.1836C19.5977 16.4297 20.1602 16.6406 20.7578 16.8164C20.6875 16.6406 20.582 16.5 20.5117 16.3242C20.4766 16.2539 20.4062 16.1836 20.3711 16.1133C20.0547 15.4805 20.1602 14.707 20.6523 14.1797C21.3906 13.3711 21.8125 12.4219 21.8125 11.4375C21.8125 9.36328 19.8086 7.21875 16.75 6.97266V6.9375C16.75 6.375 16.6445 5.8125 16.5039 5.28516C20.4062 5.42578 23.5 8.13281 23.5 11.4375C23.5 12.9141 22.8672 14.2852 21.8828 15.3398C21.8828 15.4102 21.918 15.4453 21.9531 15.5156C22.3398 16.1484 22.7617 16.7812 23.2539 17.3438C23.5 17.5898 23.5352 17.9414 23.4297 18.2578C23.2891 18.5742 22.9727 18.75 22.6562 18.75C21.1445 18.75 19.5977 18.293 18.332 17.7305C18.1562 17.6602 17.9805 17.5547 17.8398 17.4844C17.2773 17.5898 16.75 17.625 16.1875 17.625Z"/>
+                                                </svg>
+                                                <span class="c-topic-card__metas-comments-text">2</span>
+                                            </div>
+                                            <div class="c-topic-card__metas-views o-flex o-flex--ng">
+                                                <svg class="c-topic-card__metas-views-icon" fill="none" width="19" height="15" viewBox="0 0 19 15" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#12314e" d="M10 2C7.9375 2 6.28125 2.9375 5 4.125C3.78125 5.25 2.96875 6.5625 2.53125 7.5C2.96875 8.4375 3.78125 9.78125 5 10.9062C6.28125 12.0938 7.9375 13 10 13C12.0312 13 13.6875 12.0938 14.9688 10.9062C16.1875 9.78125 17.0312 8.4375 17.4375 7.5C17.0312 6.5625 16.1875 5.25 15 4.125C13.6875 2.9375 12.0312 2 10 2ZM3.96875 3.03125C5.4375 1.65625 7.46875 0.5 10 0.5C12.5 0.5 14.5312 1.65625 16 3.03125C17.4688 4.40625 18.4375 6 18.9062 7.125C19 7.375 19 7.65625 18.9062 7.90625C18.4375 9 17.4688 10.625 16 12C14.5312 13.375 12.5 14.5 10 14.5C7.46875 14.5 5.4375 13.375 3.96875 12C2.5 10.625 1.53125 9 1.0625 7.90625C0.96875 7.65625 0.96875 7.375 1.0625 7.125C1.53125 6 2.5 4.375 3.96875 3.03125ZM10 10C11.375 10 12.5 8.90625 12.5 7.5C12.5 6.125 11.375 5 10 5C9.96875 5 9.9375 5 9.9375 5C9.96875 5.1875 10 5.34375 10 5.5C10 6.625 9.09375 7.5 8 7.5C7.8125 7.5 7.65625 7.5 7.5 7.4375C7.5 7.46875 7.5 7.5 7.5 7.5C7.5 8.90625 8.59375 10 10 10ZM10 3.5C11.4062 3.5 12.7188 4.28125 13.4375 5.5C14.1562 6.75 14.1562 8.28125 13.4375 9.5C12.7188 10.75 11.4062 11.5 10 11.5C8.5625 11.5 7.25 10.75 6.53125 9.5C5.8125 8.28125 5.8125 6.75 6.53125 5.5C7.25 4.28125 8.5625 3.5 10 3.5Z"/>
+                                                </svg>
+                                                <span class="c-topic-card__metas-views-text">16</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li class="block-last-topics__sidebar-menu-item o-pt-xs o-pb-xs">
-                                    <a class="block-last-topics__sidebar-menu-link o-flex o-flex--ng o-tdn" href="#" target="_self">
-                                        <svg class="block-last-topics__sidebar-menu-link-icon" fill="none" width="22" height="21" viewBox="0 0 22 21" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="#ffffff" d="M16.8594 16.1322C18.2656 14.6869 19.125 12.6947 19.125 10.5072C19.125 6.05412 15.4531 2.38225 11 2.38225C6.50781 2.38225 2.875 6.05412 2.875 10.5072C2.875 12.6947 3.69531 14.6869 5.10156 16.1322C5.84375 14.2963 7.64062 13.0072 9.75 13.0072H12.25C14.3203 13.0072 16.1172 14.2963 16.8594 16.1322ZM15.2969 17.4213C15.0234 15.976 13.7344 14.8822 12.25 14.8822H9.75C8.22656 14.8822 6.9375 15.976 6.66406 17.4213C7.91406 18.2026 9.39844 18.6322 11 18.6322C12.5625 18.6322 14.0469 18.2026 15.2969 17.4213ZM11 20.5072C7.40625 20.5072 4.125 18.6322 2.32812 15.5072C0.53125 12.4213 0.53125 8.63225 2.32812 5.50725C4.125 2.42131 7.40625 0.507248 11 0.507248C14.5547 0.507248 17.8359 2.42131 19.6328 5.50725C21.4297 8.63225 21.4297 12.4213 19.6328 15.5072C17.8359 18.6322 14.5547 20.5072 11 20.5072ZM11 9.88225C11.5469 9.88225 12.0547 9.60881 12.3281 9.101C12.6016 8.63225 12.6016 8.04631 12.3281 7.5385C12.0547 7.06975 11.5469 6.75725 11 6.75725C10.4141 6.75725 9.90625 7.06975 9.63281 7.5385C9.35938 8.04631 9.35938 8.63225 9.63281 9.101C9.90625 9.60881 10.4141 9.88225 11 9.88225ZM7.5625 8.31975C7.5625 7.10881 8.1875 5.976 9.28125 5.351C10.3359 4.76506 11.625 4.76506 12.7188 5.351C13.7734 5.976 14.4375 7.10881 14.4375 8.31975C14.4375 9.56975 13.7734 10.7026 12.7188 11.3276C11.625 11.9135 10.3359 11.9135 9.28125 11.3276C8.1875 10.7026 7.5625 9.56975 7.5625 8.31975Z"/>
-                                        </svg>
-                                        <span class="block-last-topics__sidebar-menu-link-text">Mes infos</span>
-                                    </a>
+                                <li class="block-last-topics__list-item">
+                                    <div class="c-topic-card o-flex o-flex--fw o-flex--jce o-pt-m o-pb-m">
+                                        <div class="c-topic-card__image">
+                                            <a class="c-topic-card__image-link o-oh" href="answers.html">
+                                                <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
+                                            </a>
+                                        </div>
+                                        <div class="c-topic-card__texts">
+                                            <a class="c-topic-card__texts-title o-h6 o-tdn" href="answers.html" target="_self">Lorem ipsum dolor sit amet consectetur, velit mauris consequat placerat sapien.</a>
+                                            <div class="c-topic-card__texts-infos o-flex o-flex--fw o-flex--ng o-mt-2xs">
+                                                <div class="c-topic-card__texts-infos-pseudo o-flex o-flex--ng o-flex--aic">
+                                                    <a href="#" target="_self">Pseudo</a>
+                                                </div>
+                                                <div class="c-topic-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
+                                                    <svg class="c-topic-card__texts-infos-date-icon" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
+                                                    </svg>
+                                                    <p class="c-topic-card__texts-infos-date-text">18. Oct 2023 à 16h42</p>
+                                                </div>
+                                                <div class="c-topic-card__texts-infos-tags o-flex o-flex--fw o-flex--ng o-flex--aic">
+                                                    <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                        <p class="c-topic-card__texts-infos-tags-text">Catégorie 1</p>
+                                                    </div>
+                                                    <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                        <p class="c-topic-card__texts-infos-tags-text">Étiquette 5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-topic-card__metas o-flex o-flex--aie o-mt-s">
+                                            <div class="c-topic-card__metas-comments o-flex o-flex--ng">
+                                                <svg class="c-topic-card__metas-comments-icon" fill="none" width="24" height="19" viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#12314e" d="M4.09375 11.6484C4.05859 11.7188 4.02344 11.7891 3.95312 11.8242C3.88281 12 3.77734 12.1406 3.70703 12.3164C4.30469 12.1758 4.86719 11.9297 5.42969 11.6836C5.60547 11.6133 5.74609 11.543 5.88672 11.4727C6.23828 11.2969 6.58984 11.2617 6.97656 11.332C7.39844 11.4023 7.82031 11.4375 8.3125 11.4375C11.6875 11.4375 13.9375 9.1875 13.9375 6.9375C13.9375 4.72266 11.6875 2.4375 8.3125 2.4375C4.90234 2.4375 2.6875 4.72266 2.6875 6.9375C2.6875 7.92188 3.07422 8.87109 3.8125 9.67969C4.33984 10.207 4.44531 10.9805 4.09375 11.6484ZM1 6.9375C1 3.52734 4.26953 0.75 8.3125 0.75C12.3203 0.75 15.625 3.52734 15.625 6.9375C15.625 10.3828 12.3203 13.125 8.3125 13.125C7.71484 13.125 7.1875 13.0898 6.625 12.9844C6.48438 13.0547 6.30859 13.1602 6.13281 13.2305C4.86719 13.793 3.35547 14.25 1.84375 14.25C1.49219 14.25 1.17578 14.0742 1.03516 13.7578C0.929688 13.4414 0.964844 13.0898 1.21094 12.8438C1.70312 12.2812 2.125 11.6484 2.51172 11.0156C2.54688 10.9453 2.58203 10.875 2.58203 10.8398C1.59766 9.78516 1 8.41406 1 6.9375ZM16.1875 17.625C13.3047 17.625 10.8086 16.2188 9.61328 14.1797C10.2109 14.0742 10.8086 13.9336 11.3711 13.7578C12.2852 15.0234 14.0078 15.9375 16.1523 15.9375C16.6445 15.9375 17.0664 15.9023 17.4883 15.832C17.875 15.7617 18.2266 15.7969 18.5781 15.9727C18.7188 16.043 18.8594 16.1133 19.0352 16.1836C19.5977 16.4297 20.1602 16.6406 20.7578 16.8164C20.6875 16.6406 20.582 16.5 20.5117 16.3242C20.4766 16.2539 20.4062 16.1836 20.3711 16.1133C20.0547 15.4805 20.1602 14.707 20.6523 14.1797C21.3906 13.3711 21.8125 12.4219 21.8125 11.4375C21.8125 9.36328 19.8086 7.21875 16.75 6.97266V6.9375C16.75 6.375 16.6445 5.8125 16.5039 5.28516C20.4062 5.42578 23.5 8.13281 23.5 11.4375C23.5 12.9141 22.8672 14.2852 21.8828 15.3398C21.8828 15.4102 21.918 15.4453 21.9531 15.5156C22.3398 16.1484 22.7617 16.7812 23.2539 17.3438C23.5 17.5898 23.5352 17.9414 23.4297 18.2578C23.2891 18.5742 22.9727 18.75 22.6562 18.75C21.1445 18.75 19.5977 18.293 18.332 17.7305C18.1562 17.6602 17.9805 17.5547 17.8398 17.4844C17.2773 17.5898 16.75 17.625 16.1875 17.625Z"/>
+                                                </svg>
+                                                <span class="c-topic-card__metas-comments-text">2</span>
+                                            </div>
+                                            <div class="c-topic-card__metas-views o-flex o-flex--ng">
+                                                <svg class="c-topic-card__metas-views-icon" fill="none" width="19" height="15" viewBox="0 0 19 15" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#12314e" d="M10 2C7.9375 2 6.28125 2.9375 5 4.125C3.78125 5.25 2.96875 6.5625 2.53125 7.5C2.96875 8.4375 3.78125 9.78125 5 10.9062C6.28125 12.0938 7.9375 13 10 13C12.0312 13 13.6875 12.0938 14.9688 10.9062C16.1875 9.78125 17.0312 8.4375 17.4375 7.5C17.0312 6.5625 16.1875 5.25 15 4.125C13.6875 2.9375 12.0312 2 10 2ZM3.96875 3.03125C5.4375 1.65625 7.46875 0.5 10 0.5C12.5 0.5 14.5312 1.65625 16 3.03125C17.4688 4.40625 18.4375 6 18.9062 7.125C19 7.375 19 7.65625 18.9062 7.90625C18.4375 9 17.4688 10.625 16 12C14.5312 13.375 12.5 14.5 10 14.5C7.46875 14.5 5.4375 13.375 3.96875 12C2.5 10.625 1.53125 9 1.0625 7.90625C0.96875 7.65625 0.96875 7.375 1.0625 7.125C1.53125 6 2.5 4.375 3.96875 3.03125ZM10 10C11.375 10 12.5 8.90625 12.5 7.5C12.5 6.125 11.375 5 10 5C9.96875 5 9.9375 5 9.9375 5C9.96875 5.1875 10 5.34375 10 5.5C10 6.625 9.09375 7.5 8 7.5C7.8125 7.5 7.65625 7.5 7.5 7.4375C7.5 7.46875 7.5 7.5 7.5 7.5C7.5 8.90625 8.59375 10 10 10ZM10 3.5C11.4062 3.5 12.7188 4.28125 13.4375 5.5C14.1562 6.75 14.1562 8.28125 13.4375 9.5C12.7188 10.75 11.4062 11.5 10 11.5C8.5625 11.5 7.25 10.75 6.53125 9.5C5.8125 8.28125 5.8125 6.75 6.53125 5.5C7.25 4.28125 8.5625 3.5 10 3.5Z"/>
+                                                </svg>
+                                                <span class="c-topic-card__metas-views-text">16</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li class="block-last-topics__sidebar-menu-item o-pt-xs o-pb-xs">
-                                    <a class="block-last-topics__sidebar-menu-link o-flex o-flex--ng o-tdn" href="#" target="_self">
-                                        <svg class="block-last-topics__sidebar-menu-link-icon" fill="none" width="18" height="17" viewBox="0 0 18 17" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="#ffffff" d="M5.90625 2.5625C5.41406 2.5625 5.0625 2.94922 5.0625 3.40625V14.0938C5.0625 14.4102 4.99219 14.6914 4.88672 14.9375H15.4688C15.9258 14.9375 16.3125 14.5859 16.3125 14.0938V3.40625C16.3125 2.94922 15.9258 2.5625 15.4688 2.5625H5.90625ZM2.53125 14.9375C2.98828 14.9375 3.375 14.5859 3.375 14.0938V3.40625C3.375 2.03516 4.5 0.875 5.90625 0.875H15.4688C16.8398 0.875 18 2.03516 18 3.40625V14.0938C18 15.5 16.8398 16.625 15.4688 16.625H2.53125C1.125 16.625 0 15.5 0 14.0938V3.6875C0 3.23047 0.351562 2.84375 0.84375 2.84375C1.30078 2.84375 1.6875 3.23047 1.6875 3.6875V14.0938C1.6875 14.5859 2.03906 14.9375 2.53125 14.9375ZM6.1875 4.53125C6.1875 4.07422 6.53906 3.6875 7.03125 3.6875H14.3438C14.8008 3.6875 15.1875 4.07422 15.1875 4.53125V7.34375C15.1875 7.83594 14.8008 8.1875 14.3438 8.1875H7.03125C6.53906 8.1875 6.1875 7.83594 6.1875 7.34375V4.53125ZM7.03125 9.3125H9.28125C9.73828 9.3125 10.125 9.69922 10.125 10.1562C10.125 10.6484 9.73828 11 9.28125 11H7.03125C6.53906 11 6.1875 10.6484 6.1875 10.1562C6.1875 9.69922 6.53906 9.3125 7.03125 9.3125ZM12.0938 9.3125H14.3438C14.8008 9.3125 15.1875 9.69922 15.1875 10.1562C15.1875 10.6484 14.8008 11 14.3438 11H12.0938C11.6016 11 11.25 10.6484 11.25 10.1562C11.25 9.69922 11.6016 9.3125 12.0938 9.3125ZM7.03125 12.125H9.28125C9.73828 12.125 10.125 12.5117 10.125 12.9688C10.125 13.4609 9.73828 13.8125 9.28125 13.8125H7.03125C6.53906 13.8125 6.1875 13.4609 6.1875 12.9688C6.1875 12.5117 6.53906 12.125 7.03125 12.125ZM12.0938 12.125H14.3438C14.8008 12.125 15.1875 12.5117 15.1875 12.9688C15.1875 13.4609 14.8008 13.8125 14.3438 13.8125H12.0938C11.6016 13.8125 11.25 13.4609 11.25 12.9688C11.25 12.5117 11.6016 12.125 12.0938 12.125Z"/>
-                                        </svg>
-                                        <span class="block-last-topics__sidebar-menu-link-text">Mes articles</span>
-                                    </a>
-                                </li>
-                                <li class="block-last-topics__sidebar-menu-item o-pt-xs o-pb-xs">
-                                    <a class="block-last-topics__sidebar-menu-link o-flex o-flex--ng o-tdn" href="#" target="_self">
-                                        <svg class="block-last-topics__sidebar-menu-link-icon" fill="none" width="24" height="19" viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="#ffffff" d="M4.09375 11.6484C4.05859 11.7188 4.02344 11.7891 3.95312 11.8242C3.88281 12 3.77734 12.1406 3.70703 12.3164C4.30469 12.1758 4.86719 11.9297 5.42969 11.6836C5.60547 11.6133 5.74609 11.543 5.88672 11.4727C6.23828 11.2969 6.58984 11.2617 6.97656 11.332C7.39844 11.4023 7.82031 11.4375 8.3125 11.4375C11.6875 11.4375 13.9375 9.1875 13.9375 6.9375C13.9375 4.72266 11.6875 2.4375 8.3125 2.4375C4.90234 2.4375 2.6875 4.72266 2.6875 6.9375C2.6875 7.92188 3.07422 8.87109 3.8125 9.67969C4.33984 10.207 4.44531 10.9805 4.09375 11.6484ZM1 6.9375C1 3.52734 4.26953 0.75 8.3125 0.75C12.3203 0.75 15.625 3.52734 15.625 6.9375C15.625 10.3828 12.3203 13.125 8.3125 13.125C7.71484 13.125 7.1875 13.0898 6.625 12.9844C6.48438 13.0547 6.30859 13.1602 6.13281 13.2305C4.86719 13.793 3.35547 14.25 1.84375 14.25C1.49219 14.25 1.17578 14.0742 1.03516 13.7578C0.929688 13.4414 0.964844 13.0898 1.21094 12.8438C1.70312 12.2812 2.125 11.6484 2.51172 11.0156C2.54688 10.9453 2.58203 10.875 2.58203 10.8398C1.59766 9.78516 1 8.41406 1 6.9375ZM16.1875 17.625C13.3047 17.625 10.8086 16.2188 9.61328 14.1797C10.2109 14.0742 10.8086 13.9336 11.3711 13.7578C12.2852 15.0234 14.0078 15.9375 16.1523 15.9375C16.6445 15.9375 17.0664 15.9023 17.4883 15.832C17.875 15.7617 18.2266 15.7969 18.5781 15.9727C18.7188 16.043 18.8594 16.1133 19.0352 16.1836C19.5977 16.4297 20.1602 16.6406 20.7578 16.8164C20.6875 16.6406 20.582 16.5 20.5117 16.3242C20.4766 16.2539 20.4062 16.1836 20.3711 16.1133C20.0547 15.4805 20.1602 14.707 20.6523 14.1797C21.3906 13.3711 21.8125 12.4219 21.8125 11.4375C21.8125 9.36328 19.8086 7.21875 16.75 6.97266V6.9375C16.75 6.375 16.6445 5.8125 16.5039 5.28516C20.4062 5.42578 23.5 8.13281 23.5 11.4375C23.5 12.9141 22.8672 14.2852 21.8828 15.3398C21.8828 15.4102 21.918 15.4453 21.9531 15.5156C22.3398 16.1484 22.7617 16.7812 23.2539 17.3438C23.5 17.5898 23.5352 17.9414 23.4297 18.2578C23.2891 18.5742 22.9727 18.75 22.6562 18.75C21.1445 18.75 19.5977 18.293 18.332 17.7305C18.1562 17.6602 17.9805 17.5547 17.8398 17.4844C17.2773 17.5898 16.75 17.625 16.1875 17.625Z"/>
-                                        </svg>
-                                        <span class="block-last-topics__sidebar-menu-link-text">Mes discussions</span>
-                                    </a>
-                                </li>
-                                <li class="block-last-topics__sidebar-menu-item o-pt-xs o-pb-xs">
-                                    <a class="block-last-topics__sidebar-menu-link o-flex o-flex--ng o-tdn" href="#" target="_self">
-                                        <svg class="block-last-topics__sidebar-menu-link-icon" fill="none" width="21" height="17" viewBox="0 0 21 17" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="#ffffff" d="M5.625 2.5625C5.30859 2.5625 5.0625 2.84375 5.0625 3.125V11C5.0625 11.3164 5.30859 11.5625 5.625 11.5625H6.15234L8.57812 8.25781C8.75391 8.04688 9 7.90625 9.24609 7.90625C9.52734 7.90625 9.77344 8.04688 9.94922 8.25781L10.3711 8.85547L12.1992 6.04297C12.375 5.83203 12.6211 5.65625 12.9375 5.65625C13.2188 5.65625 13.4648 5.83203 13.6406 6.04297L17.2266 11.5625H18C18.2812 11.5625 18.5625 11.3164 18.5625 11V3.125C18.5625 2.84375 18.2812 2.5625 18 2.5625H5.625ZM3.375 3.125C3.375 1.89453 4.35938 0.875 5.625 0.875H18C19.2305 0.875 20.25 1.89453 20.25 3.125V11C20.25 12.2656 19.2305 13.25 18 13.25H5.625C4.35938 13.25 3.375 12.2656 3.375 11V3.125ZM1.6875 3.96875V11.8438C1.6875 13.5664 3.05859 14.9375 4.78125 14.9375H16.0312C16.4883 14.9375 16.875 15.3242 16.875 15.7812C16.875 16.2734 16.4883 16.625 16.0312 16.625H4.78125C2.10938 16.625 0 14.5156 0 11.8438V3.96875C0 3.51172 0.351562 3.125 0.84375 3.125C1.30078 3.125 1.6875 3.51172 1.6875 3.96875ZM9 4.8125C9 5.44531 8.47266 5.9375 7.875 5.9375C7.24219 5.9375 6.75 5.44531 6.75 4.8125C6.75 4.21484 7.24219 3.6875 7.875 3.6875C8.47266 3.6875 9 4.21484 9 4.8125Z"/>
-                                        </svg>
-                                        <span class="block-last-topics__sidebar-menu-link-text">Mes galeries photos</span>
-                                    </a>
-                                </li>
-                                <li class="block-last-topics__sidebar-menu-item o-pt-xs o-pb-xs">
-                                    <a class="block-last-topics__sidebar-menu-link o-flex o-flex--ng o-tdn" href="#" target="_self">
-                                        <svg class="block-last-topics__sidebar-menu-link-icon" fill="none" width="19" height="17" viewBox="0 0 19 17" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill="#ffffff" d="M17.7539 8.84766L13.2539 13.3477C12.9023 13.6992 12.375 13.6992 12.0586 13.3477C11.707 13.0312 11.707 12.5039 12.0586 12.1523L15.1172 9.09375H6.46875C5.97656 9.09375 5.625 8.74219 5.625 8.25C5.625 7.79297 5.97656 7.40625 6.46875 7.40625H15.1172L12.0586 4.34766C11.707 4.03125 11.707 3.50391 12.0586 3.15234C12.375 2.83594 12.9023 2.83594 13.2539 3.15234L17.7539 7.6875C18.0703 8.00391 18.0703 8.53125 17.7539 8.84766ZM5.90625 2.0625H3.09375C2.28516 2.0625 1.6875 2.69531 1.6875 3.46875V13.0312C1.6875 13.8398 2.28516 14.4375 3.09375 14.4375H5.90625C6.36328 14.4375 6.75 14.8242 6.75 15.2812C6.75 15.7734 6.36328 16.125 5.90625 16.125H3.09375C1.37109 16.125 0 14.7539 0 13.0312V3.46875C0 1.78125 1.37109 0.375 3.09375 0.375H5.90625C6.36328 0.375 6.75 0.761719 6.75 1.21875C6.75 1.71094 6.36328 2.0625 5.90625 2.0625Z"/>
-                                        </svg>
-                                        <span class="block-last-topics__sidebar-menu-link-text">Se déconnecter</span>
-                                    </a>
+                                <li class="block-last-topics__list-item">
+                                    <div class="c-topic-card o-flex o-flex--fw o-flex--jce o-pt-m o-pb-m">
+                                        <div class="c-topic-card__image">
+                                            <a class="c-topic-card__image-link o-oh" href="answers.html">
+                                                <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
+                                            </a>
+                                        </div>
+                                        <div class="c-topic-card__texts">
+                                            <a class="c-topic-card__texts-title o-h6 o-tdn" href="answers.html" target="_self">Lorem ipsum dolor sit amet consectetur, velit mauris consequat placerat sapien.</a>
+                                            <div class="c-topic-card__texts-infos o-flex o-flex--fw o-flex--ng o-mt-2xs">
+                                                <div class="c-topic-card__texts-infos-pseudo o-flex o-flex--ng o-flex--aic">
+                                                    <a href="#" target="_self">Pseudo</a>
+                                                </div>
+                                                <div class="c-topic-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
+                                                    <svg class="c-topic-card__texts-infos-date-icon" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
+                                                    </svg>
+                                                    <p class="c-topic-card__texts-infos-date-text">18. Oct 2023 à 16h42</p>
+                                                </div>
+                                                <div class="c-topic-card__texts-infos-tags o-flex o-flex--fw o-flex--ng o-flex--aic">
+                                                    <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                        <p class="c-topic-card__texts-infos-tags-text">Catégorie 1</p>
+                                                    </div>
+                                                    <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
+                                                        <p class="c-topic-card__texts-infos-tags-text">Étiquette 5</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="c-topic-card__metas o-flex o-flex--aie o-mt-s">
+                                            <div class="c-topic-card__metas-comments o-flex o-flex--ng">
+                                                <svg class="c-topic-card__metas-comments-icon" fill="none" width="24" height="19" viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#12314e" d="M4.09375 11.6484C4.05859 11.7188 4.02344 11.7891 3.95312 11.8242C3.88281 12 3.77734 12.1406 3.70703 12.3164C4.30469 12.1758 4.86719 11.9297 5.42969 11.6836C5.60547 11.6133 5.74609 11.543 5.88672 11.4727C6.23828 11.2969 6.58984 11.2617 6.97656 11.332C7.39844 11.4023 7.82031 11.4375 8.3125 11.4375C11.6875 11.4375 13.9375 9.1875 13.9375 6.9375C13.9375 4.72266 11.6875 2.4375 8.3125 2.4375C4.90234 2.4375 2.6875 4.72266 2.6875 6.9375C2.6875 7.92188 3.07422 8.87109 3.8125 9.67969C4.33984 10.207 4.44531 10.9805 4.09375 11.6484ZM1 6.9375C1 3.52734 4.26953 0.75 8.3125 0.75C12.3203 0.75 15.625 3.52734 15.625 6.9375C15.625 10.3828 12.3203 13.125 8.3125 13.125C7.71484 13.125 7.1875 13.0898 6.625 12.9844C6.48438 13.0547 6.30859 13.1602 6.13281 13.2305C4.86719 13.793 3.35547 14.25 1.84375 14.25C1.49219 14.25 1.17578 14.0742 1.03516 13.7578C0.929688 13.4414 0.964844 13.0898 1.21094 12.8438C1.70312 12.2812 2.125 11.6484 2.51172 11.0156C2.54688 10.9453 2.58203 10.875 2.58203 10.8398C1.59766 9.78516 1 8.41406 1 6.9375ZM16.1875 17.625C13.3047 17.625 10.8086 16.2188 9.61328 14.1797C10.2109 14.0742 10.8086 13.9336 11.3711 13.7578C12.2852 15.0234 14.0078 15.9375 16.1523 15.9375C16.6445 15.9375 17.0664 15.9023 17.4883 15.832C17.875 15.7617 18.2266 15.7969 18.5781 15.9727C18.7188 16.043 18.8594 16.1133 19.0352 16.1836C19.5977 16.4297 20.1602 16.6406 20.7578 16.8164C20.6875 16.6406 20.582 16.5 20.5117 16.3242C20.4766 16.2539 20.4062 16.1836 20.3711 16.1133C20.0547 15.4805 20.1602 14.707 20.6523 14.1797C21.3906 13.3711 21.8125 12.4219 21.8125 11.4375C21.8125 9.36328 19.8086 7.21875 16.75 6.97266V6.9375C16.75 6.375 16.6445 5.8125 16.5039 5.28516C20.4062 5.42578 23.5 8.13281 23.5 11.4375C23.5 12.9141 22.8672 14.2852 21.8828 15.3398C21.8828 15.4102 21.918 15.4453 21.9531 15.5156C22.3398 16.1484 22.7617 16.7812 23.2539 17.3438C23.5 17.5898 23.5352 17.9414 23.4297 18.2578C23.2891 18.5742 22.9727 18.75 22.6562 18.75C21.1445 18.75 19.5977 18.293 18.332 17.7305C18.1562 17.6602 17.9805 17.5547 17.8398 17.4844C17.2773 17.5898 16.75 17.625 16.1875 17.625Z"/>
+                                                </svg>
+                                                <span class="c-topic-card__metas-comments-text">2</span>
+                                            </div>
+                                            <div class="c-topic-card__metas-views o-flex o-flex--ng">
+                                                <svg class="c-topic-card__metas-views-icon" fill="none" width="19" height="15" viewBox="0 0 19 15" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill="#12314e" d="M10 2C7.9375 2 6.28125 2.9375 5 4.125C3.78125 5.25 2.96875 6.5625 2.53125 7.5C2.96875 8.4375 3.78125 9.78125 5 10.9062C6.28125 12.0938 7.9375 13 10 13C12.0312 13 13.6875 12.0938 14.9688 10.9062C16.1875 9.78125 17.0312 8.4375 17.4375 7.5C17.0312 6.5625 16.1875 5.25 15 4.125C13.6875 2.9375 12.0312 2 10 2ZM3.96875 3.03125C5.4375 1.65625 7.46875 0.5 10 0.5C12.5 0.5 14.5312 1.65625 16 3.03125C17.4688 4.40625 18.4375 6 18.9062 7.125C19 7.375 19 7.65625 18.9062 7.90625C18.4375 9 17.4688 10.625 16 12C14.5312 13.375 12.5 14.5 10 14.5C7.46875 14.5 5.4375 13.375 3.96875 12C2.5 10.625 1.53125 9 1.0625 7.90625C0.96875 7.65625 0.96875 7.375 1.0625 7.125C1.53125 6 2.5 4.375 3.96875 3.03125ZM10 10C11.375 10 12.5 8.90625 12.5 7.5C12.5 6.125 11.375 5 10 5C9.96875 5 9.9375 5 9.9375 5C9.96875 5.1875 10 5.34375 10 5.5C10 6.625 9.09375 7.5 8 7.5C7.8125 7.5 7.65625 7.5 7.5 7.4375C7.5 7.46875 7.5 7.5 7.5 7.5C7.5 8.90625 8.59375 10 10 10ZM10 3.5C11.4062 3.5 12.7188 4.28125 13.4375 5.5C14.1562 6.75 14.1562 8.28125 13.4375 9.5C12.7188 10.75 11.4062 11.5 10 11.5C8.5625 11.5 7.25 10.75 6.53125 9.5C5.8125 8.28125 5.8125 6.75 6.53125 5.5C7.25 4.28125 8.5625 3.5 10 3.5Z"/>
+                                                </svg>
+                                                <span class="c-topic-card__metas-views-text">16</span>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
+                            <div class="c-button c-button--icon block-last-topics__content-link o-full o-flex o-flex--col o-flex--aic o-flex--jcsb o-mt-s">
+                                <a class="c-button__link o-p-xs o-pl-s o-pr-s o-br-3xl o-tdn" href="#" target="_self">
+                                    <svg class="c-button__link-icon" fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#12314e" d="M14.6426 2.08398H14.6094C14.3105 1.78516 13.8125 1.78516 13.5137 2.08398L12.5176 3.04688L14.0781 4.60742L15.041 3.61133C15.3398 3.3125 15.3398 2.81445 15.041 2.48242L14.6426 2.08398ZM6.93945 8.6582C6.83984 8.72461 6.77344 8.85742 6.74023 8.99023L6.17578 10.916L8.13477 10.3848C8.26758 10.3516 8.36719 10.2852 8.4668 10.1855L12.9492 5.70312L11.4219 4.17578L6.93945 8.6582ZM12.3848 0.955078C13.3145 0.0253906 14.8086 0.0253906 15.7383 0.955078L16.1699 1.38672C17.0996 2.31641 17.0996 3.81055 16.1699 4.74023L9.5957 11.3145C9.33008 11.5801 8.96484 11.7793 8.56641 11.9121L5.24609 12.8418C4.98047 12.9414 4.68164 12.875 4.48242 12.6426C4.25 12.4434 4.18359 12.1445 4.25 11.8789L5.21289 8.55859C5.3125 8.16016 5.54492 7.79492 5.81055 7.5293L12.3848 0.955078ZM2.92188 2.25H6.64062C7.07227 2.25 7.4375 2.61523 7.4375 3.04688C7.4375 3.51172 7.07227 3.84375 6.64062 3.84375H2.92188C2.1582 3.84375 1.59375 4.44141 1.59375 5.17188V14.2031C1.59375 14.9668 2.1582 15.5312 2.92188 15.5312H11.9531C12.6836 15.5312 13.2812 14.9668 13.2812 14.2031V10.4844C13.2812 10.0527 13.6133 9.6875 14.0781 9.6875C14.5098 9.6875 14.875 10.0527 14.875 10.4844V14.2031C14.875 15.8301 13.5469 17.125 11.9531 17.125H2.92188C1.29492 17.125 0 15.8301 0 14.2031V5.17188C0 3.57812 1.29492 2.25 2.92188 2.25Z"/>
+                                    </svg>
+                                    <span class="c-button__link-text">Créer un nouveau sujet</span>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <div class="block-last-topics__content o-mt-m">
-                        <h2 class="block-last-topics__content-title o-h3">Dernières discussions</h2>
-                        <ul class="block-last-topics__list o-mt-m o-mb-m">
-                            <li class="block-last-topics__list-item">
-                                <div class="c-topic-card o-flex o-flex--fw o-flex--jce o-pt-m o-pb-m">
-                                    <div class="c-topic-card__image">
-                                        <a class="c-topic-card__image-link o-oh" href="answers.html">
-                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
+                </section>
+                
+                <!-- SECTION - FEATURED -->
+                <section class="block-featured o-mt-4xl o-mb-4xl">
+                    <div class="block-featured__container o-wrapper">
+                        <div class="c-card c-card--landscape o-p-s">
+                            <div class="c-card__image">
+                                <a class="c-card__image-link" href="new.html">
+                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'article">
+                                </a>
+                            </div>
+                            <div class="c-card__texts o-pt-m">
+                                <p class="c-card__texts-suptitle o-suptitle">À la une :</p>
+                                <a class="c-card__texts-title o-h6 o-tdn" href="new.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                <div class="c-card__texts-infos o-flex o-flex--ng o-mt-xs">
+                                    <div class="c-card__texts-infos-item c-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
+                                        <svg class="c-card__texts-infos-date-icon" opacity="0.80" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
+                                        </svg>
+                                        <p class="c-card__texts-infos-date-text">Le 5 juin 2024</p>
+                                    </div>
+                                    <div class="c-card__texts-infos-item o-flex o-flex--ng o-flex--aic">
+                                        <p class="c-card__texts-infos-tag">Catégorie 1</p>
+                                    </div>
+                                </div>
+                                <p class="c-card__texts-excerpt">Pharetra sit consequat arcu egestas tortor lorem. Ut sit donec vel mattis. Tellus adipiscing id et id rhoncus cursus arcu. Fermentum fermentum sed velit vulputate. Elit et sagittis purus mauris. Nisl maecenas quam vulputate blandit diam et in.</p>
+                                <div class="c-button c-card__texts-link o-mt-s">
+                                    <a class="c-button__link o-p-xs o-pl-s o-pr-s o-br-3xl o-tdn" href="new.html" target="_self">En savoir plus</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- SECTION - LAST-NEWS -->
+                <section class="block-last-news c-shapes o-mt-4xl o-mb-4xl">
+                    <div class="c-shapes__container block-last-news__shapes">
+                        <img class="c-shapes__item c-shapes__item--rectangle" src="./assets/images/svg/rectangle-red.svg" alt="">
+                        <img class="c-shapes__item c-shapes__item--circle" src="./assets/images/svg/circle-teal.svg" alt="">
+                    </div>
+                    <div class="block-last-news__title o-wrapper o-grid o-grid--aic">
+                        <h2 class="block-last-news__title-title o-large o-tac">Nos dernières actualités</h2>
+                        <p class="block-last-news__title-subtitle o-subtitle o-large o-tac">Lorem ipsum dolor sit amet consectetur. Dui pharetra vulputate dictumst quis dui aliquam a cursus lectus.</p>
+                    </div>
+                    <div class="block-last-news__content o-wrapper o-flex o-flex--col o-flex--aic o-mt-xl">
+                        <ul class="block-last-news__list o-full o-grid o-grid--row-gap">
+                            <li class="block-last-news__list-item o-tiers">
+                                <div class="c-card o-p-s">
+                                    <div class="c-card__image">
+                                        <a class="c-card__image-link" href="new.html">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'article">
                                         </a>
                                     </div>
-                                    <div class="c-topic-card__texts">
-                                        <a class="c-topic-card__texts-title o-h6 o-tdn" href="answers.html" target="_self">Lorem ipsum dolor sit amet consectetur, velit mauris consequat placerat sapien.</a>
-                                        <div class="c-topic-card__texts-infos o-flex o-flex--fw o-flex--ng o-mt-2xs">
-                                            <div class="c-topic-card__texts-infos-pseudo o-flex o-flex--ng o-flex--aic">
-                                                <a href="#" target="_self">Pseudo</a>
-                                            </div>
-                                            <div class="c-topic-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
-                                                <svg class="c-topic-card__texts-infos-date-icon" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                                    <div class="c-card__texts o-pt-m">
+                                        <a class="c-card__texts-title o-h6 o-tdn" href="new.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                        <div class="c-card__texts-infos o-flex o-flex--ng o-mt-xs">
+                                            <div class="c-card__texts-infos-item c-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
+                                                <svg class="c-card__texts-infos-date-icon" opacity="0.80" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
                                                 </svg>
-                                                <p class="c-topic-card__texts-infos-date-text">18. Oct 2023 à 16h42</p>
+                                                <p class="c-card__texts-infos-date-text">Le 5 juin 2024</p>
                                             </div>
-                                            <div class="c-topic-card__texts-infos-tags o-flex o-flex--fw o-flex--ng o-flex--aic">
-                                                <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
-                                                    <p class="c-topic-card__texts-infos-tags-text">Catégorie 1</p>
-                                                </div>
-                                                <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
-                                                    <p class="c-topic-card__texts-infos-tags-text">Étiquette 5</p>
-                                                </div>
+                                            <div class="c-card__texts-infos-item o-flex o-flex--ng o-flex--aic">
+                                                <p class="c-card__texts-infos-tag">Catégorie 1</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="c-topic-card__metas o-flex o-flex--aie o-mt-s">
-                                        <div class="c-topic-card__metas-comments o-flex o-flex--ng">
-                                            <svg class="c-topic-card__metas-comments-icon" fill="none" width="24" height="19" viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill="#12314e" d="M4.09375 11.6484C4.05859 11.7188 4.02344 11.7891 3.95312 11.8242C3.88281 12 3.77734 12.1406 3.70703 12.3164C4.30469 12.1758 4.86719 11.9297 5.42969 11.6836C5.60547 11.6133 5.74609 11.543 5.88672 11.4727C6.23828 11.2969 6.58984 11.2617 6.97656 11.332C7.39844 11.4023 7.82031 11.4375 8.3125 11.4375C11.6875 11.4375 13.9375 9.1875 13.9375 6.9375C13.9375 4.72266 11.6875 2.4375 8.3125 2.4375C4.90234 2.4375 2.6875 4.72266 2.6875 6.9375C2.6875 7.92188 3.07422 8.87109 3.8125 9.67969C4.33984 10.207 4.44531 10.9805 4.09375 11.6484ZM1 6.9375C1 3.52734 4.26953 0.75 8.3125 0.75C12.3203 0.75 15.625 3.52734 15.625 6.9375C15.625 10.3828 12.3203 13.125 8.3125 13.125C7.71484 13.125 7.1875 13.0898 6.625 12.9844C6.48438 13.0547 6.30859 13.1602 6.13281 13.2305C4.86719 13.793 3.35547 14.25 1.84375 14.25C1.49219 14.25 1.17578 14.0742 1.03516 13.7578C0.929688 13.4414 0.964844 13.0898 1.21094 12.8438C1.70312 12.2812 2.125 11.6484 2.51172 11.0156C2.54688 10.9453 2.58203 10.875 2.58203 10.8398C1.59766 9.78516 1 8.41406 1 6.9375ZM16.1875 17.625C13.3047 17.625 10.8086 16.2188 9.61328 14.1797C10.2109 14.0742 10.8086 13.9336 11.3711 13.7578C12.2852 15.0234 14.0078 15.9375 16.1523 15.9375C16.6445 15.9375 17.0664 15.9023 17.4883 15.832C17.875 15.7617 18.2266 15.7969 18.5781 15.9727C18.7188 16.043 18.8594 16.1133 19.0352 16.1836C19.5977 16.4297 20.1602 16.6406 20.7578 16.8164C20.6875 16.6406 20.582 16.5 20.5117 16.3242C20.4766 16.2539 20.4062 16.1836 20.3711 16.1133C20.0547 15.4805 20.1602 14.707 20.6523 14.1797C21.3906 13.3711 21.8125 12.4219 21.8125 11.4375C21.8125 9.36328 19.8086 7.21875 16.75 6.97266V6.9375C16.75 6.375 16.6445 5.8125 16.5039 5.28516C20.4062 5.42578 23.5 8.13281 23.5 11.4375C23.5 12.9141 22.8672 14.2852 21.8828 15.3398C21.8828 15.4102 21.918 15.4453 21.9531 15.5156C22.3398 16.1484 22.7617 16.7812 23.2539 17.3438C23.5 17.5898 23.5352 17.9414 23.4297 18.2578C23.2891 18.5742 22.9727 18.75 22.6562 18.75C21.1445 18.75 19.5977 18.293 18.332 17.7305C18.1562 17.6602 17.9805 17.5547 17.8398 17.4844C17.2773 17.5898 16.75 17.625 16.1875 17.625Z"/>
-                                            </svg>
-                                            <span class="c-topic-card__metas-comments-text">2</span>
-                                        </div>
-                                        <div class="c-topic-card__metas-views o-flex o-flex--ng">
-                                            <svg class="c-topic-card__metas-views-icon" fill="none" width="19" height="15" viewBox="0 0 19 15" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill="#12314e" d="M10 2C7.9375 2 6.28125 2.9375 5 4.125C3.78125 5.25 2.96875 6.5625 2.53125 7.5C2.96875 8.4375 3.78125 9.78125 5 10.9062C6.28125 12.0938 7.9375 13 10 13C12.0312 13 13.6875 12.0938 14.9688 10.9062C16.1875 9.78125 17.0312 8.4375 17.4375 7.5C17.0312 6.5625 16.1875 5.25 15 4.125C13.6875 2.9375 12.0312 2 10 2ZM3.96875 3.03125C5.4375 1.65625 7.46875 0.5 10 0.5C12.5 0.5 14.5312 1.65625 16 3.03125C17.4688 4.40625 18.4375 6 18.9062 7.125C19 7.375 19 7.65625 18.9062 7.90625C18.4375 9 17.4688 10.625 16 12C14.5312 13.375 12.5 14.5 10 14.5C7.46875 14.5 5.4375 13.375 3.96875 12C2.5 10.625 1.53125 9 1.0625 7.90625C0.96875 7.65625 0.96875 7.375 1.0625 7.125C1.53125 6 2.5 4.375 3.96875 3.03125ZM10 10C11.375 10 12.5 8.90625 12.5 7.5C12.5 6.125 11.375 5 10 5C9.96875 5 9.9375 5 9.9375 5C9.96875 5.1875 10 5.34375 10 5.5C10 6.625 9.09375 7.5 8 7.5C7.8125 7.5 7.65625 7.5 7.5 7.4375C7.5 7.46875 7.5 7.5 7.5 7.5C7.5 8.90625 8.59375 10 10 10ZM10 3.5C11.4062 3.5 12.7188 4.28125 13.4375 5.5C14.1562 6.75 14.1562 8.28125 13.4375 9.5C12.7188 10.75 11.4062 11.5 10 11.5C8.5625 11.5 7.25 10.75 6.53125 9.5C5.8125 8.28125 5.8125 6.75 6.53125 5.5C7.25 4.28125 8.5625 3.5 10 3.5Z"/>
-                                            </svg>
-                                            <span class="c-topic-card__metas-views-text">16</span>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="block-last-topics__list-item">
-                                <div class="c-topic-card o-flex o-flex--fw o-flex--jce o-pt-m o-pb-m">
-                                    <div class="c-topic-card__image">
-                                        <a class="c-topic-card__image-link o-oh" href="answers.html">
-                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
+                            <li class="block-last-news__list-item o-tiers">
+                                <div class="c-card o-p-s">
+                                    <div class="c-card__image">
+                                        <a class="c-card__image-link" href="new.html">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'article">
                                         </a>
                                     </div>
-                                    <div class="c-topic-card__texts">
-                                        <a class="c-topic-card__texts-title o-h6 o-tdn" href="answers.html" target="_self">Lorem ipsum dolor sit amet consectetur, velit mauris consequat placerat sapien.</a>
-                                        <div class="c-topic-card__texts-infos o-flex o-flex--fw o-flex--ng o-mt-2xs">
-                                            <div class="c-topic-card__texts-infos-pseudo o-flex o-flex--ng o-flex--aic">
-                                                <a href="#" target="_self">Pseudo</a>
-                                            </div>
-                                            <div class="c-topic-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
-                                                <svg class="c-topic-card__texts-infos-date-icon" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                                    <div class="c-card__texts o-pt-m">
+                                        <a class="c-card__texts-title o-h6 o-tdn" href="new.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                        <div class="c-card__texts-infos o-flex o-flex--ng o-mt-xs">
+                                            <div class="c-card__texts-infos-item c-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
+                                                <svg class="c-card__texts-infos-date-icon" opacity="0.80" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
                                                 </svg>
-                                                <p class="c-topic-card__texts-infos-date-text">18. Oct 2023 à 16h42</p>
+                                                <p class="c-card__texts-infos-date-text">Le 5 juin 2024</p>
                                             </div>
-                                            <div class="c-topic-card__texts-infos-tags o-flex o-flex--fw o-flex--ng o-flex--aic">
-                                                <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
-                                                    <p class="c-topic-card__texts-infos-tags-text">Catégorie 1</p>
-                                                </div>
-                                                <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
-                                                    <p class="c-topic-card__texts-infos-tags-text">Étiquette 5</p>
-                                                </div>
+                                            <div class="c-card__texts-infos-item o-flex o-flex--ng o-flex--aic">
+                                                <p class="c-card__texts-infos-tag">Catégorie 2</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="c-topic-card__metas o-flex o-flex--aie o-mt-s">
-                                        <div class="c-topic-card__metas-comments o-flex o-flex--ng">
-                                            <svg class="c-topic-card__metas-comments-icon" fill="none" width="24" height="19" viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill="#12314e" d="M4.09375 11.6484C4.05859 11.7188 4.02344 11.7891 3.95312 11.8242C3.88281 12 3.77734 12.1406 3.70703 12.3164C4.30469 12.1758 4.86719 11.9297 5.42969 11.6836C5.60547 11.6133 5.74609 11.543 5.88672 11.4727C6.23828 11.2969 6.58984 11.2617 6.97656 11.332C7.39844 11.4023 7.82031 11.4375 8.3125 11.4375C11.6875 11.4375 13.9375 9.1875 13.9375 6.9375C13.9375 4.72266 11.6875 2.4375 8.3125 2.4375C4.90234 2.4375 2.6875 4.72266 2.6875 6.9375C2.6875 7.92188 3.07422 8.87109 3.8125 9.67969C4.33984 10.207 4.44531 10.9805 4.09375 11.6484ZM1 6.9375C1 3.52734 4.26953 0.75 8.3125 0.75C12.3203 0.75 15.625 3.52734 15.625 6.9375C15.625 10.3828 12.3203 13.125 8.3125 13.125C7.71484 13.125 7.1875 13.0898 6.625 12.9844C6.48438 13.0547 6.30859 13.1602 6.13281 13.2305C4.86719 13.793 3.35547 14.25 1.84375 14.25C1.49219 14.25 1.17578 14.0742 1.03516 13.7578C0.929688 13.4414 0.964844 13.0898 1.21094 12.8438C1.70312 12.2812 2.125 11.6484 2.51172 11.0156C2.54688 10.9453 2.58203 10.875 2.58203 10.8398C1.59766 9.78516 1 8.41406 1 6.9375ZM16.1875 17.625C13.3047 17.625 10.8086 16.2188 9.61328 14.1797C10.2109 14.0742 10.8086 13.9336 11.3711 13.7578C12.2852 15.0234 14.0078 15.9375 16.1523 15.9375C16.6445 15.9375 17.0664 15.9023 17.4883 15.832C17.875 15.7617 18.2266 15.7969 18.5781 15.9727C18.7188 16.043 18.8594 16.1133 19.0352 16.1836C19.5977 16.4297 20.1602 16.6406 20.7578 16.8164C20.6875 16.6406 20.582 16.5 20.5117 16.3242C20.4766 16.2539 20.4062 16.1836 20.3711 16.1133C20.0547 15.4805 20.1602 14.707 20.6523 14.1797C21.3906 13.3711 21.8125 12.4219 21.8125 11.4375C21.8125 9.36328 19.8086 7.21875 16.75 6.97266V6.9375C16.75 6.375 16.6445 5.8125 16.5039 5.28516C20.4062 5.42578 23.5 8.13281 23.5 11.4375C23.5 12.9141 22.8672 14.2852 21.8828 15.3398C21.8828 15.4102 21.918 15.4453 21.9531 15.5156C22.3398 16.1484 22.7617 16.7812 23.2539 17.3438C23.5 17.5898 23.5352 17.9414 23.4297 18.2578C23.2891 18.5742 22.9727 18.75 22.6562 18.75C21.1445 18.75 19.5977 18.293 18.332 17.7305C18.1562 17.6602 17.9805 17.5547 17.8398 17.4844C17.2773 17.5898 16.75 17.625 16.1875 17.625Z"/>
-                                            </svg>
-                                            <span class="c-topic-card__metas-comments-text">2</span>
-                                        </div>
-                                        <div class="c-topic-card__metas-views o-flex o-flex--ng">
-                                            <svg class="c-topic-card__metas-views-icon" fill="none" width="19" height="15" viewBox="0 0 19 15" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill="#12314e" d="M10 2C7.9375 2 6.28125 2.9375 5 4.125C3.78125 5.25 2.96875 6.5625 2.53125 7.5C2.96875 8.4375 3.78125 9.78125 5 10.9062C6.28125 12.0938 7.9375 13 10 13C12.0312 13 13.6875 12.0938 14.9688 10.9062C16.1875 9.78125 17.0312 8.4375 17.4375 7.5C17.0312 6.5625 16.1875 5.25 15 4.125C13.6875 2.9375 12.0312 2 10 2ZM3.96875 3.03125C5.4375 1.65625 7.46875 0.5 10 0.5C12.5 0.5 14.5312 1.65625 16 3.03125C17.4688 4.40625 18.4375 6 18.9062 7.125C19 7.375 19 7.65625 18.9062 7.90625C18.4375 9 17.4688 10.625 16 12C14.5312 13.375 12.5 14.5 10 14.5C7.46875 14.5 5.4375 13.375 3.96875 12C2.5 10.625 1.53125 9 1.0625 7.90625C0.96875 7.65625 0.96875 7.375 1.0625 7.125C1.53125 6 2.5 4.375 3.96875 3.03125ZM10 10C11.375 10 12.5 8.90625 12.5 7.5C12.5 6.125 11.375 5 10 5C9.96875 5 9.9375 5 9.9375 5C9.96875 5.1875 10 5.34375 10 5.5C10 6.625 9.09375 7.5 8 7.5C7.8125 7.5 7.65625 7.5 7.5 7.4375C7.5 7.46875 7.5 7.5 7.5 7.5C7.5 8.90625 8.59375 10 10 10ZM10 3.5C11.4062 3.5 12.7188 4.28125 13.4375 5.5C14.1562 6.75 14.1562 8.28125 13.4375 9.5C12.7188 10.75 11.4062 11.5 10 11.5C8.5625 11.5 7.25 10.75 6.53125 9.5C5.8125 8.28125 5.8125 6.75 6.53125 5.5C7.25 4.28125 8.5625 3.5 10 3.5Z"/>
-                                            </svg>
-                                            <span class="c-topic-card__metas-views-text">16</span>
                                         </div>
                                     </div>
                                 </div>
                             </li>
-                            <li class="block-last-topics__list-item">
-                                <div class="c-topic-card o-flex o-flex--fw o-flex--jce o-pt-m o-pb-m">
-                                    <div class="c-topic-card__image">
-                                        <a class="c-topic-card__image-link o-oh" href="answers.html">
-                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image de profil de l'utilisateur">
+                            <li class="block-last-news__list-item o-tiers">
+                                <div class="c-card o-p-s">
+                                    <div class="c-card__image">
+                                        <a class="c-card__image-link" href="new.html">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'article">
                                         </a>
                                     </div>
-                                    <div class="c-topic-card__texts">
-                                        <a class="c-topic-card__texts-title o-h6 o-tdn" href="answers.html" target="_self">Lorem ipsum dolor sit amet consectetur, velit mauris consequat placerat sapien.</a>
-                                        <div class="c-topic-card__texts-infos o-flex o-flex--fw o-flex--ng o-mt-2xs">
-                                            <div class="c-topic-card__texts-infos-pseudo o-flex o-flex--ng o-flex--aic">
-                                                <a href="#" target="_self">Pseudo</a>
-                                            </div>
-                                            <div class="c-topic-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
-                                                <svg class="c-topic-card__texts-infos-date-icon" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
+                                    <div class="c-card__texts o-pt-m">
+                                        <a class="c-card__texts-title o-h6 o-tdn" href="new.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                        <div class="c-card__texts-infos o-flex o-flex--ng o-mt-xs">
+                                            <div class="c-card__texts-infos-item c-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
+                                                <svg class="c-card__texts-infos-date-icon" opacity="0.80" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
                                                 </svg>
-                                                <p class="c-topic-card__texts-infos-date-text">18. Oct 2023 à 16h42</p>
+                                                <p class="c-card__texts-infos-date-text">Le 5 juin 2024</p>
                                             </div>
-                                            <div class="c-topic-card__texts-infos-tags o-flex o-flex--fw o-flex--ng o-flex--aic">
-                                                <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
-                                                    <p class="c-topic-card__texts-infos-tags-text">Catégorie 1</p>
-                                                </div>
-                                                <div class="c-topic-card__texts-infos-tags-item o-flex o-flex--ng o-flex--aic">
-                                                    <p class="c-topic-card__texts-infos-tags-text">Étiquette 5</p>
-                                                </div>
+                                            <div class="c-card__texts-infos-item o-flex o-flex--ng o-flex--aic">
+                                                <p class="c-card__texts-infos-tag">Catégorie 4, Catégorie 2</p>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="c-topic-card__metas o-flex o-flex--aie o-mt-s">
-                                        <div class="c-topic-card__metas-comments o-flex o-flex--ng">
-                                            <svg class="c-topic-card__metas-comments-icon" fill="none" width="24" height="19" viewBox="0 0 24 19" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill="#12314e" d="M4.09375 11.6484C4.05859 11.7188 4.02344 11.7891 3.95312 11.8242C3.88281 12 3.77734 12.1406 3.70703 12.3164C4.30469 12.1758 4.86719 11.9297 5.42969 11.6836C5.60547 11.6133 5.74609 11.543 5.88672 11.4727C6.23828 11.2969 6.58984 11.2617 6.97656 11.332C7.39844 11.4023 7.82031 11.4375 8.3125 11.4375C11.6875 11.4375 13.9375 9.1875 13.9375 6.9375C13.9375 4.72266 11.6875 2.4375 8.3125 2.4375C4.90234 2.4375 2.6875 4.72266 2.6875 6.9375C2.6875 7.92188 3.07422 8.87109 3.8125 9.67969C4.33984 10.207 4.44531 10.9805 4.09375 11.6484ZM1 6.9375C1 3.52734 4.26953 0.75 8.3125 0.75C12.3203 0.75 15.625 3.52734 15.625 6.9375C15.625 10.3828 12.3203 13.125 8.3125 13.125C7.71484 13.125 7.1875 13.0898 6.625 12.9844C6.48438 13.0547 6.30859 13.1602 6.13281 13.2305C4.86719 13.793 3.35547 14.25 1.84375 14.25C1.49219 14.25 1.17578 14.0742 1.03516 13.7578C0.929688 13.4414 0.964844 13.0898 1.21094 12.8438C1.70312 12.2812 2.125 11.6484 2.51172 11.0156C2.54688 10.9453 2.58203 10.875 2.58203 10.8398C1.59766 9.78516 1 8.41406 1 6.9375ZM16.1875 17.625C13.3047 17.625 10.8086 16.2188 9.61328 14.1797C10.2109 14.0742 10.8086 13.9336 11.3711 13.7578C12.2852 15.0234 14.0078 15.9375 16.1523 15.9375C16.6445 15.9375 17.0664 15.9023 17.4883 15.832C17.875 15.7617 18.2266 15.7969 18.5781 15.9727C18.7188 16.043 18.8594 16.1133 19.0352 16.1836C19.5977 16.4297 20.1602 16.6406 20.7578 16.8164C20.6875 16.6406 20.582 16.5 20.5117 16.3242C20.4766 16.2539 20.4062 16.1836 20.3711 16.1133C20.0547 15.4805 20.1602 14.707 20.6523 14.1797C21.3906 13.3711 21.8125 12.4219 21.8125 11.4375C21.8125 9.36328 19.8086 7.21875 16.75 6.97266V6.9375C16.75 6.375 16.6445 5.8125 16.5039 5.28516C20.4062 5.42578 23.5 8.13281 23.5 11.4375C23.5 12.9141 22.8672 14.2852 21.8828 15.3398C21.8828 15.4102 21.918 15.4453 21.9531 15.5156C22.3398 16.1484 22.7617 16.7812 23.2539 17.3438C23.5 17.5898 23.5352 17.9414 23.4297 18.2578C23.2891 18.5742 22.9727 18.75 22.6562 18.75C21.1445 18.75 19.5977 18.293 18.332 17.7305C18.1562 17.6602 17.9805 17.5547 17.8398 17.4844C17.2773 17.5898 16.75 17.625 16.1875 17.625Z"/>
-                                            </svg>
-                                            <span class="c-topic-card__metas-comments-text">2</span>
-                                        </div>
-                                        <div class="c-topic-card__metas-views o-flex o-flex--ng">
-                                            <svg class="c-topic-card__metas-views-icon" fill="none" width="19" height="15" viewBox="0 0 19 15" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill="#12314e" d="M10 2C7.9375 2 6.28125 2.9375 5 4.125C3.78125 5.25 2.96875 6.5625 2.53125 7.5C2.96875 8.4375 3.78125 9.78125 5 10.9062C6.28125 12.0938 7.9375 13 10 13C12.0312 13 13.6875 12.0938 14.9688 10.9062C16.1875 9.78125 17.0312 8.4375 17.4375 7.5C17.0312 6.5625 16.1875 5.25 15 4.125C13.6875 2.9375 12.0312 2 10 2ZM3.96875 3.03125C5.4375 1.65625 7.46875 0.5 10 0.5C12.5 0.5 14.5312 1.65625 16 3.03125C17.4688 4.40625 18.4375 6 18.9062 7.125C19 7.375 19 7.65625 18.9062 7.90625C18.4375 9 17.4688 10.625 16 12C14.5312 13.375 12.5 14.5 10 14.5C7.46875 14.5 5.4375 13.375 3.96875 12C2.5 10.625 1.53125 9 1.0625 7.90625C0.96875 7.65625 0.96875 7.375 1.0625 7.125C1.53125 6 2.5 4.375 3.96875 3.03125ZM10 10C11.375 10 12.5 8.90625 12.5 7.5C12.5 6.125 11.375 5 10 5C9.96875 5 9.9375 5 9.9375 5C9.96875 5.1875 10 5.34375 10 5.5C10 6.625 9.09375 7.5 8 7.5C7.8125 7.5 7.65625 7.5 7.5 7.4375C7.5 7.46875 7.5 7.5 7.5 7.5C7.5 8.90625 8.59375 10 10 10ZM10 3.5C11.4062 3.5 12.7188 4.28125 13.4375 5.5C14.1562 6.75 14.1562 8.28125 13.4375 9.5C12.7188 10.75 11.4062 11.5 10 11.5C8.5625 11.5 7.25 10.75 6.53125 9.5C5.8125 8.28125 5.8125 6.75 6.53125 5.5C7.25 4.28125 8.5625 3.5 10 3.5Z"/>
-                                            </svg>
-                                            <span class="c-topic-card__metas-views-text">16</span>
                                         </div>
                                     </div>
                                 </div>
                             </li>
                         </ul>
-                        <div class="c-button c-button--icon block-last-topics__content-link o-full o-flex o-flex--col o-flex--aic o-flex--jcsb o-mt-s">
-                            <a class="c-button__link o-p-xs o-pl-s o-pr-s o-br-3xl o-tdn" href="#" target="_self">
-                                <svg class="c-button__link-icon" fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="#12314e" d="M14.6426 2.08398H14.6094C14.3105 1.78516 13.8125 1.78516 13.5137 2.08398L12.5176 3.04688L14.0781 4.60742L15.041 3.61133C15.3398 3.3125 15.3398 2.81445 15.041 2.48242L14.6426 2.08398ZM6.93945 8.6582C6.83984 8.72461 6.77344 8.85742 6.74023 8.99023L6.17578 10.916L8.13477 10.3848C8.26758 10.3516 8.36719 10.2852 8.4668 10.1855L12.9492 5.70312L11.4219 4.17578L6.93945 8.6582ZM12.3848 0.955078C13.3145 0.0253906 14.8086 0.0253906 15.7383 0.955078L16.1699 1.38672C17.0996 2.31641 17.0996 3.81055 16.1699 4.74023L9.5957 11.3145C9.33008 11.5801 8.96484 11.7793 8.56641 11.9121L5.24609 12.8418C4.98047 12.9414 4.68164 12.875 4.48242 12.6426C4.25 12.4434 4.18359 12.1445 4.25 11.8789L5.21289 8.55859C5.3125 8.16016 5.54492 7.79492 5.81055 7.5293L12.3848 0.955078ZM2.92188 2.25H6.64062C7.07227 2.25 7.4375 2.61523 7.4375 3.04688C7.4375 3.51172 7.07227 3.84375 6.64062 3.84375H2.92188C2.1582 3.84375 1.59375 4.44141 1.59375 5.17188V14.2031C1.59375 14.9668 2.1582 15.5312 2.92188 15.5312H11.9531C12.6836 15.5312 13.2812 14.9668 13.2812 14.2031V10.4844C13.2812 10.0527 13.6133 9.6875 14.0781 9.6875C14.5098 9.6875 14.875 10.0527 14.875 10.4844V14.2031C14.875 15.8301 13.5469 17.125 11.9531 17.125H2.92188C1.29492 17.125 0 15.8301 0 14.2031V5.17188C0 3.57812 1.29492 2.25 2.92188 2.25Z"/>
+                        <div class="c-button block-last-news__link o-mt-l">
+                            <a class="c-button__link o-p-xs o-pl-s o-pr-s o-br-3xl o-tdn" href="news.html" target="_self">Voir toutes nos actualités</a>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- SECTION - PORTFOLIO -->
+                <section class="block-portfolio o-mt-4xl o-mb-4xl" data-module-slider>
+                    <div class="block-portfolio__title o-wrapper o-grid o-grid--aic">
+                        <h2 class="block-portfolio__title-title o-large o-tac">Notre portfolio</h2>
+                        <p class="block-portfolio__title-subtitle o-subtitle o-tac">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
+                    </div>
+                    <div class="block-portfolio__content o-m-xl">
+                        <div class="swiper block-portfolio__slider o-full" data-slider="sliderportfolio">
+                            <div class="swiper-wrapper block-portfolio__slider-swiper-wrapper">
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                </div>
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                </div>
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                </div>
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                </div>
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                </div>
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                </div>
+                            </div>
+                            <div class="block-portfolio__slider-footer o-wrapper o-flex o-flex--aic o-flex--jcsb o-mt-l">
+                                <div class="block-portfolio__slider-buttons o-flex">
+                                    <div class="block-portfolio__slider-buttons-item block-portfolio__slider-buttons-prev o-p-xs" data-slider="prev">
+                                        <svg fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke="#12314e" d="M16.25 8.875H1.75M1.75 8.875L8.75 1.875M1.75 8.875L8.75 16.125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                    <div class="block-portfolio__slider-buttons-item block-portfolio__slider-buttons-next o-p-xs" data-slider="next">
+                                        <svg fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke="#12314e" d="M1.75 8.875H16.25M16.25 8.875L9.25 1.875M16.25 8.875L9.25 16.125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="block-portfolio__slider-pagination">
+                                    <div class="swiper-pagination" data-slider="pagination"></div>
+                                </div>
+                                <div class="c-button block-portfolio__slider-link">
+                                    <a class="c-button__link o-p-xs o-pl-s o-pr-s o-br-3xl o-tdn" href="portfolio.html" target="_self">Voir le portfolio</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- SECTION - CTA -->
+                <section class="block-cta o-mt-4xl o-mb-4xl">
+                    <div class="block-cta__container o-wrapper o-grid">
+                        <div class="block-cta__content o-p-m">
+                            <h2 class="block-cta__content-title">Nos ressources documentaires</h2>
+                            <p class="block-cta__content-text o-mt-m">Lorem ipsum dolor sit amet consectetur. Velit lectus lectus risus sit lacus eget neque suspendisse. Tempus sit maecenas vivamus tortor malesuada.</p>
+                            <div class="c-button c-button--alt block-cta__content-link o-mt-s">
+                                <a class="c-button__link o-p-xs o-pl-s o-pr-s o-br-3xl o-tdn" href="#" target="_self">Accéder à toutes les ressources</a>
+                            </div>
+                        </div>
+                        <div class="block-cta__background">
+                            <img src="./assets/images/cta-background.png" alt="Attribut alt de l'image du CTA">
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- SECTION - PARTNERS -->
+                <section class="block-partners o-mt-4xl o-mb-4xl" data-module-slider>
+                    <div class="block-partners__title o-wrapper o-grid o-grid--aic">
+                        <h2 class="block-partners__title-title o-large o-tac">Nos partenaires</h2>
+                    </div>
+                    <div class="block-partners__content o-wrapper o-flex o-flex--col o-flex--aic o-mt-xl">
+                        <div class="swiper block-partners__slider o-full" data-slider="sliderpartners">
+                            <div class="swiper-wrapper block-partners__slider-swiper-wrapper">
+                                <div class="swiper-slide block-partners__slider-swiper-slide">
+                                    <div class="block-partners__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide block-partners__slider-swiper-slide">
+                                    <div class="block-partners__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide block-partners__slider-swiper-slide">
+                                    <div class="block-partners__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide block-partners__slider-swiper-slide">
+                                    <div class="block-partners__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide block-partners__slider-swiper-slide">
+                                    <div class="block-partners__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide block-partners__slider-swiper-slide">
+                                    <div class="block-partners__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide block-partners__slider-swiper-slide">
+                                    <div class="block-partners__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide block-partners__slider-swiper-slide">
+                                    <div class="block-partners__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide block-partners__slider-swiper-slide">
+                                    <div class="block-partners__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide block-partners__slider-swiper-slide">
+                                    <div class="block-partners__slider-swiper-slide-image">
+                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </main>
+            
+            <!-- FOOTER -->
+            <footer class="p-footer">
+                <div class="p-footer__container o-wrapper o-grid o-grid--row-gap o-grid--ais o-pt-3xl o-pb-3xl">
+                    <div class="p-footer__logo">
+                        <a class="p-footer__logo-link" href="index.html" target="_self">
+                            <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
+                        </a>
+                    </div>
+                    <div class="p-footer__menu">
+                        <p class="p-footer__menu-title o-h5">Maison des associations</p>
+                        <ul class="c-menu c-menu--col o-mt-s">
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">À propos</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Services</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Espace adhérents</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-footer__infos">
+                        <p class="p-footer__infos-title o-h5">Infos pratiques</p>
+                        <div class="p-footer__infos-list o-mt-s">
+                            <div class="p-footer__infos-list-item o-flex">
+                                <svg class="p-footer__infos-list-item-icon" fill="none" width="14" height="18" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M11.6562 6.5C11.6562 3.87695 9.49805 1.71875 6.875 1.71875C4.21875 1.71875 2.09375 3.87695 2.09375 6.5C2.09375 6.93164 2.22656 7.5625 2.5918 8.42578C2.92383 9.22266 3.42188 10.1523 3.98633 11.082C4.94922 12.6094 6.04492 14.0703 6.875 15.1328C7.67188 14.0703 8.76758 12.6094 9.73047 11.082C10.2949 10.1523 10.793 9.22266 11.125 8.42578C11.4902 7.5625 11.6562 6.93164 11.6562 6.5ZM13.25 6.5C13.25 9.42188 9.36523 14.5684 7.63867 16.7266C7.24023 17.2246 6.47656 17.2246 6.07812 16.7266C4.38477 14.5684 0.5 9.42188 0.5 6.5C0.5 2.98047 3.35547 0.125 6.875 0.125C10.3945 0.125 13.25 2.98047 13.25 6.5ZM7.9375 6.5C7.9375 5.93555 7.43945 5.4375 6.875 5.4375C6.27734 5.4375 5.8125 5.93555 5.8125 6.5C5.8125 7.09766 6.27734 7.5625 6.875 7.5625C7.43945 7.5625 7.9375 7.09766 7.9375 6.5ZM4.21875 6.5C4.21875 5.57031 4.7168 4.70703 5.54688 4.20898C6.34375 3.74414 7.37305 3.74414 8.20312 4.20898C9 4.70703 9.53125 5.57031 9.53125 6.5C9.53125 7.46289 9 8.32617 8.20312 8.82422C7.37305 9.28906 6.34375 9.28906 5.54688 8.82422C4.7168 8.32617 4.21875 7.46289 4.21875 6.5Z"/>
                                 </svg>
-                                <span class="c-button__link-text">Créer un nouveau sujet</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- SECTION - FEATURED -->
-            <section class="block-featured o-mt-4xl o-mb-4xl">
-                <div class="block-featured__container o-wrapper">
-                    <div class="c-card c-card--landscape o-p-s">
-                        <div class="c-card__image">
-                            <a class="c-card__image-link" href="new.html">
-                                <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'article">
-                            </a>
-                        </div>
-                        <div class="c-card__texts o-pt-m">
-                            <p class="c-card__texts-suptitle o-suptitle">À la une :</p>
-                            <a class="c-card__texts-title o-h6 o-tdn" href="new.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                            <div class="c-card__texts-infos o-flex o-flex--ng o-mt-xs">
-                                <div class="c-card__texts-infos-item c-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
-                                    <svg class="c-card__texts-infos-date-icon" opacity="0.80" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
-                                    </svg>
-                                    <p class="c-card__texts-infos-date-text">Le 5 juin 2024</p>
-                                </div>
-                                <div class="c-card__texts-infos-item o-flex o-flex--ng o-flex--aic">
-                                    <p class="c-card__texts-infos-tag">Catégorie 1</p>
-                                </div>
+                                <p class="p-footer__infos-list-item-text">1 Place Joseph Thierry, 67500 Haguenau</p>
                             </div>
-                            <p class="c-card__texts-excerpt">Pharetra sit consequat arcu egestas tortor lorem. Ut sit donec vel mattis. Tellus adipiscing id et id rhoncus cursus arcu. Fermentum fermentum sed velit vulputate. Elit et sagittis purus mauris. Nisl maecenas quam vulputate blandit diam et in.</p>
-                            <div class="c-button c-card__texts-link o-mt-s">
-                                <a class="c-button__link o-p-xs o-pl-s o-pr-s o-br-3xl o-tdn" href="new.html" target="_self">En savoir plus</a>
+                            <div class="p-footer__infos-list-item o-flex">
+                                <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M12.9512 9.28906L16.6699 10.8828C17.2676 11.1152 17.5996 11.7461 17.4668 12.377L16.6699 16.0957C16.5371 16.6934 15.9727 17.1582 15.375 17.1582C15.1426 17.1582 14.9434 17.125 14.7441 17.125C14.4121 17.125 14.0801 17.0918 13.7812 17.0586C6.31055 16.2617 0.5 9.95312 0.5 2.25C0.5 1.65234 0.931641 1.08789 1.5293 0.955078L5.24805 0.158203C5.87891 0.0253906 6.50977 0.357422 6.74219 0.955078L8.33594 4.67383C8.56836 5.20508 8.43555 5.83594 7.9707 6.20117L6.60938 7.33008C7.50586 8.85742 8.76758 10.1191 10.2949 11.0156L11.4238 9.6543C11.7891 9.18945 12.4199 9.05664 12.9512 9.28906ZM15.1426 15.5312L15.8398 12.2441L12.5195 10.8164L11.5566 12.0117C11.0586 12.6094 10.1953 12.7754 9.49805 12.377C7.73828 11.3477 6.27734 9.88672 5.24805 8.12695C4.84961 7.42969 5.01562 6.56641 5.61328 6.06836L6.80859 5.10547L5.38086 1.78516L2.09375 2.48242C2.19336 9.6543 7.9707 15.4316 15.1426 15.5312Z"/>
+                                </svg>
+                                <a class="p-footer__infos-list-item-text" href="tel:0388733041" target="_self">03 88 73 30 41</a>
+                            </div>
+                            <div class="p-footer__infos-list-item o-flex">
+                                <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M15.9062 9.625C15.9062 7.16797 14.5781 4.91016 12.4531 3.64844C10.2949 2.41992 7.67188 2.41992 5.54688 3.64844C3.38867 4.91016 2.09375 7.16797 2.09375 9.625C2.09375 12.1152 3.38867 14.373 5.54688 15.6348C7.67188 16.8633 10.2949 16.8633 12.4531 15.6348C14.5781 14.373 15.9062 12.1152 15.9062 9.625ZM0.5 9.625C0.5 6.60352 2.09375 3.81445 4.75 2.28711C7.37305 0.759766 10.5938 0.759766 13.25 2.28711C15.873 3.81445 17.5 6.60352 17.5 9.625C17.5 12.6797 15.873 15.4688 13.25 16.9961C10.5938 18.5234 7.37305 18.5234 4.75 16.9961C2.09375 15.4688 0.5 12.6797 0.5 9.625ZM8.20312 5.10938C8.20312 4.67773 8.53516 4.3125 9 4.3125C9.43164 4.3125 9.79688 4.67773 9.79688 5.10938V9.22656L12.6191 11.0859C12.9844 11.3516 13.084 11.8496 12.8516 12.2148C12.5859 12.5801 12.0879 12.6797 11.7227 12.4141L8.53516 10.2891C8.33594 10.1562 8.20312 9.89062 8.20312 9.625V5.10938Z"/>
+                                </svg>
+                                <p class="p-footer__infos-list-item-text">Lundi - vendredi : 13h30 - 17h30</p>
                             </div>
                         </div>
                     </div>
-                </div>
-            </section>
-            
-            <!-- SECTION - LAST-NEWS -->
-            <section class="block-last-news c-shapes o-mt-4xl o-mb-4xl">
-                <div class="c-shapes__container block-last-news__shapes">
-                    <img class="c-shapes__item c-shapes__item--rectangle" src="./assets/images/svg/rectangle-red.svg" alt="">
-                    <img class="c-shapes__item c-shapes__item--circle" src="./assets/images/svg/circle-teal.svg" alt="">
-                </div>
-                <div class="block-last-news__title o-wrapper o-grid o-grid--aic">
-                    <h2 class="block-last-news__title-title o-large o-tac">Nos dernières actualités</h2>
-                    <p class="block-last-news__title-subtitle o-subtitle o-large o-tac">Lorem ipsum dolor sit amet consectetur. Dui pharetra vulputate dictumst quis dui aliquam a cursus lectus.</p>
-                </div>
-                <div class="block-last-news__content o-wrapper o-flex o-flex--col o-flex--aic o-mt-xl">
-                    <ul class="block-last-news__list o-full o-grid o-grid--row-gap">
-                        <li class="block-last-news__list-item o-tiers">
-                            <div class="c-card o-p-s">
-                                <div class="c-card__image">
-                                    <a class="c-card__image-link" href="new.html">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'article">
-                                    </a>
-                                </div>
-                                <div class="c-card__texts o-pt-m">
-                                    <a class="c-card__texts-title o-h6 o-tdn" href="new.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                                    <div class="c-card__texts-infos o-flex o-flex--ng o-mt-xs">
-                                        <div class="c-card__texts-infos-item c-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
-                                            <svg class="c-card__texts-infos-date-icon" opacity="0.80" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
-                                            </svg>
-                                            <p class="c-card__texts-infos-date-text">Le 5 juin 2024</p>
-                                        </div>
-                                        <div class="c-card__texts-infos-item o-flex o-flex--ng o-flex--aic">
-                                            <p class="c-card__texts-infos-tag">Catégorie 1</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="block-last-news__list-item o-tiers">
-                            <div class="c-card o-p-s">
-                                <div class="c-card__image">
-                                    <a class="c-card__image-link" href="new.html">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'article">
-                                    </a>
-                                </div>
-                                <div class="c-card__texts o-pt-m">
-                                    <a class="c-card__texts-title o-h6 o-tdn" href="new.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                                    <div class="c-card__texts-infos o-flex o-flex--ng o-mt-xs">
-                                        <div class="c-card__texts-infos-item c-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
-                                            <svg class="c-card__texts-infos-date-icon" opacity="0.80" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
-                                            </svg>
-                                            <p class="c-card__texts-infos-date-text">Le 5 juin 2024</p>
-                                        </div>
-                                        <div class="c-card__texts-infos-item o-flex o-flex--ng o-flex--aic">
-                                            <p class="c-card__texts-infos-tag">Catégorie 2</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="block-last-news__list-item o-tiers">
-                            <div class="c-card o-p-s">
-                                <div class="c-card__image">
-                                    <a class="c-card__image-link" href="new.html">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'article">
-                                    </a>
-                                </div>
-                                <div class="c-card__texts o-pt-m">
-                                    <a class="c-card__texts-title o-h6 o-tdn" href="new.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                                    <div class="c-card__texts-infos o-flex o-flex--ng o-mt-xs">
-                                        <div class="c-card__texts-infos-item c-card__texts-infos-date o-flex o-flex--ng o-flex--aic">
-                                            <svg class="c-card__texts-infos-date-icon" opacity="0.80" fill="none" width="14" height="17" viewBox="0 0 14 17" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill="#12314e" d="M4.75 1.25V2.5H9.25V1.25C9.25 0.84375 9.5625 0.5 10 0.5C10.4062 0.5 10.75 0.84375 10.75 1.25V2.5H12C13.0938 2.5 14 3.40625 14 4.5V5V6.5V14.5C14 15.625 13.0938 16.5 12 16.5H2C0.875 16.5 0 15.625 0 14.5V6.5V5V4.5C0 3.40625 0.875 2.5 2 2.5H3.25V1.25C3.25 0.84375 3.5625 0.5 4 0.5C4.40625 0.5 4.75 0.84375 4.75 1.25ZM1.5 6.5V14.5C1.5 14.7812 1.71875 15 2 15H12C12.25 15 12.5 14.7812 12.5 14.5V6.5H1.5Z"/>
-                                            </svg>
-                                            <p class="c-card__texts-infos-date-text">Le 5 juin 2024</p>
-                                        </div>
-                                        <div class="c-card__texts-infos-item o-flex o-flex--ng o-flex--aic">
-                                            <p class="c-card__texts-infos-tag">Catégorie 4, Catégorie 2</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="c-button block-last-news__link o-mt-l">
-                        <a class="c-button__link o-p-xs o-pl-s o-pr-s o-br-3xl o-tdn" href="news.html" target="_self">Voir toutes nos actualités</a>
+                    <div class="p-footer__submenu o-mt-3xl">
+                        <ul class="c-menu c-menu--row">
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Données personnelles</a>
+                            </li>
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Accessibilité</a>
+                            </li>
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Politique cookies</a>
+                            </li>
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Mentions légales</a>
+                            </li>
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Plan du site</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </section>
-            
-            <!-- SECTION - PORTFOLIO -->
-            <section class="block-portfolio o-mt-4xl o-mb-4xl" data-module-slider>
-                <div class="block-portfolio__title o-wrapper o-grid o-grid--aic">
-                    <h2 class="block-portfolio__title-title o-large o-tac">Notre portfolio</h2>
-                    <p class="block-portfolio__title-subtitle o-subtitle o-tac">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
-                </div>
-                <div class="block-portfolio__content o-m-xl">
-                    <div class="swiper block-portfolio__slider o-full" data-slider="sliderportfolio">
-                        <div class="swiper-wrapper block-portfolio__slider-swiper-wrapper">
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                            </div>
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                            </div>
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                            </div>
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                            </div>
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                            </div>
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                            </div>
-                        </div>
-                        <div class="block-portfolio__slider-footer o-wrapper o-flex o-flex--aic o-flex--jcsb o-mt-l">
-                            <div class="block-portfolio__slider-buttons o-flex">
-                                <div class="block-portfolio__slider-buttons-item block-portfolio__slider-buttons-prev o-p-xs" data-slider="prev">
-                                    <svg fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke="#12314e" d="M16.25 8.875H1.75M1.75 8.875L8.75 1.875M1.75 8.875L8.75 16.125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                                <div class="block-portfolio__slider-buttons-item block-portfolio__slider-buttons-next o-p-xs" data-slider="next">
-                                    <svg fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                        <path stroke="#12314e" d="M1.75 8.875H16.25M16.25 8.875L9.25 1.875M16.25 8.875L9.25 16.125" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                    </svg>
-                                </div>
-                            </div>
-                            <div class="block-portfolio__slider-pagination">
-                                <div class="swiper-pagination" data-slider="pagination"></div>
-                            </div>
-                            <div class="c-button block-portfolio__slider-link">
-                                <a class="c-button__link o-p-xs o-pl-s o-pr-s o-br-3xl o-tdn" href="portfolio.html" target="_self">Voir le portfolio</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-            <!-- SECTION - CTA -->
-            <section class="block-cta o-mt-4xl o-mb-4xl">
-                <div class="block-cta__container o-wrapper o-grid">
-                    <div class="block-cta__content o-p-m">
-                        <h2 class="block-cta__content-title">Nos ressources documentaires</h2>
-                        <p class="block-cta__content-text o-mt-m">Lorem ipsum dolor sit amet consectetur. Velit lectus lectus risus sit lacus eget neque suspendisse. Tempus sit maecenas vivamus tortor malesuada.</p>
-                        <div class="c-button c-button--alt block-cta__content-link o-mt-s">
-                            <a class="c-button__link o-p-xs o-pl-s o-pr-s o-br-3xl o-tdn" href="#" target="_self">Accéder à toutes les ressources</a>
-                        </div>
-                    </div>
-                    <div class="block-cta__background">
-                        <img src="./assets/images/cta-background.png" alt="Attribut alt de l'image du CTA">
-                    </div>
-                </div>
-            </section>
-            
-            <!-- SECTION - PARTNERS -->
-            <section class="block-partners o-mt-4xl o-mb-4xl" data-module-slider>
-                <div class="block-partners__title o-wrapper o-grid o-grid--aic">
-                    <h2 class="block-partners__title-title o-large o-tac">Nos partenaires</h2>
-                </div>
-                <div class="block-partners__content o-wrapper o-flex o-flex--col o-flex--aic o-mt-xl">
-                    <div class="swiper block-partners__slider o-full" data-slider="sliderpartners">
-                        <div class="swiper-wrapper block-partners__slider-swiper-wrapper">
-                            <div class="swiper-slide block-partners__slider-swiper-slide">
-                                <div class="block-partners__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
-                                </div>
-                            </div>
-                            <div class="swiper-slide block-partners__slider-swiper-slide">
-                                <div class="block-partners__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
-                                </div>
-                            </div>
-                            <div class="swiper-slide block-partners__slider-swiper-slide">
-                                <div class="block-partners__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
-                                </div>
-                            </div>
-                            <div class="swiper-slide block-partners__slider-swiper-slide">
-                                <div class="block-partners__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
-                                </div>
-                            </div>
-                            <div class="swiper-slide block-partners__slider-swiper-slide">
-                                <div class="block-partners__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
-                                </div>
-                            </div>
-                            <div class="swiper-slide block-partners__slider-swiper-slide">
-                                <div class="block-partners__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
-                                </div>
-                            </div>
-                            <div class="swiper-slide block-partners__slider-swiper-slide">
-                                <div class="block-partners__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
-                                </div>
-                            </div>
-                            <div class="swiper-slide block-partners__slider-swiper-slide">
-                                <div class="block-partners__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
-                                </div>
-                            </div>
-                            <div class="swiper-slide block-partners__slider-swiper-slide">
-                                <div class="block-partners__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
-                                </div>
-                            </div>
-                            <div class="swiper-slide block-partners__slider-swiper-slide">
-                                <div class="block-partners__slider-swiper-slide-image">
-                                    <img src="./assets/images/image-fallback.svg" alt="Attribut alt du logo du partenaire">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            
-        </main>
-        
-        <!-- FOOTER -->
-        <footer class="p-footer">
-            <div class="p-footer__container o-wrapper o-grid o-grid--row-gap o-grid--ais o-pt-3xl o-pb-3xl">
-                <div class="p-footer__logo">
-                    <a class="p-footer__logo-link" href="index.html" target="_self">
-                        <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
-                    </a>
-                </div>
-                <div class="p-footer__menu">
-                    <p class="p-footer__menu-title o-h5">Maison des associations</p>
-                    <ul class="c-menu c-menu--col o-mt-s">
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">À propos</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Services</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Espace adhérents</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="p-footer__infos">
-                    <p class="p-footer__infos-title o-h5">Infos pratiques</p>
-                    <div class="p-footer__infos-list o-mt-s">
-                        <div class="p-footer__infos-list-item o-flex">
-                            <svg class="p-footer__infos-list-item-icon" fill="none" width="14" height="18" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" d="M11.6562 6.5C11.6562 3.87695 9.49805 1.71875 6.875 1.71875C4.21875 1.71875 2.09375 3.87695 2.09375 6.5C2.09375 6.93164 2.22656 7.5625 2.5918 8.42578C2.92383 9.22266 3.42188 10.1523 3.98633 11.082C4.94922 12.6094 6.04492 14.0703 6.875 15.1328C7.67188 14.0703 8.76758 12.6094 9.73047 11.082C10.2949 10.1523 10.793 9.22266 11.125 8.42578C11.4902 7.5625 11.6562 6.93164 11.6562 6.5ZM13.25 6.5C13.25 9.42188 9.36523 14.5684 7.63867 16.7266C7.24023 17.2246 6.47656 17.2246 6.07812 16.7266C4.38477 14.5684 0.5 9.42188 0.5 6.5C0.5 2.98047 3.35547 0.125 6.875 0.125C10.3945 0.125 13.25 2.98047 13.25 6.5ZM7.9375 6.5C7.9375 5.93555 7.43945 5.4375 6.875 5.4375C6.27734 5.4375 5.8125 5.93555 5.8125 6.5C5.8125 7.09766 6.27734 7.5625 6.875 7.5625C7.43945 7.5625 7.9375 7.09766 7.9375 6.5ZM4.21875 6.5C4.21875 5.57031 4.7168 4.70703 5.54688 4.20898C6.34375 3.74414 7.37305 3.74414 8.20312 4.20898C9 4.70703 9.53125 5.57031 9.53125 6.5C9.53125 7.46289 9 8.32617 8.20312 8.82422C7.37305 9.28906 6.34375 9.28906 5.54688 8.82422C4.7168 8.32617 4.21875 7.46289 4.21875 6.5Z"/>
-                            </svg>
-                            <p class="p-footer__infos-list-item-text">1 Place Joseph Thierry, 67500 Haguenau</p>
-                        </div>
-                        <div class="p-footer__infos-list-item o-flex">
-                            <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" d="M12.9512 9.28906L16.6699 10.8828C17.2676 11.1152 17.5996 11.7461 17.4668 12.377L16.6699 16.0957C16.5371 16.6934 15.9727 17.1582 15.375 17.1582C15.1426 17.1582 14.9434 17.125 14.7441 17.125C14.4121 17.125 14.0801 17.0918 13.7812 17.0586C6.31055 16.2617 0.5 9.95312 0.5 2.25C0.5 1.65234 0.931641 1.08789 1.5293 0.955078L5.24805 0.158203C5.87891 0.0253906 6.50977 0.357422 6.74219 0.955078L8.33594 4.67383C8.56836 5.20508 8.43555 5.83594 7.9707 6.20117L6.60938 7.33008C7.50586 8.85742 8.76758 10.1191 10.2949 11.0156L11.4238 9.6543C11.7891 9.18945 12.4199 9.05664 12.9512 9.28906ZM15.1426 15.5312L15.8398 12.2441L12.5195 10.8164L11.5566 12.0117C11.0586 12.6094 10.1953 12.7754 9.49805 12.377C7.73828 11.3477 6.27734 9.88672 5.24805 8.12695C4.84961 7.42969 5.01562 6.56641 5.61328 6.06836L6.80859 5.10547L5.38086 1.78516L2.09375 2.48242C2.19336 9.6543 7.9707 15.4316 15.1426 15.5312Z"/>
-                            </svg>
-                            <a class="p-footer__infos-list-item-text" href="tel:0388733041" target="_self">03 88 73 30 41</a>
-                        </div>
-                        <div class="p-footer__infos-list-item o-flex">
-                            <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" d="M15.9062 9.625C15.9062 7.16797 14.5781 4.91016 12.4531 3.64844C10.2949 2.41992 7.67188 2.41992 5.54688 3.64844C3.38867 4.91016 2.09375 7.16797 2.09375 9.625C2.09375 12.1152 3.38867 14.373 5.54688 15.6348C7.67188 16.8633 10.2949 16.8633 12.4531 15.6348C14.5781 14.373 15.9062 12.1152 15.9062 9.625ZM0.5 9.625C0.5 6.60352 2.09375 3.81445 4.75 2.28711C7.37305 0.759766 10.5938 0.759766 13.25 2.28711C15.873 3.81445 17.5 6.60352 17.5 9.625C17.5 12.6797 15.873 15.4688 13.25 16.9961C10.5938 18.5234 7.37305 18.5234 4.75 16.9961C2.09375 15.4688 0.5 12.6797 0.5 9.625ZM8.20312 5.10938C8.20312 4.67773 8.53516 4.3125 9 4.3125C9.43164 4.3125 9.79688 4.67773 9.79688 5.10938V9.22656L12.6191 11.0859C12.9844 11.3516 13.084 11.8496 12.8516 12.2148C12.5859 12.5801 12.0879 12.6797 11.7227 12.4141L8.53516 10.2891C8.33594 10.1562 8.20312 9.89062 8.20312 9.625V5.10938Z"/>
-                            </svg>
-                            <p class="p-footer__infos-list-item-text">Lundi - vendredi : 13h30 - 17h30</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="p-footer__submenu o-mt-3xl">
-                    <ul class="c-menu c-menu--row">
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Données personnelles</a>
-                        </li>
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Accessibilité</a>
-                        </li>
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Politique cookies</a>
-                        </li>
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Mentions légales</a>
-                        </li>
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Plan du site</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
         
         <!-- SCRIPTS -->
         <script type="module" id="site-js" src="./assets/scripts/app.js"></script>

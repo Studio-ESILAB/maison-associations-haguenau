@@ -29,297 +29,298 @@
 </head>
 
 <body data-module-scroll data-module-load-disabled data-load="wrapper">
-    <div data-load="container">
-        
-        <!-- HEADER -->
-        <header class="p-header p-header--light" data-module-menu>
-            <div class="p-header__background" data-menu="headerbackground"></div>
-            <div class="p-header__container o-wrapper o-grid o-grid--aic o-pt-m o-pb-xs">
-                <div class="p-header__logo">
-                    <a id="logo" class="p-header__logo-link o-dn" href="index.html" target="_self">
-                        <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
-                    </a>
-                    <a id="logo-light" class="p-header__logo-link" href="index.html" target="_self">
-                        <img src="./assets/images/logos/logo-light.svg" alt="Logo de la Maison des Associations de Haguenau">
-                    </a>
-                </div>
-                <nav class="p-header__menu o-grid o-grid--aic">
-                    <ul class="c-menu c-menu--closed c-menu--row o-p-m" data-menu="menucontainer">
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">À propos</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Services</a>
-                        </li>
-                        <li class="c-menu__item active">
-                            <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
-                        </li>
-                        <li class="c-menu__item c-menu__item--login o-dn">
-                            <a class="c-menu__item--login-link o-flex o-flex--aic o-tdn" href="log-in.html" target="_self">
-                                <svg class="c-menu__item--login-icon" fill="none" width="22" height="21" viewBox="0 0 22 21" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill="#ffffff" d="M16.8594 16.1322C18.2656 14.6869 19.125 12.6947 19.125 10.5072C19.125 6.05412 15.4531 2.38225 11 2.38225C6.50781 2.38225 2.875 6.05412 2.875 10.5072C2.875 12.6947 3.69531 14.6869 5.10156 16.1322C5.84375 14.2963 7.64062 13.0072 9.75 13.0072H12.25C14.3203 13.0072 16.1172 14.2963 16.8594 16.1322ZM15.2969 17.4213C15.0234 15.976 13.7344 14.8822 12.25 14.8822H9.75C8.22656 14.8822 6.9375 15.976 6.66406 17.4213C7.91406 18.2026 9.39844 18.6322 11 18.6322C12.5625 18.6322 14.0469 18.2026 15.2969 17.4213ZM11 20.5072C7.40625 20.5072 4.125 18.6322 2.32812 15.5072C0.53125 12.4213 0.53125 8.63225 2.32812 5.50725C4.125 2.42131 7.40625 0.507248 11 0.507248C14.5547 0.507248 17.8359 2.42131 19.6328 5.50725C21.4297 8.63225 21.4297 12.4213 19.6328 15.5072C17.8359 18.6322 14.5547 20.5072 11 20.5072ZM11 9.88225C11.5469 9.88225 12.0547 9.60881 12.3281 9.101C12.6016 8.63225 12.6016 8.04631 12.3281 7.5385C12.0547 7.06975 11.5469 6.75725 11 6.75725C10.4141 6.75725 9.90625 7.06975 9.63281 7.5385C9.35938 8.04631 9.35938 8.63225 9.63281 9.101C9.90625 9.60881 10.4141 9.88225 11 9.88225ZM7.5625 8.31975C7.5625 7.10881 8.1875 5.976 9.28125 5.351C10.3359 4.76506 11.625 4.76506 12.7188 5.351C13.7734 5.976 14.4375 7.10881 14.4375 8.31975C14.4375 9.56975 13.7734 10.7026 12.7188 11.3276C11.625 11.9135 10.3359 11.9135 9.28125 11.3276C8.1875 10.7026 7.5625 9.56975 7.5625 8.31975Z"/>
-                                </svg>
-                                <span class="c-menu__item--login-text">Se connecter</span>
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="p-header__menu-login o-mt-m">
-                        <a class="p-header__menu-login-link o-flex o-flex--aic o-tdn" href="log-in.html" target="_self">
-                            <svg class="p-header__menu-login-icon" fill="none" width="22" height="21" viewBox="0 0 22 21" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" d="M16.8594 16.1322C18.2656 14.6869 19.125 12.6947 19.125 10.5072C19.125 6.05412 15.4531 2.38225 11 2.38225C6.50781 2.38225 2.875 6.05412 2.875 10.5072C2.875 12.6947 3.69531 14.6869 5.10156 16.1322C5.84375 14.2963 7.64062 13.0072 9.75 13.0072H12.25C14.3203 13.0072 16.1172 14.2963 16.8594 16.1322ZM15.2969 17.4213C15.0234 15.976 13.7344 14.8822 12.25 14.8822H9.75C8.22656 14.8822 6.9375 15.976 6.66406 17.4213C7.91406 18.2026 9.39844 18.6322 11 18.6322C12.5625 18.6322 14.0469 18.2026 15.2969 17.4213ZM11 20.5072C7.40625 20.5072 4.125 18.6322 2.32812 15.5072C0.53125 12.4213 0.53125 8.63225 2.32812 5.50725C4.125 2.42131 7.40625 0.507248 11 0.507248C14.5547 0.507248 17.8359 2.42131 19.6328 5.50725C21.4297 8.63225 21.4297 12.4213 19.6328 15.5072C17.8359 18.6322 14.5547 20.5072 11 20.5072ZM11 9.88225C11.5469 9.88225 12.0547 9.60881 12.3281 9.101C12.6016 8.63225 12.6016 8.04631 12.3281 7.5385C12.0547 7.06975 11.5469 6.75725 11 6.75725C10.4141 6.75725 9.90625 7.06975 9.63281 7.5385C9.35938 8.04631 9.35938 8.63225 9.63281 9.101C9.90625 9.60881 10.4141 9.88225 11 9.88225ZM7.5625 8.31975C7.5625 7.10881 8.1875 5.976 9.28125 5.351C10.3359 4.76506 11.625 4.76506 12.7188 5.351C13.7734 5.976 14.4375 7.10881 14.4375 8.31975C14.4375 9.56975 13.7734 10.7026 12.7188 11.3276C11.625 11.9135 10.3359 11.9135 9.28125 11.3276C8.1875 10.7026 7.5625 9.56975 7.5625 8.31975Z"/>
-                            </svg>
-                            <span class="p-header__menu-login-text">Se connecter</span>
+    <div id="smooth-wrapper" data-load="container">
+        <div id="smooth-content">
+            <!-- HEADER -->
+            <header class="p-header p-header--light" data-module-menu>
+                <div class="p-header__background" data-menu="headerbackground"></div>
+                <div class="p-header__container o-wrapper o-grid o-grid--aic o-pt-m o-pb-xs">
+                    <div class="p-header__logo">
+                        <a id="logo" class="p-header__logo-link o-dn" href="index.html" target="_self">
+                            <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
+                        </a>
+                        <a id="logo-light" class="p-header__logo-link" href="index.html" target="_self">
+                            <img src="./assets/images/logos/logo-light.svg" alt="Logo de la Maison des Associations de Haguenau">
                         </a>
                     </div>
-                    <div class="p-header__menu-toggle o-flex o-flex--ng o-flex--jce o-p-m o-br-3xl" data-menu="menutoggle">
-                        <svg class="p-header__menu-toggle-icon p-header__menu-toggle-open" fill="none" width="14" height="14" viewBox="0 0 13.9 12.3" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#12314e" d="M13.1,10.6c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
-                            <path fill="#12314e" d="M13.1,6.2c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
-                            <path fill="#12314e" d="M13.1,1.7c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
-                        </svg>
-                        <svg class="p-header__menu-toggle-icon p-header__menu-toggle-close" fill="none" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#12314e" d="M12.8,2.9c.5-.5.5-1.3,0-1.8s-1.3-.5-1.8,0l-4.1,4.1L2.9,1.2c-.5-.5-1.3-.5-1.8,0s-.5,1.3,0,1.8l4.1,4.1L1.2,11.1c-.5.5-.5,1.3,0,1.8s1.3.5,1.8,0l4.1-4.1,4.1,4.1c.5.5,1.3.5,1.8,0s.5-1.3,0-1.8l-4.1-4.1,4.1-4.1Z"/>
-                        </svg>
-                    </div>
-                </nav>
-            </div>
-        </header>
-        
-        <main class="c-main o-oh">
-            
-            <!-- SECTION - HERO -->
-            <section class="p-hero p-hero--small p-hero--light o-flex o-flex--col o-flex--jce">
-                <div class="p-hero__background">
-                    <img src="./assets/images/portfolio-hero-background.png" alt="Attribut alt de l'image de fond du hero">
-                </div>
-                <div class="p-hero__container o-wrapper o-grid o-pt-xl o-pb-xl">
-                    <div class="p-hero__breadcrumb o-flex o-mb-m">
-                        <a class="p-hero__breadcrumb-start o-tdn" href="index.html" target="_self">Accueil</a>
-                        <span class="p-hero__breadcrumb-separator">/</span>
-                        <p class="p-hero__breadcrumb-end">Portfolio</p>
-                    </div>
-                    <h1 class="p-hero__title o-h2">Notre portfolio</h1>
-                    <p class="p-hero__subtitle o-mt-m">Lorem ipsum dolor sit amet consectetur. Nec convallis bibendum semper sed ut posuere. Quis in nisl nunc venenatis. Pretium amet pretium diam ultricies auctor. Orci enim faucibus porta sit quisque vitae ultrices dapibus urna.</p>
-                </div>
-            </section>
-            
-            <!-- SECTION - PORTFOLIO -->
-            <section class="block-portfolio o-mb-4xl">
-                <div class="block-portfolio__content o-wrapper o-flex o-flex--col o-flex--aic o-mt-xl">
-                    <ul class="block-portfolio__list o-grid o-grid--row-gap-large">
-                        <li class="block-portfolio__list-item o-demi">
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                                <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
-                            </div>
-                        </li>
-                        <li class="block-portfolio__list-item o-demi">
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                                <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
-                            </div>
-                        </li>
-                        <li class="block-portfolio__list-item o-demi">
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                                <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
-                            </div>
-                        </li>
-                        <li class="block-portfolio__list-item o-demi">
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                                <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
-                            </div>
-                        </li>
-                        <li class="block-portfolio__list-item o-demi">
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                                <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
-                            </div>
-                        </li>
-                        <li class="block-portfolio__list-item o-demi">
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                                <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
-                            </div>
-                        </li>
-                        <li class="block-portfolio__list-item o-demi">
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                                <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
-                            </div>
-                        </li>
-                        <li class="block-portfolio__list-item o-demi">
-                            <div class="swiper-slide block-portfolio__slider-swiper-slide">
-                                <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
-                                    <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
-                                        <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
-                                    </a>
-                                </div>
-                                <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
-                                <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
-                            </div>
-                        </li>
-                    </ul>
-                    <div class="c-pagination o-flex o-mt-l">
-                        <a class="c-pagination__prev o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">
-                            <svg class="c-pagination__prev-icon" fill="none" width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#12314e" d="M.7,7.3c-.3.3-.3.8,0,1.1l6,6c.3.3.8.3,1.1,0,.3-.3.3-.8,0-1L2.3,7.8,7.8,2.3c.3-.3.3-.8,0-1-.3-.3-.8-.3-1,0L.7,7.3Z"/>
-                            </svg>
-                        </a>
-                        <ul class="c-pagination__pages o-flex">
-                            <li class="c-pagination__pages-item c-pagination__pages-item--active">
-                                <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">1</a>
+                    <nav class="p-header__menu o-grid o-grid--aic">
+                        <ul class="c-menu c-menu--closed c-menu--row o-p-m" data-menu="menucontainer">
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">À propos</a>
                             </li>
-                            <li class="c-pagination__pages-item">
-                                <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">2</a>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
                             </li>
-                            <li class="c-pagination__pages-item">
-                                <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">3</a>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Services</a>
                             </li>
-                            <li class="c-pagination__pages-item">
-                                <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">4</a>
+                            <li class="c-menu__item active">
+                                <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
                             </li>
-                            <li class="c-pagination__pages-item c-pagination__pages-item--more">
-                                <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">...</a>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
                             </li>
-                            <li class="c-pagination__pages-item">
-                                <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">12</a>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
+                            </li>
+                            <li class="c-menu__item c-menu__item--login o-dn">
+                                <a class="c-menu__item--login-link o-flex o-flex--aic o-tdn" href="log-in.html" target="_self">
+                                    <svg class="c-menu__item--login-icon" fill="none" width="22" height="21" viewBox="0 0 22 21" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="#ffffff" d="M16.8594 16.1322C18.2656 14.6869 19.125 12.6947 19.125 10.5072C19.125 6.05412 15.4531 2.38225 11 2.38225C6.50781 2.38225 2.875 6.05412 2.875 10.5072C2.875 12.6947 3.69531 14.6869 5.10156 16.1322C5.84375 14.2963 7.64062 13.0072 9.75 13.0072H12.25C14.3203 13.0072 16.1172 14.2963 16.8594 16.1322ZM15.2969 17.4213C15.0234 15.976 13.7344 14.8822 12.25 14.8822H9.75C8.22656 14.8822 6.9375 15.976 6.66406 17.4213C7.91406 18.2026 9.39844 18.6322 11 18.6322C12.5625 18.6322 14.0469 18.2026 15.2969 17.4213ZM11 20.5072C7.40625 20.5072 4.125 18.6322 2.32812 15.5072C0.53125 12.4213 0.53125 8.63225 2.32812 5.50725C4.125 2.42131 7.40625 0.507248 11 0.507248C14.5547 0.507248 17.8359 2.42131 19.6328 5.50725C21.4297 8.63225 21.4297 12.4213 19.6328 15.5072C17.8359 18.6322 14.5547 20.5072 11 20.5072ZM11 9.88225C11.5469 9.88225 12.0547 9.60881 12.3281 9.101C12.6016 8.63225 12.6016 8.04631 12.3281 7.5385C12.0547 7.06975 11.5469 6.75725 11 6.75725C10.4141 6.75725 9.90625 7.06975 9.63281 7.5385C9.35938 8.04631 9.35938 8.63225 9.63281 9.101C9.90625 9.60881 10.4141 9.88225 11 9.88225ZM7.5625 8.31975C7.5625 7.10881 8.1875 5.976 9.28125 5.351C10.3359 4.76506 11.625 4.76506 12.7188 5.351C13.7734 5.976 14.4375 7.10881 14.4375 8.31975C14.4375 9.56975 13.7734 10.7026 12.7188 11.3276C11.625 11.9135 10.3359 11.9135 9.28125 11.3276C8.1875 10.7026 7.5625 9.56975 7.5625 8.31975Z"/>
+                                    </svg>
+                                    <span class="c-menu__item--login-text">Se connecter</span>
+                                </a>
                             </li>
                         </ul>
-                        <a class="c-pagination__next o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">
-                            <svg class="c-pagination__next-icon" fill="none" width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#12314e" d="M8.28125 7.26074C8.5625 7.57324 8.5625 8.04199 8.28125 8.32324L2.28125 14.3232C1.96875 14.6357 1.5 14.6357 1.21875 14.3232C0.90625 14.042 0.90625 13.5732 1.21875 13.292L6.6875 7.82324L1.21875 2.32324C0.90625 2.04199 0.90625 1.57324 1.21875 1.29199C1.5 0.979492 1.96875 0.979492 2.25 1.29199L8.28125 7.26074Z"/>
+                        <div class="p-header__menu-login o-mt-m">
+                            <a class="p-header__menu-login-link o-flex o-flex--aic o-tdn" href="log-in.html" target="_self">
+                                <svg class="p-header__menu-login-icon" fill="none" width="22" height="21" viewBox="0 0 22 21" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M16.8594 16.1322C18.2656 14.6869 19.125 12.6947 19.125 10.5072C19.125 6.05412 15.4531 2.38225 11 2.38225C6.50781 2.38225 2.875 6.05412 2.875 10.5072C2.875 12.6947 3.69531 14.6869 5.10156 16.1322C5.84375 14.2963 7.64062 13.0072 9.75 13.0072H12.25C14.3203 13.0072 16.1172 14.2963 16.8594 16.1322ZM15.2969 17.4213C15.0234 15.976 13.7344 14.8822 12.25 14.8822H9.75C8.22656 14.8822 6.9375 15.976 6.66406 17.4213C7.91406 18.2026 9.39844 18.6322 11 18.6322C12.5625 18.6322 14.0469 18.2026 15.2969 17.4213ZM11 20.5072C7.40625 20.5072 4.125 18.6322 2.32812 15.5072C0.53125 12.4213 0.53125 8.63225 2.32812 5.50725C4.125 2.42131 7.40625 0.507248 11 0.507248C14.5547 0.507248 17.8359 2.42131 19.6328 5.50725C21.4297 8.63225 21.4297 12.4213 19.6328 15.5072C17.8359 18.6322 14.5547 20.5072 11 20.5072ZM11 9.88225C11.5469 9.88225 12.0547 9.60881 12.3281 9.101C12.6016 8.63225 12.6016 8.04631 12.3281 7.5385C12.0547 7.06975 11.5469 6.75725 11 6.75725C10.4141 6.75725 9.90625 7.06975 9.63281 7.5385C9.35938 8.04631 9.35938 8.63225 9.63281 9.101C9.90625 9.60881 10.4141 9.88225 11 9.88225ZM7.5625 8.31975C7.5625 7.10881 8.1875 5.976 9.28125 5.351C10.3359 4.76506 11.625 4.76506 12.7188 5.351C13.7734 5.976 14.4375 7.10881 14.4375 8.31975C14.4375 9.56975 13.7734 10.7026 12.7188 11.3276C11.625 11.9135 10.3359 11.9135 9.28125 11.3276C8.1875 10.7026 7.5625 9.56975 7.5625 8.31975Z"/>
+                                </svg>
+                                <span class="p-header__menu-login-text">Se connecter</span>
+                            </a>
+                        </div>
+                        <div class="p-header__menu-toggle o-flex o-flex--ng o-flex--jce o-p-m o-br-3xl" data-menu="menutoggle">
+                            <svg class="p-header__menu-toggle-icon p-header__menu-toggle-open" fill="none" width="14" height="14" viewBox="0 0 13.9 12.3" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#12314e" d="M13.1,10.6c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
+                                <path fill="#12314e" d="M13.1,6.2c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
+                                <path fill="#12314e" d="M13.1,1.7c0,.5-.4.9-.9.9H1.7c-.5,0-.9-.4-.9-.9s.4-.9.9-.9h10.5c.5,0,.9.4.9.9Z"/>
                             </svg>
+                            <svg class="p-header__menu-toggle-icon p-header__menu-toggle-close" fill="none" width="14" height="14" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#12314e" d="M12.8,2.9c.5-.5.5-1.3,0-1.8s-1.3-.5-1.8,0l-4.1,4.1L2.9,1.2c-.5-.5-1.3-.5-1.8,0s-.5,1.3,0,1.8l4.1,4.1L1.2,11.1c-.5.5-.5,1.3,0,1.8s1.3.5,1.8,0l4.1-4.1,4.1,4.1c.5.5,1.3.5,1.8,0s.5-1.3,0-1.8l-4.1-4.1,4.1-4.1Z"/>
+                            </svg>
+                        </div>
+                    </nav>
+                </div>
+            </header>
+            
+            <main class="c-main o-oh">
+                
+                <!-- SECTION - HERO -->
+                <section class="p-hero p-hero--small p-hero--light o-flex o-flex--col o-flex--jce">
+                    <div class="p-hero__background">
+                        <img src="./assets/images/portfolio-hero-background.png" alt="Attribut alt de l'image de fond du hero">
+                    </div>
+                    <div class="p-hero__container o-wrapper o-grid o-pt-xl o-pb-xl">
+                        <div class="p-hero__breadcrumb o-flex o-mb-m">
+                            <a class="p-hero__breadcrumb-start o-tdn" href="index.html" target="_self">Accueil</a>
+                            <span class="p-hero__breadcrumb-separator">/</span>
+                            <p class="p-hero__breadcrumb-end">Portfolio</p>
+                        </div>
+                        <h1 class="p-hero__title o-h2">Notre portfolio</h1>
+                        <p class="p-hero__subtitle o-mt-m">Lorem ipsum dolor sit amet consectetur. Nec convallis bibendum semper sed ut posuere. Quis in nisl nunc venenatis. Pretium amet pretium diam ultricies auctor. Orci enim faucibus porta sit quisque vitae ultrices dapibus urna.</p>
+                    </div>
+                </section>
+                
+                <!-- SECTION - PORTFOLIO -->
+                <section class="block-portfolio o-mb-4xl">
+                    <div class="block-portfolio__content o-wrapper o-flex o-flex--col o-flex--aic o-mt-xl">
+                        <ul class="block-portfolio__list o-grid o-grid--row-gap-large">
+                            <li class="block-portfolio__list-item o-demi">
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                    <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
+                                </div>
+                            </li>
+                            <li class="block-portfolio__list-item o-demi">
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                    <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
+                                </div>
+                            </li>
+                            <li class="block-portfolio__list-item o-demi">
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                    <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
+                                </div>
+                            </li>
+                            <li class="block-portfolio__list-item o-demi">
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                    <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
+                                </div>
+                            </li>
+                            <li class="block-portfolio__list-item o-demi">
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                    <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
+                                </div>
+                            </li>
+                            <li class="block-portfolio__list-item o-demi">
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                    <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
+                                </div>
+                            </li>
+                            <li class="block-portfolio__list-item o-demi">
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                    <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
+                                </div>
+                            </li>
+                            <li class="block-portfolio__list-item o-demi">
+                                <div class="swiper-slide block-portfolio__slider-swiper-slide">
+                                    <div class="block-portfolio__slider-swiper-slide-image o-mb-s">
+                                        <a class="block-portfolio__slider-swiper-slide-image-link" href="galerie.html" target="_self">
+                                            <img src="./assets/images/image-fallback.svg" alt="Attribut alt de l'image">
+                                        </a>
+                                    </div>
+                                    <a class="block-portfolio__slider-swiper-slide-title o-h6 o-tdn" href="galerie.html" target="_self">Lorem ipsum dolor sit amet consectetur. Congue ultrices</a>
+                                    <p class="block-portfolio__slider-swiper-slide-description o-mt-xs">Lorem ipsum dolor sit amet consectetur. Facilisis quis rhoncus quisque vel lacus viverra. Elit faucibus cras pellentesque fames praesent ac. Consectetur quis fusce dignissim sem quam enim facilisis nec.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="c-pagination o-flex o-mt-l">
+                            <a class="c-pagination__prev o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">
+                                <svg class="c-pagination__prev-icon" fill="none" width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#12314e" d="M.7,7.3c-.3.3-.3.8,0,1.1l6,6c.3.3.8.3,1.1,0,.3-.3.3-.8,0-1L2.3,7.8,7.8,2.3c.3-.3.3-.8,0-1-.3-.3-.8-.3-1,0L.7,7.3Z"/>
+                                </svg>
+                            </a>
+                            <ul class="c-pagination__pages o-flex">
+                                <li class="c-pagination__pages-item c-pagination__pages-item--active">
+                                    <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">1</a>
+                                </li>
+                                <li class="c-pagination__pages-item">
+                                    <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">2</a>
+                                </li>
+                                <li class="c-pagination__pages-item">
+                                    <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">3</a>
+                                </li>
+                                <li class="c-pagination__pages-item">
+                                    <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">4</a>
+                                </li>
+                                <li class="c-pagination__pages-item c-pagination__pages-item--more">
+                                    <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">...</a>
+                                </li>
+                                <li class="c-pagination__pages-item">
+                                    <a class="c-pagination__pages-link o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">12</a>
+                                </li>
+                            </ul>
+                            <a class="c-pagination__next o-flex o-flex--aic o-flex--jcc o-tdn" href="#" target="_self">
+                                <svg class="c-pagination__next-icon" fill="none" width="9" height="15" viewBox="0 0 9 15" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#12314e" d="M8.28125 7.26074C8.5625 7.57324 8.5625 8.04199 8.28125 8.32324L2.28125 14.3232C1.96875 14.6357 1.5 14.6357 1.21875 14.3232C0.90625 14.042 0.90625 13.5732 1.21875 13.292L6.6875 7.82324L1.21875 2.32324C0.90625 2.04199 0.90625 1.57324 1.21875 1.29199C1.5 0.979492 1.96875 0.979492 2.25 1.29199L8.28125 7.26074Z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+            </main>
+            
+            <!-- FOOTER -->
+            <footer class="p-footer">
+                <div class="p-footer__container o-wrapper o-grid o-grid--row-gap o-grid--ais o-pt-3xl o-pb-3xl">
+                    <div class="p-footer__logo">
+                        <a class="p-footer__logo-link" href="index.html" target="_self">
+                            <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
                         </a>
                     </div>
-                </div>
-            </section>
-            
-        </main>
-        
-        <!-- FOOTER -->
-        <footer class="p-footer">
-            <div class="p-footer__container o-wrapper o-grid o-grid--row-gap o-grid--ais o-pt-3xl o-pb-3xl">
-                <div class="p-footer__logo">
-                    <a class="p-footer__logo-link" href="index.html" target="_self">
-                        <img src="./assets/images/logos/logo.svg" alt="Logo de la Maison des Associations de Haguenau">
-                    </a>
-                </div>
-                <div class="p-footer__menu">
-                    <p class="p-footer__menu-title o-h5">Maison des associations</p>
-                    <ul class="c-menu c-menu--col o-mt-s">
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">À propos</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Services</a>
-                        </li>
-                        <li class="c-menu__item active">
-                            <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
-                        </li>
-                        <li class="c-menu__item">
-                            <a class="c-menu__item-link" href="#" target="_self">Espace adhérents</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="p-footer__infos">
-                    <p class="p-footer__infos-title o-h5">Infos pratiques</p>
-                    <div class="p-footer__infos-list o-mt-s">
-                        <div class="p-footer__infos-list-item o-flex">
-                            <svg class="p-footer__infos-list-item-icon" fill="none" width="14" height="18" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" d="M11.6562 6.5C11.6562 3.87695 9.49805 1.71875 6.875 1.71875C4.21875 1.71875 2.09375 3.87695 2.09375 6.5C2.09375 6.93164 2.22656 7.5625 2.5918 8.42578C2.92383 9.22266 3.42188 10.1523 3.98633 11.082C4.94922 12.6094 6.04492 14.0703 6.875 15.1328C7.67188 14.0703 8.76758 12.6094 9.73047 11.082C10.2949 10.1523 10.793 9.22266 11.125 8.42578C11.4902 7.5625 11.6562 6.93164 11.6562 6.5ZM13.25 6.5C13.25 9.42188 9.36523 14.5684 7.63867 16.7266C7.24023 17.2246 6.47656 17.2246 6.07812 16.7266C4.38477 14.5684 0.5 9.42188 0.5 6.5C0.5 2.98047 3.35547 0.125 6.875 0.125C10.3945 0.125 13.25 2.98047 13.25 6.5ZM7.9375 6.5C7.9375 5.93555 7.43945 5.4375 6.875 5.4375C6.27734 5.4375 5.8125 5.93555 5.8125 6.5C5.8125 7.09766 6.27734 7.5625 6.875 7.5625C7.43945 7.5625 7.9375 7.09766 7.9375 6.5ZM4.21875 6.5C4.21875 5.57031 4.7168 4.70703 5.54688 4.20898C6.34375 3.74414 7.37305 3.74414 8.20312 4.20898C9 4.70703 9.53125 5.57031 9.53125 6.5C9.53125 7.46289 9 8.32617 8.20312 8.82422C7.37305 9.28906 6.34375 9.28906 5.54688 8.82422C4.7168 8.32617 4.21875 7.46289 4.21875 6.5Z"/>
-                            </svg>
-                            <p class="p-footer__infos-list-item-text">1 Place Joseph Thierry, 67500 Haguenau</p>
-                        </div>
-                        <div class="p-footer__infos-list-item o-flex">
-                            <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" d="M12.9512 9.28906L16.6699 10.8828C17.2676 11.1152 17.5996 11.7461 17.4668 12.377L16.6699 16.0957C16.5371 16.6934 15.9727 17.1582 15.375 17.1582C15.1426 17.1582 14.9434 17.125 14.7441 17.125C14.4121 17.125 14.0801 17.0918 13.7812 17.0586C6.31055 16.2617 0.5 9.95312 0.5 2.25C0.5 1.65234 0.931641 1.08789 1.5293 0.955078L5.24805 0.158203C5.87891 0.0253906 6.50977 0.357422 6.74219 0.955078L8.33594 4.67383C8.56836 5.20508 8.43555 5.83594 7.9707 6.20117L6.60938 7.33008C7.50586 8.85742 8.76758 10.1191 10.2949 11.0156L11.4238 9.6543C11.7891 9.18945 12.4199 9.05664 12.9512 9.28906ZM15.1426 15.5312L15.8398 12.2441L12.5195 10.8164L11.5566 12.0117C11.0586 12.6094 10.1953 12.7754 9.49805 12.377C7.73828 11.3477 6.27734 9.88672 5.24805 8.12695C4.84961 7.42969 5.01562 6.56641 5.61328 6.06836L6.80859 5.10547L5.38086 1.78516L2.09375 2.48242C2.19336 9.6543 7.9707 15.4316 15.1426 15.5312Z"/>
-                            </svg>
-                            <a class="p-footer__infos-list-item-text" href="tel:0388733041" target="_self">03 88 73 30 41</a>
-                        </div>
-                        <div class="p-footer__infos-list-item o-flex">
-                            <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="#ffffff" d="M15.9062 9.625C15.9062 7.16797 14.5781 4.91016 12.4531 3.64844C10.2949 2.41992 7.67188 2.41992 5.54688 3.64844C3.38867 4.91016 2.09375 7.16797 2.09375 9.625C2.09375 12.1152 3.38867 14.373 5.54688 15.6348C7.67188 16.8633 10.2949 16.8633 12.4531 15.6348C14.5781 14.373 15.9062 12.1152 15.9062 9.625ZM0.5 9.625C0.5 6.60352 2.09375 3.81445 4.75 2.28711C7.37305 0.759766 10.5938 0.759766 13.25 2.28711C15.873 3.81445 17.5 6.60352 17.5 9.625C17.5 12.6797 15.873 15.4688 13.25 16.9961C10.5938 18.5234 7.37305 18.5234 4.75 16.9961C2.09375 15.4688 0.5 12.6797 0.5 9.625ZM8.20312 5.10938C8.20312 4.67773 8.53516 4.3125 9 4.3125C9.43164 4.3125 9.79688 4.67773 9.79688 5.10938V9.22656L12.6191 11.0859C12.9844 11.3516 13.084 11.8496 12.8516 12.2148C12.5859 12.5801 12.0879 12.6797 11.7227 12.4141L8.53516 10.2891C8.33594 10.1562 8.20312 9.89062 8.20312 9.625V5.10938Z"/>
-                            </svg>
-                            <p class="p-footer__infos-list-item-text">Lundi - vendredi : 13h30 - 17h30</p>
+                    <div class="p-footer__menu">
+                        <p class="p-footer__menu-title o-h5">Maison des associations</p>
+                        <ul class="c-menu c-menu--col o-mt-s">
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">À propos</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="news.html" target="_self">Actualités</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Services</a>
+                            </li>
+                            <li class="c-menu__item active">
+                                <a class="c-menu__item-link" href="portfolio.html" target="_self">Portfolio</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Ressources</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="forum.html" target="_self">Forum</a>
+                            </li>
+                            <li class="c-menu__item">
+                                <a class="c-menu__item-link" href="#" target="_self">Espace adhérents</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="p-footer__infos">
+                        <p class="p-footer__infos-title o-h5">Infos pratiques</p>
+                        <div class="p-footer__infos-list o-mt-s">
+                            <div class="p-footer__infos-list-item o-flex">
+                                <svg class="p-footer__infos-list-item-icon" fill="none" width="14" height="18" viewBox="0 0 14 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M11.6562 6.5C11.6562 3.87695 9.49805 1.71875 6.875 1.71875C4.21875 1.71875 2.09375 3.87695 2.09375 6.5C2.09375 6.93164 2.22656 7.5625 2.5918 8.42578C2.92383 9.22266 3.42188 10.1523 3.98633 11.082C4.94922 12.6094 6.04492 14.0703 6.875 15.1328C7.67188 14.0703 8.76758 12.6094 9.73047 11.082C10.2949 10.1523 10.793 9.22266 11.125 8.42578C11.4902 7.5625 11.6562 6.93164 11.6562 6.5ZM13.25 6.5C13.25 9.42188 9.36523 14.5684 7.63867 16.7266C7.24023 17.2246 6.47656 17.2246 6.07812 16.7266C4.38477 14.5684 0.5 9.42188 0.5 6.5C0.5 2.98047 3.35547 0.125 6.875 0.125C10.3945 0.125 13.25 2.98047 13.25 6.5ZM7.9375 6.5C7.9375 5.93555 7.43945 5.4375 6.875 5.4375C6.27734 5.4375 5.8125 5.93555 5.8125 6.5C5.8125 7.09766 6.27734 7.5625 6.875 7.5625C7.43945 7.5625 7.9375 7.09766 7.9375 6.5ZM4.21875 6.5C4.21875 5.57031 4.7168 4.70703 5.54688 4.20898C6.34375 3.74414 7.37305 3.74414 8.20312 4.20898C9 4.70703 9.53125 5.57031 9.53125 6.5C9.53125 7.46289 9 8.32617 8.20312 8.82422C7.37305 9.28906 6.34375 9.28906 5.54688 8.82422C4.7168 8.32617 4.21875 7.46289 4.21875 6.5Z"/>
+                                </svg>
+                                <p class="p-footer__infos-list-item-text">1 Place Joseph Thierry, 67500 Haguenau</p>
+                            </div>
+                            <div class="p-footer__infos-list-item o-flex">
+                                <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M12.9512 9.28906L16.6699 10.8828C17.2676 11.1152 17.5996 11.7461 17.4668 12.377L16.6699 16.0957C16.5371 16.6934 15.9727 17.1582 15.375 17.1582C15.1426 17.1582 14.9434 17.125 14.7441 17.125C14.4121 17.125 14.0801 17.0918 13.7812 17.0586C6.31055 16.2617 0.5 9.95312 0.5 2.25C0.5 1.65234 0.931641 1.08789 1.5293 0.955078L5.24805 0.158203C5.87891 0.0253906 6.50977 0.357422 6.74219 0.955078L8.33594 4.67383C8.56836 5.20508 8.43555 5.83594 7.9707 6.20117L6.60938 7.33008C7.50586 8.85742 8.76758 10.1191 10.2949 11.0156L11.4238 9.6543C11.7891 9.18945 12.4199 9.05664 12.9512 9.28906ZM15.1426 15.5312L15.8398 12.2441L12.5195 10.8164L11.5566 12.0117C11.0586 12.6094 10.1953 12.7754 9.49805 12.377C7.73828 11.3477 6.27734 9.88672 5.24805 8.12695C4.84961 7.42969 5.01562 6.56641 5.61328 6.06836L6.80859 5.10547L5.38086 1.78516L2.09375 2.48242C2.19336 9.6543 7.9707 15.4316 15.1426 15.5312Z"/>
+                                </svg>
+                                <a class="p-footer__infos-list-item-text" href="tel:0388733041" target="_self">03 88 73 30 41</a>
+                            </div>
+                            <div class="p-footer__infos-list-item o-flex">
+                                <svg class="p-footer__infos-list-item-icon" fill="none" width="18" height="19" viewBox="0 0 18 19" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="#ffffff" d="M15.9062 9.625C15.9062 7.16797 14.5781 4.91016 12.4531 3.64844C10.2949 2.41992 7.67188 2.41992 5.54688 3.64844C3.38867 4.91016 2.09375 7.16797 2.09375 9.625C2.09375 12.1152 3.38867 14.373 5.54688 15.6348C7.67188 16.8633 10.2949 16.8633 12.4531 15.6348C14.5781 14.373 15.9062 12.1152 15.9062 9.625ZM0.5 9.625C0.5 6.60352 2.09375 3.81445 4.75 2.28711C7.37305 0.759766 10.5938 0.759766 13.25 2.28711C15.873 3.81445 17.5 6.60352 17.5 9.625C17.5 12.6797 15.873 15.4688 13.25 16.9961C10.5938 18.5234 7.37305 18.5234 4.75 16.9961C2.09375 15.4688 0.5 12.6797 0.5 9.625ZM8.20312 5.10938C8.20312 4.67773 8.53516 4.3125 9 4.3125C9.43164 4.3125 9.79688 4.67773 9.79688 5.10938V9.22656L12.6191 11.0859C12.9844 11.3516 13.084 11.8496 12.8516 12.2148C12.5859 12.5801 12.0879 12.6797 11.7227 12.4141L8.53516 10.2891C8.33594 10.1562 8.20312 9.89062 8.20312 9.625V5.10938Z"/>
+                                </svg>
+                                <p class="p-footer__infos-list-item-text">Lundi - vendredi : 13h30 - 17h30</p>
+                            </div>
                         </div>
                     </div>
+                    <div class="p-footer__submenu o-mt-3xl">
+                        <ul class="c-menu c-menu--row">
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Données personnelles</a>
+                            </li>
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Accessibilité</a>
+                            </li>
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Politique cookies</a>
+                            </li>
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Mentions légales</a>
+                            </li>
+                            <li class="c-menu__item o-flex o-flex--ng">
+                                <a class="c-menu__item-link" href="#" target="_self">Plan du site</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="p-footer__submenu o-mt-3xl">
-                    <ul class="c-menu c-menu--row">
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Données personnelles</a>
-                        </li>
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Accessibilité</a>
-                        </li>
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Politique cookies</a>
-                        </li>
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Mentions légales</a>
-                        </li>
-                        <li class="c-menu__item o-flex o-flex--ng">
-                            <a class="c-menu__item-link" href="#" target="_self">Plan du site</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+            </footer>
+        </div>
         
         <!-- SCRIPTS -->
         <script type="module" id="site-js" src="./assets/scripts/app.js"></script>
